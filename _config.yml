@@ -1,0 +1,31 @@
+baseurl: /guide
+title: Data Science Guide and Framework
+subtitle: Comprehensive DataScience Guide and Framework
+author:  Andrew Andrade 
+simple_search: http://google.com/search
+description: Comprehensive Datascience Guide and Framework 
+name: tufte
+markdown: Kramdown
+kramdown:  
+  input: GFM
+  syntax_highlighter: rouge
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+permalink: /:title
+timezone: America/New_York
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: gvim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/mrandrewandrade.github.com/
