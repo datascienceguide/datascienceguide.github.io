@@ -4,22 +4,20 @@ title:  "Required Background"
 categories: introduction 
 ---
 
-What background knowledge would be helpful to know as a datascientist?  The following list is not complete, so please consider contributing via a [pull request](http://github.com/datascienceguide/datascienceguide.github.io/) or sending [me an email](mailto:andrew@andrewandrade.ca) with suggestions or edits.
-
+What background knowledge would be helpful to know as a datascientist? Know of any good (and free) resources? The following list is not complete, so please consider contributing via a [pull request](http://github.com/datascienceguide/datascienceguide.github.io/) or sending [me an email](mailto:andrew@andrewandrade.ca) with suggestions or edits.
 
 In the previous lesson on [What is Data Science?](what-is-data-science/) we learnt that it is multifacted and requiers strong scientific analysis to create meaningful results. For this reason, to be a good data scientist, one requires a strong background in math: statistics and computer science as well as linear algebra and multivariable caluclus.  Why? Not understanding the fundamentals will lead to incorrect analysis and result is poor decision making.
 
-Most people give more emphasis on statistics over computer science, linear algebra and calculus since many of the machine learning algorithms are already implemented (so why learn the math?). While it is true that it is recommended to use already implemented algorithms, it is important to have a fundamental undestranding of how the algorithms are implemented.  This way you understand the assumptions in using the algorithm both quickly and correctly. 
+Most people give more emphasis on statistics (or computer science) over linear algebra and calculus since many of the machine learning algorithms are already implemented (so why learn the math?). While it is true that it is recommended to use already implemented algorithms, it is important to have a fundamental undestranding of how the algorithms are implemented.  This way you understand the assumptions in using the algorithm both quickly and correctly. 
 
 The required knowledge is broken down into the following sections:
 
 1. Precalculus and Mathematical Thinking
-1. statistics
+1. Statistics
 1. Linear Algebra
 1. Calculus
 1. computer science/programming
-1. MISC topics
-
+1. Important topics and concepts
 
 # Precalculus and Mathematical Thinking
 
@@ -27,10 +25,12 @@ Data is fundamentally represented by numbers, so having a strong foundation
 in mathematics is very important. The following are links to good resources
 to provide a background:
 
-https://www.khanacademy.org/math/precalculus
-https://www.coursera.org/course/maththink
-https://www.coursera.org/course/intrologic
-http://betterexplained.com
+[Precalculus](https://www.khanacademy.org/math/precalculus)
+[Mathematical Thinking](https://www.coursera.org/course/maththink)
+[Introductiuon to Logic](https://www.coursera.org/course/intrologic)
+[Better Explained Math Concepts](http://betterexplained.com)
+
+When I am learning a new math concept, I usually search it on BetterExplained first to get a more intuitive explanation.
 
 # Statistics
 
@@ -68,7 +68,7 @@ causation
 least squares
 Factor analysis
 
-## Bayesian vs Frequentist Apporach
+## Bayesian vs Frequentist Approach
 In addition, a data scientist should know the bayesian vs Frequentist approach to statistics and should be familiary with bayes theory and Bayesian Statistics. The notes go into Bayes Theorem.
 
 ## Bayesian Statistics
@@ -87,24 +87,22 @@ A lot of machine learning (ML) or applied statistics concepts are tied to linear
 For Mathematical Modeling: for example, if you want to capture behaviors (sales, engagement, etc.) in a mathematical model, you can use matrix to breakdown the samples into their own subgroups, and each has its own parameter instead of using a global value. This requires some basic matrix manipulation. Matrix inversion, derivation, solving partial differential or first order differential equations with matrices, for example.For Understanding High Dimensional Distribution: multinomial as the basic example and there are many more.
 
 ## Good resources:
-### Theory
-[Matrix Cookbook](http://matrixcookbook.com)
-[Khan Academy Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
-If you are really having difficulty, you can buy [Linear Algebra Done Right](http://amzn.to/1YT2dcj) which is both a comprehensive guide and provides great intuition.
 
-### Hands On
-[Linear Algebra for Data Scientists](http://alexhwoods.com/2015/07/11/linear-algebra-for-data-scientists/)
+[Matrix Cookbook](http://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+[Khan Academy's Linear Algebra Videos](https://www.khanacademy.org/math/linear-algebra)
+If you are really having difficulty, you can buy [Linear Algebra Done Right](http://amzn.to/1YT2dcj) which is both a comprehensive guide and provides great intuition.
+[Hands on Linear Algebra for Data Scientists](http://alexhwoods.com/2015/07/11/linear-algebra-for-data-scientists/)
 
 # Calculus
 
 Khan Academy provides a great overview of many of the necessary concepts:
 
-https://www.khanacademy.org/math/calculus
-https://www.khanacademy.org/math/integral-calculus
-https://www.khanacademy.org/math/multivariable-calculus
-https://www.khanacademy.org/math/differential-equations
+[Calculus](https://www.khanacademy.org/math/calculus)
+[Integral Calculus](https://www.khanacademy.org/math/integral-calculus)
+[MultiVariable Calculus](https://www.khanacademy.org/math/multivariable-calculus)
+[Differential Equations](https://www.khanacademy.org/math/differential-equations)
 
-Calculus and differential equations is very important for methematic modeling of systems.
+Calculus and differential equations is very important for methematic modeling of systems and used in optimization.
 
 # Computer Science/programming
 
@@ -115,23 +113,32 @@ Calculus and differential equations is very important for methematic modeling of
 Arrays, loops, functions, reading/writing data, objects
 vectors, lists, variables, expressions, factors
 
+[Udacity's Intro to Computer Science](https://www.udacity.com/course/intro-to-computer-science--cs101) and [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036) are great resources to both learn programming and python.  You can view and learn the course material for free or you can take the course and get extra help.
+
 ## Data structures
 
+Specifically focus on understanding graphs, trees (binary trees), hash functions,  algorithm complexity, big O notation
 TODO: find good resource
 
 ## Algorithms
 
-TODO: find good resouce
+Searching and manupilating graphs and trees
+
+Sorting Algorithms, and searching algorithms are also useful.
+
+TODO: find good free resource
 
 ## Data Fundamentals
-## Data types:
 
 ### Tabular data
-
 spreadsheet, csvs, dataframes, data series
 
 ### JSON, XML
+"data of the web", no key value or any organized tablular structure.
+[Data wrangling with mongodb](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
 
+### Unstructured data
+Images, voice, natural language text
 
 ## Databases
 
@@ -139,11 +146,28 @@ spreadsheet, csvs, dataframes, data series
 
 ### SQL
 
-SQL joins
-http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+[SQL on Khan Academy(https://www.khanacademy.org/computer-programming/sql/)
+
+[Hands on SQL Tutorial with SQLite](https://github.com/uWaterlooDataTeam/IntroSQL/wiki)
+
+[SQL joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
 ### NoSQL
-TODO: find good resouce
 
-# MISC topics
+[Data wrangling with mongodb](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
+
+### Numerical methods
+
+Understand how rounding errors affect calculations.
+
+### Running Servers and Virtual Machines
+
+Commandline, linux
+
+TODO: write why this is important and make a guide
+
+# Important Background Concepts
+
+Since these topics are a must read, we created a new section called [important concepts](important-concepts/).
+
 
