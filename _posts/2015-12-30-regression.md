@@ -1,28 +1,24 @@
 ---
 layout: post
 title:  "Regression"
-date:   2015-02-08 13:06:04
 categories: jekyll update
 ---
-Regression is fitting a line or curve to do numeric prediction or to do causility analysis (in some cases)
 
-Think Scatter plot of Grade vs. Hours of Study
+Regression is fitting a line or curve to do numeric prediction or to do predicted causility analysis (in some cases).
+
+## Generalized linear models
+
+### Linear regression
+
+Fit a line to a set of data, for example think Scatter plot of Grade vs. Hours of Study
 
 |Hours of study | Grade|
 |:-------------:|:----:|
 |data1          | data1|
 |...            |   ...|
 
-One feature (or attribute):
+Simple linear regressoin (with one feature (or attribute)):
 $$y = mx +b$$
-
-Multiple features (or attributes)
-
-$$y = m_1 x_1 + m_2 x_2 + m_3 x_3 ... m_k x_k + b $$
-
-## Generalized linear models
-
-### Linear regression
 
 Input:   
 
@@ -135,3 +131,12 @@ Piece-wise regression, polynomial regression, ridge regression, bayesian regress
 In addition, we learn later in the course about classification methods which can also be used for regerssion.  These include [decision trees](http://scikit-learn.org/stable/auto_examples/ensemble/plot_adaboost_regression.html#example-ensemble-plot-adaboost-regression-py), [nearest neighbour](http://scikit-learn.org/stable/auto_examples/neighbors/plot_regression.html#example-neighbors-plot-regression-py), [support vector regression](http://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#example-svm-plot-svm-regression-py), [isotonic regression](http://scikit-learn.org/stable/auto_examples/plot_isotonic_regression.html).
 
 For now, understand that these methods exist, and later once we learn model selection, evaluation and parameter tuning, we will learn which algorithm and method to use.
+
+
+### Multi-Regression
+
+After regression with 1 single features, the intuition can be extended to deal with multiple features called [multi-regresion](http://onlinestatbook.com/2/regression/multiple_regression.html) In simple linear regression, a criterion variable is predicted from one predictor variable. In multiple regression, the criterion is predicted by two or more variables. The basic idea is to find a linear combination of each of the features to predict the output.  The problem is to find the values of m1, m2, ... mk and b in the equation shown below that give the best predictions. As in the case of simple linear regression, we define the best predictions as the predictions that minimize the squared errors of prediction.
+
+$$y = m_1 x_1 + m_2 x_2 + m_3 x_3 ... m_k x_k + b $$
+
+Instead of a line for one features and an output, with more than one feature, the result is a plane.  Tutorial 4 covers examples of multi-regression with real world data.

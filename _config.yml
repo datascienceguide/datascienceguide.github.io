@@ -7,6 +7,7 @@ name: tufte
 markdown: Kramdown
 kramdown:  
   input: GFM
+  auto_id_prefix: true
   syntax_highlighter: rouge
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
