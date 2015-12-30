@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Regression"
-categories: jekyll update
+categories: predict
 ---
 
 Regression is fitting a line or curve to do numeric prediction or to do predicted causility analysis (in some cases).
@@ -53,6 +53,8 @@ RMSE = $$\sqrt{2/5}$$
 Usually we calculate the (vertical) residual, or the difference in the observed and predicted in the y.  This is because "the use of the least squares method to calculate the best-fitting line through a two-dimensional scatter plot typically requires the user to assume that one of the variables depends on the other.  (We caculate the difference in the y)  However, in many cases the relationship between the two variables is more complex, and it is not valid to say that one variable is independent and the other is dependent. When analysing such data researchers should  consider plotting the three regression lines that can be calculated for any two-dimensional scatter plot.
 
 Plotting all three regression lines gives a fuller picture of the data, and comparing their slopes provides a simple graphical assessment of the correlation coefficient. Plotting the orthogonal regression line (red) provides additional information because it makes no assumptions about the dependence or independence of the variables; as such, it appears to more accurately describe the trend in the data compared to either of the ordinary least squares regression lines."  You can read the [full paper](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3601633/) [here](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3601633/pdf/elife00638.pdf)
+
+[Tutorial 2](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/tutorials/Tutorial-2-Linear-Regression.ipynb) covers a complete example of simple (one attribute) linear regression.
 
 ### Residual plot
 
@@ -138,5 +140,7 @@ For now, understand that these methods exist, and later once we learn model sele
 After regression with 1 single features, the intuition can be extended to deal with multiple features called [multi-regresion](http://onlinestatbook.com/2/regression/multiple_regression.html) In simple linear regression, a criterion variable is predicted from one predictor variable. In multiple regression, the criterion is predicted by two or more variables. The basic idea is to find a linear combination of each of the features to predict the output.  The problem is to find the values of m1, m2, ... mk and b in the equation shown below that give the best predictions. As in the case of simple linear regression, we define the best predictions as the predictions that minimize the squared errors of prediction.
 
 $$y = m_1 x_1 + m_2 x_2 + m_3 x_3 ... m_k x_k + b $$
+
+![](http://image.slidesharecdn.com/multipleregression-130320062840-phpapp02/95/multiple-regression-7-638.jpg?cb=1363760985)
 
 Instead of a line for one features and an output, with more than one feature, the result is a plane.  Tutorial 4 covers examples of multi-regression with real world data.

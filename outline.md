@@ -1,3 +1,8 @@
+---
+layout: post
+title: "outline"
+---
+
 # [Module 0: Introduction](introduction)
 ## [About](about/index.html)
 ## What is DataScience?
@@ -47,8 +52,8 @@ Grid search
 ## Hypothesis Testing
 
 # Module 8: Predict
-## (Regression](linear-regression/)
-Tutorial: [2](), [3](), [4]()
+## [Regression](regression/)
+Tutorial: [2](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/tutorials/Tutorial-2-Linear-Regression.ipynb), [3](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/tutorials/Tutorial-3-Non-Linear-Regression.ipynb), [4]()
 ## Classification
 
 ## Recommendation
