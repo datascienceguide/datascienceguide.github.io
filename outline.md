@@ -5,7 +5,7 @@ title: "outline"
 
 ### Module 0: [Introduction & Outline](outline.html)
 
-####  [About](about/index.html)
+####  [About](about.html)
 
 #### [What is DataScience?](what-is-data-science/)
 
