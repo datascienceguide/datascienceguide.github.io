@@ -2,212 +2,27 @@ http://bl.ocks.org/serra/5012770
 http://bl.ocks.org/mbostock/raw/4063550/flare.json
 https://leanpub.com/D3-Tips-and-Tricks
 
-# How Do I Start Learning Data Science?
-
-This is a "hands on" or applied guide to getting started with *data science*.  It begins with what exactly is data science, and how to get the required background and later goes into details of learning and practicing the data science approach to actional insights.  After going over the basics of data analysis, it later goes into special topics such as dealing with big data, natural language processing and many more topics.
-
-## Why We created this guide
-
- Ever since Harvard Business Review claimed that being a [Data Scientist is the Sexiest Job of the 21st Century](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/) there have been countless guides, blogs, courses, new sites and tutorials on different aspects of data science, machine learning, statistics and many many more related topics.  Different than other guides, this site strives to act as (somewhat comprehensive) learning plan or a road map with practical advice for getting started on a journey into the world of data science.  While books are great (and are recommended), a large reading lists are daunting and are not conductive to becoming a better data scientist, rather the way to get better is to learn a little, play a little, present results a little, get feedback a little, rinse and repeat!  And this guide provides such a framework by explaining topics, providing sample code and data and links to revelant resources along the way!
-
-
-
-
-# Required background
-
-## Precalculus and Mathematical Thinking
-
-Data is fundamentally represented by numbers, so having a strong foundation
-in mathematics is very important. The following are links to good resources
-to provide a background:
-
-https://www.khanacademy.org/math/precalculus
-https://www.coursera.org/course/maththink
-https://www.coursera.org/course/intrologic
-http://betterexplained.com
-
-
-## Linear Algebra
-
-
-For Machine Learning: A lot of ML concepts are tied to linear algebra concepts. Some basic examples, PCA - eigenvalue, regression - matrix multiplication... As most ML techniques deal with high dimensional data, they are often times represented as matrices.
-
-
-Singular value decomposition, projections, principal components, eigenvalue, eigenvectors, regression, matrix multiplication, matrix operations, matrix, inverse, solving differential equations using matrices.
-
-For Mathematical Modeling: for example, if you want to capture behaviors (sales, engagement, etc.) in a mathematical model, you can use matrix to breakdown the samples into their own subgroups, and each has its own parameter instead of using a global value. This requires some basic matrix manipulation. Matrix inversion, derivation, solving partial differential or first order differential equations with matrices, for example.
-For Understanding High Dimensional Distribution: multinomial as the basic example and there are many more.
-
-http://matrixcookbook.com
-https://www.khanacademy.org/math/linear-algebra
-
-Linear Algebra Done Right, Axler
-
-Hands on:
-
-http://alexhwoods.com/2015/07/11/linear-algebra-for-data-scientists/
-
-## Calculus
-
-https://www.khanacademy.org/math/calculus
-https://www.khanacademy.org/math/integral-calculus
-https://www.khanacademy.org/math/multivariable-calculus
-https://www.khanacademy.org/math/differential-equations
-
-
-## Statistics
 
 
 
 
 
 
-
-## MISC Fundamentals 
-
-Regular Expressions
-
-REGEX!
-
-Super userful to extract information, data cleaning!
-
-CAP theorem
-http://www.julianbrowne.com/article/viewer/brewers-cap-theorem
-
-Information Entropy
-https://www.khanacademy.org/computing/computer-science/informationtheory/moderninfotheory/v/information-entropy
-
-### Multi dimensional data
-
-- DataSharding
-
-- OLAP
-
-- ETL
-
-### Business Analytics vs Business Intelligence
-
-https://www.quora.com/What-is-the-difference-between-business-intelligence-and-business-analytics-1
-
-https://rapidminer.com/summarizing-differences-business-intelligence-advanced-analytics/
 
 Tools and Environment Setup!
 
 ### Data structures and algorithms:
 
-- hash functions, binary tree, algorithm complexity, big O notation
 
-### Numerical methods
-
-### Running Servers and Virtual Machines
-
-Commandline, linux
-
-
-### Distance measurements
-euclidean distance
-
-manhatten
-
-jacarrd distance
-
-cosine similarity
 
 
 ## Data Tools
 
-- Many tools exist.  We start with excel since it is the most basic for dealing with tabular data, later we focus on open source tools: first with workbenches/ interfaces and then programming frameworks.
-
-#### Why open source?
-
-- view source code, contribute, free innovation, cross platform, not tied down
-
-#### Excel/ Open Office
-
-##### Java Work Benches
-
-Java-based environments, workbenches and graphical user interfaces (GUIs) that can be used for data science.  From the [original article](http://machinelearningmastery.com/java-machine-learning/) outlining more details.
-
-###### [Weka](http://www.cs.waikato.ac.nz/ml/weka/)
-
-Waikato Environment for Knowledge Analysis (Weka) is a data mining platform created by the University of Waikato, New Zealand. It  provides a graphical user interface, command line interface and Java API. It is perhaps the most popular Java machine learning library and a great place to start or practice machine learning.
-
-Recommended for beginners, great out of the box visualizations
-
-###### KIME
-
-Konstanz Information Miner
-
-###### RapidMiner
-
-###### ELKI
-
-Environment for DeveLoping KDD-Applications Supported by Index-Structures (ELKI)
-
-
-#### Programming Frame works
-
-Why write code?
-- reproducable
-- scales better
-- easily distributed
-
-##### Java Libraries
-
-####### Java-ML
-
-####### JSAT
-
-###### Python Libraries
-
-####### ScitKit learn
-
-####### Xgboost
-
-####### Orange
-
-
-####### R
-
-R Studio
-Rattle (http://rattle.togaware.com/)
-(that other R IDE)
-
-
-## Big data tools
+	if 
 
 
 # Data Science Framework
 
-Ask > Acquire > assimilate > analyze > answer > act
-
-## What is Machine learning?
-
-### Correlation does not imply causation
-
-### Model evaluation
-
-### Bias and Variance Trade-off
-
-### Cross validation
-
-### Garbage in, Garbage out
-
-### Issues with Data Science
-
-1. Computational complexity
-  - Can not evaluate all models and parameters
-2. Validation or evaluation
-- How to pick the best algorithm?   
-- Test with smaller set of data
-3. Data skew.
-- Data can be misleading or incorrect
-- See data aggrigation
-4. Interpretation
-- Human in the loop (domain expertise) is necessary to understand
-- Made from subset of population
-- Data Mining does stereotyping by default
-5. Ethics/Data Privacy
 
 # Acquiring Data
 
@@ -602,12 +417,6 @@ Other techniques are used in feature engineering section (TODO add link)
 - Random trees
 
 ### K nearest neighours
-
-
-
-
-
-
 
 
 ## Classification

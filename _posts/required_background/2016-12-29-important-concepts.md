@@ -90,3 +90,5 @@ Before learning "big data" or distributed systesm, one must understand CAP theor
 
 Here is a [plain english explation](http://ksat.me/a-plain-english-introduction-to-cap-theorem/) which explains it better than I could.
 
+Once you have read through the topics, you can move onto learning differents [tools for data science](opensource-tools-for-datascience).
+

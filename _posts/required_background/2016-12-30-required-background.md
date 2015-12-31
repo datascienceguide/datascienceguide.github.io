@@ -128,6 +128,11 @@ Sorting Algorithms, and searching algorithms are also useful.
 
 TODO: find good free resource
 
+## Numerical methods
+
+Understand how rounding errors affect calculations.
+
+
 ## Data Fundamentals
 
 ### Tabular data
@@ -155,16 +160,6 @@ Images, voice, natural language text
 ### NoSQL
 
 [Data wrangling with mongodb](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
-
-### Numerical methods
-
-Understand how rounding errors affect calculations.
-
-### Running Servers and Virtual Machines
-
-Commandline, linux
-
-TODO: write why this is important and make a guide
 
 # Important Background Concepts
 
