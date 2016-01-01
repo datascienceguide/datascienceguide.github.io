@@ -1,11 +1,8 @@
 ---
 layout: post
-title:  "Aquiring Data"
+title:  "Analyze Data"
 categories: introduction 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
+Ask > Acquire > Assimilate > ___Analyze___ > Answer > Act
 
-## Scraping
-
-
-## Logging
+Content coming soon!

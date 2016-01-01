@@ -12,5 +12,5 @@ Coming soon!
 
 ### Outlier Detection
 
-As part of the data clearning stage, outliers can be detected through [outlier detection](outlier-detection).  Once outliers are determined, they can be removed and then ignored or imputed.  Alternatively there are algorithms which robustly ignore (or deal with) outliers.
+As part of the data cleaning stage, outliers can be detected through [outlier detection](outlier-detection).  Once outliers are determined, they can be removed and then ignored or imputed.  Alternatively there are algorithms which robustly ignore (or deal with) outliers.
 
