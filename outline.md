@@ -39,7 +39,7 @@ title: "outline"
 
 ### Module 3: [Aquire Data](aquiring-data/)
 
-#### Downloading Data, Scraping Data, Logging Data
+#### Downloading Data, Scraping Data, Logging Data, Streaming
 
 ### Module 4: [Prepare Data](preparing-data/)
 
