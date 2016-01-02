@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Aquiring Data"
-categories: introduction 
+title:  "Recommendation"
+categories: recommendation 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
+Content coming soon!
 
+## Content based Filtering
 
-## Logging
+## Colaborative Filtering
+

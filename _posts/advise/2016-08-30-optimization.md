@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
+title:  "Optimization"
 categories: introduction 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+More content to come soon!

@@ -3,9 +3,7 @@ layout: post
 title:  "Aquiring Data"
 categories: introduction 
 ---
-Comming soon!
-
-Ask > *Acquire* > assimilate > analyze > answer > act
+Ask > __Acquire__ > assimilate > analyze > answer > act
 
 ## Downloading
 

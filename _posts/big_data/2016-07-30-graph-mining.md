@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
-categories: introduction 
+title:  "Graph Mining"
+categories:  big-data
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+Content coming soon!

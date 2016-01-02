@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
-categories: introduction 
+title:  "Hypothesis Testing"
+categories: disover
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+Content coming soon!

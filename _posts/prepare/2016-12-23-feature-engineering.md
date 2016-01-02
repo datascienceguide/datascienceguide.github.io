@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
-categories: introduction 
+title:  "Feature Engineering"
+categories: prepare
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+Content coming soon!

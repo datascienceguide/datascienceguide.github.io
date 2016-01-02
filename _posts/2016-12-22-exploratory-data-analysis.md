@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
+title:  "Exploratory Data Analysis"
 categories: introduction 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+Content coming soon!

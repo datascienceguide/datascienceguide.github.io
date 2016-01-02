@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
-categories: introduction 
+title:  "K Nearest Neighbor and Lazy Learning"
+categories: classification 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+Content coming soon!

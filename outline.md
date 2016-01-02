@@ -33,9 +33,11 @@ title: "outline"
 
 #### Garbage in, Garbage out
 
-#### Unstructed data, [deep learning](deep-learning/): [natural language processing](natural-language-processing/) and [image classification](image-classification/)
+#### Special Topics: [deep learning](deep-learning/): [natural language processing](natural-language-processing/) and [image classification](image-classification/)
 
 #### What questions to ask
+
+#### Problems with data science
 
 ### Module 3: [Aquire Data](aquiring-data/)
 

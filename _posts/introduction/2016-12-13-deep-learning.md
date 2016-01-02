@@ -1,11 +1,5 @@
 ---
 layout: post
-title:  "Aquiring Data"
-categories: introduction 
+title:  "Deep Learning"
+categories: classifiation 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
-
-## Scraping
-
-
-## Logging

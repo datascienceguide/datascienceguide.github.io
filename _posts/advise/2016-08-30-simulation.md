@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
-categories: introduction 
+title:  "Simulation"
+categories: advise 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+More content coming soon!

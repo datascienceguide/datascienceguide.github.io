@@ -4,9 +4,7 @@ title:  "Data Science Framework Overview"
 categories: introduction 
 ---
 
-
 Ask > Acquire > assimilate > analyze > answer > act
-
 
 # What questions to Ask?
 

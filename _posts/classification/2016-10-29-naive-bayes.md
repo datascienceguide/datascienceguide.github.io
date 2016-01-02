@@ -1,11 +1,7 @@
 ---
 layout: post
-title:  "Aquiring Data"
+title:  "Naive Bayes"
 categories: introduction 
 ---
-Ask > *Acquire* > assimilate > analyze > answer > act
 
-## Scraping
-
-
-## Logging
+Content coming soon!
