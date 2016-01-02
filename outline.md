@@ -84,7 +84,8 @@ title: "outline"
 
 #### [Boosting](boosting): Creating Data
 
-### Module 9: [Regression](regression/): Linear, generalized, non-linear, multi regression  
+### Module 9: [Regression](regression/)
+Simple Linear, generalized, non-linear, multi regression  
 
 Tutorial: [2](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/
 tutorials/Tutorial-2-Linear-Regression.ipynb), [3](http://nbviewer.ipython.org/github/datascienceguide/
