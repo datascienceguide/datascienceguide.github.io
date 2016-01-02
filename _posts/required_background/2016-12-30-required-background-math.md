@@ -4,7 +4,20 @@ title:  "Required Background"
 categories: introduction 
 ---
 
-Most people give more emphasis on statistics over linear algebra and calculus since many of the machine learning algorithms are already implemented (so why learn the math?). While it is true that it is recommended to use already implemented algorithms, it is important to have a fundamental undestranding of how the algorithms are implemented.  This way you understand the assumptions in using the algorithm both quickly and correctly. 
+What background knowledge would be helpful to know as a datascientist? Know of any good (and free) resources? The following list is not complete, so please consider contributing via a [pull request](http://github.com/datascienceguide/datascienceguide.github.io/) or sending [me an email](mailto:andrew@andrewandrade.ca) with suggestions or edits.
+
+In the previous lesson on [What is Data Science?](what-is-data-science/) we learnt that it is multifacted and requiers strong scientific analysis to create meaningful results. For this reason, to be a good data scientist, one requires a strong background in math: statistics and computer science as well as linear algebra and multivariable caluclus.  Why? Not understanding the fundamentals will lead to incorrect analysis and result is poor decision making.
+
+Most people give more emphasis on statistics (or computer science) over linear algebra and calculus since many of the machine learning algorithms are already implemented (so why learn the math?). While it is true that it is recommended to use already implemented algorithms, it is important to have a fundamental undestranding of how the algorithms are implemented.  This way you understand the assumptions in using the algorithm both quickly and correctly. 
+
+The required knowledge is broken down into the following sections:
+
+1. Precalculus and Mathematical Thinking
+1. Statistics
+1. Linear Algebra
+1. Calculus
+1. computer science/programming
+1. Important topics and concepts
 
 # Precalculus and Mathematical Thinking
 
@@ -21,20 +34,16 @@ When I am learning a new math concept, I usually search it on BetterExplained fi
 
 # Statistics
 
-Stats is arguably the most important background knowledge required since machine learning is applied statistics.
+Stats is arguably the most important background knowledge required since machine learning is applied statistics.  I highly recommend reading [StatsBookOnline](http://onlinestatbook.com/2/) and going through all the modules.  It will provide a very comprehensive foundation the the frequentist approach to statistics.  After reading the modules you should have a good understanding of the following topics:
 
-## Frequentism
-
-I highly recommend reading [StatsBookOnline](http://onlinestatbook.com/2/) and going through all the modules.  It will provide a very comprehensive foundation the the frequentist approach to statistics.  After reading the modules you should have a good understanding of the following topics:
-
-### Data basics:
+## Data basics:
 
 Nominal, ordinal, interval, ratio scales and how to compare
 
-### Discriptive Statistics
+## Discriptive Statistics
 mean, median, range, standard deviation, variance, and exploratory data analysis
 
-### Inferenial Statistics
+## Inferenial Statistics
 Probability Theory
 Random variables
 Distribution functions (normal, poisson, gaussian)
@@ -59,14 +68,13 @@ causation
 least squares
 Factor analysis
 
-## Bayesian Approach
-In addition, a data scientist should know the bayesian approach to statistics and should be familiary with bayes theory and Bayesian Statistics. The notes go into Bayes Theorem, naive bayes, and bayesian networks, but having a fundamental understanding is important.
+## Bayesian vs Frequentist Approach
+In addition, a data scientist should know the bayesian vs Frequentist approach to statistics and should be familiary with bayes theory and Bayesian Statistics. The notes go into Bayes Theorem.
 
-If you know of a good resouce for bayesian statistics, please [email me](mailto: andrew@andrewandrade.ca)
-
-### Bayesian Methods
+## Bayesian Statistics
 
 [Bayesian Methods for Hackers](camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) Monte carlo markov chain
+
 
 # Linear Algebra
 
@@ -96,6 +104,65 @@ Khan Academy provides a great overview of many of the necessary concepts:
 
 Calculus and differential equations is very important for methematic modeling of systems and used in optimization.
 
-## Next Steps
+# Computer Science/programming
 
-Once you think you have the required mathematical background, go can go back to the [required background](required-background) and complete the rest of the modules.
+## Programming Fundamentals
+
+### Basics
+
+Arrays, loops, functions, reading/writing data, objects
+vectors, lists, variables, expressions, factors
+
+[Udacity's Intro to Computer Science](https://www.udacity.com/course/intro-to-computer-science--cs101) and [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036) are great resources to both learn programming and python.  You can view and learn the course material for free or you can take the course and get extra help.
+
+## Data structures
+
+Specifically focus on understanding graphs, trees (binary trees), hash functions,  algorithm complexity, big O notation
+TODO: find good resource
+
+## Algorithms
+
+Searching and manupilating graphs and trees
+
+Sorting Algorithms, and searching algorithms are also useful.
+
+TODO: find good free resource
+
+## Numerical methods
+
+Understand how rounding errors affect calculations.
+
+
+## Data Fundamentals
+
+### Tabular data
+spreadsheet, csvs, dataframes, data series
+
+### JSON, XML
+"data of the web", no key value or any organized tablular structure.
+[Data wrangling with mongodb](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
+
+### Unstructured data
+Images, voice, natural language text
+
+## Databases
+
+### Relational algebra and DB basics
+
+### SQL
+
+[SQL on Khan Academy(https://www.khanacademy.org/computer-programming/sql/)
+
+[Hands on SQL Tutorial with SQLite](https://github.com/uWaterlooDataTeam/IntroSQL/wiki)
+
+[SQL joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+
+### NoSQL
+
+[Data wrangling with mongodb](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
+
+# Important Background Concepts
+
+Since these topics are a must read, we created a new section called [important concepts](important-concepts/).
+
+

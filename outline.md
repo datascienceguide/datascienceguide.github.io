@@ -33,7 +33,7 @@ title: "outline"
 
 #### Garbage in, Garbage out
 
-#### Special Topics: [deep learning](deep-learning/): [natural language processing](natural-language-processing/) and [image classification](image-classification/)
+#### [Deep learning](deep-learning/): [natural language processing](natural-language-processing/), [image classification](image-classification/), computer vision, bioinformatics
 
 #### What questions to ask
 
