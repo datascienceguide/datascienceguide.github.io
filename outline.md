@@ -21,7 +21,7 @@ title: "outline"
 	 
 #### [Tools Introduction](opensource-tools-for-datascience/): WEKA, Python, [R tutorial](r-programming-tutorial), [SQL Tutorial](sql-introduction)
 
-#### [Big Data Tools Introduction](opensource-bigdata-tools/): Hadoop, Hive, Pig
+#### [Big Data Tools Introduction](opensource-bigdata-tools/): Hadoop, Hive, Pig, and many more!
 
 ### Module 2: [DataScience Framework](data-science-framework/)
 
