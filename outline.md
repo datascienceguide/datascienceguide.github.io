@@ -17,7 +17,7 @@ title: "outline"
 
 #### [Databases](required-background-databases/): Relational Algebra, SQL
 
-#### [Important Concepts](important-concepts/): Regular expressions, Entropy, Distance measurements, OLAP, ETL, BI VS BA and CAP
+#### [Important Concepts](important-concepts/): Regular expressions, Entropy, Distance measurements, OLAP, ETL, BI VS BA and CAP, [Bayes Theorem](bayes-theorem)
 	 
 #### [Tools Introduction](opensource-tools-for-datascience/): WEKA, Python, [R tutorial](r-programming-tutorial), [SQL Tutorial](sql-introduction)
 
@@ -90,7 +90,7 @@ title: "outline"
 
 ### Module 10: [Classification](classification/)
 
-#### [Naive Bayes](naive-bayes/): Bayes theorem, naive bayes classifier
+#### [Naive Bayes](naive-bayes-classifier/): Bayes theorem, naive bayes classifier
 
 #### [Decision Trees](decision-trees/): Entropy based Decision Tree, C4.5, boosted trees, ensembled trees, Random forests
 
