@@ -84,9 +84,6 @@ title: "outline"
 
 #### [Boosting](boosting): Creating Data
 
-#### Special topics: [Natural Language Processing](natural-language-processing/), [Image classification](image-classification/)
-
-
 ### Module 9: [Regression](regression/): Linear, generalized, non-linear, multi regression  
 
 Tutorial: [2](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/
