@@ -226,7 +226,7 @@ For now, understand that these methods exist, and by applying the principles of 
 
 ### Multi-Regression
 
-After regression with 1 single features, the intuition can be extended to deal with multiple features called [multi-regresion](http://onlinestatbook.com/2/regression/multiple_regression.html) In simple linear regression, a criterion variable is predicted from one predictor variable. In multiple regression, the criterion is predicted by two or more variables. The basic idea is to find a linear combination of each of the features to predict the output.  The problem is to find the values of m1, m2, ... mk and b in the equation shown below that give the best predictions. As in the case of simple linear regression, we define the best predictions as the predictions that minimize the squared errors of prediction.
+After regression with 1 single feature, the intuition can be extended to deal with multiple features called [multi-regresion](http://onlinestatbook.com/2/regression/multiple_regression.html) In simple linear regression, a criterion variable is predicted from one predictor variable. In multiple regression, the criterion is predicted by two or more variables. The basic idea is to find a linear combination of each of the features to predict the output.  The problem is to find the values of $$m_1, m_2, ... m_k$$ and b in the equation shown below that give the best predictions. As in the case of simple linear regression, we define the best predictions as the predictions that minimize the squared errors of prediction.
 
 $$y = m_1 x_1 + m_2 x_2 + m_3 x_3 ... m_k x_k + b $$
 
