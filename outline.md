@@ -85,11 +85,8 @@ title: "outline"
 #### [Boosting](boosting): Creating Data
 
 ### Module 9: [Regression](regression/)
-Simple Linear, generalized, non-linear, multi regression  
 
-Tutorial: [2](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/
-tutorials/Tutorial-2-Linear-Regression.ipynb), [3](http://nbviewer.ipython.org/github/datascienceguide/
-datascienceguide.github.io/blob/master/tutorials/Tutorial-3-Non-Linear-Regression.ipynb), [4]()
+#### Tutorials: [Simple Linear](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/tutorials/Linear-Regression-Tutorial.ipynb), [generalized, non-linear](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/tutorials/Non-Linear-Regression-Tutorial.ipynb), multi regression (coming soon!)
 
 ### Module 10: [Classification](classification/)
 
@@ -97,19 +94,19 @@ datascienceguide.github.io/blob/master/tutorials/Tutorial-3-Non-Linear-Regressio
 
 #### [Decision Trees](decision-trees/): Entropy based Decision Tree, C4.5, boosted trees, ensembled trees, Random forests
 
-#### [Rule Based learning](rule-based-learning/): One R, Prism, Trees and Rules
+#### [Rule Based Learning](rule-based-learning/): One R, Prism, Trees and Rules
 
 #### [Logistic Regression](logistic-regression)
 
-#### [Support vector machine](support-vector-machine)
+#### [Support Vector Machines](support-vector-machine)
 
-#### [k nearest neighbor](k-nearest-neighbor)
+#### [K Nearest Neighbor](k-nearest-neighbor)
 
-#### [hidden markov model](hidden-markov-model)
+#### [Hidden Markov Model](hidden-markov-model)
 
-#### [bayesian network](bayesian-network)
+#### [Bayesian Network](bayesian-network)
 
-#### [artificial neural networks](neural-network)
+#### [Artificial Neural Networks](neural-network)
 
 ### Module 11: [Recommendation]()
 
