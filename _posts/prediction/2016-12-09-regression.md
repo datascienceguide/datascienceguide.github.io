@@ -233,3 +233,13 @@ $$y = m_1 x_1 + m_2 x_2 + m_3 x_3 ... m_k x_k + b $$
 ![](http://image.slidesharecdn.com/multipleregression-130320062840-phpapp02/95/multiple-regression-7-638.jpg?cb=1363760985)
 
 Instead of a line for one features and an output, with more than one feature, the result is a plane.  Tutorial 4 covers examples of multi-regression with real world data.
+
+
+# Futher reading
+
+[Robust regression](http://www.saedsayad.com/docs/RobustRegression.pdf) 
+
+[Time Series and Forecasting](http://www.saedsayad.com/docs/Time%20Series%20and%20Forecasting.pdf)
+
+
+

@@ -6,11 +6,16 @@ categories: prepare
 
 Coming soon!
 
+From [here](http://www.saedsayad.com/data_preparation.htm)
+
 ## Extract/Transform/Load
 
-Extract: data is usually stored in a form of a warehouse.  It needs to be extracted (for example using SQL)
-Transform: Data is rarely in the necessary form for analysis
+![](http://www.saedsayad.com/images/ETL.png)
+
+Extract: data is usually stored in a form of a source in a specific type (such as flat files, relational databases, streaming data, XML/JSON files, Open Database Connectivity (ODBC) and/or Java Database Connectivity (JDBC) data sources.
+Transform:  Cleanse, convert, aggregate, merge, and split and modify data so it use useful.
 Load: Once transformed, it can be loaded into another database or warehouse
+
 
 # Transforming Data
 
@@ -31,5 +36,19 @@ As part of the data cleaning stage, outliers can be detected through [outlier de
 ### Imputing
 
 ### Filtering
+
+## Dimensionality Reduction
+
+
+# Further Reading
+
+## Dimensionality Reduction
+
+[A Tutorial on Principal Component Analysis](http://arxiv.org/pdf/1404.1100.pdf)
+
+[Princiapl Components Analysis](http://www.saedsayad.com/docs/pca.pdf)
+
+[PCA step by step](http://sebastianraschka.com/Articles/2014_pca_step_by_step.html)
+
 
 

@@ -196,6 +196,14 @@ Combining the three points, naive bayes is great for streaming text data such as
 
 ## Further reading
 
+### Naive Bayes
+
+[The Optimality of Naive Bayes](http://www.saedsayad.com/docs/Optimality_of_Naive_Bayes.pdf)
+
+### NaiveBayes and NLP
+
+[Nomograms for Visualizing Naive Bayes](http://www.saedsayad.com/docs/Nomograms.pdf)
+
 ### Bayesian Statistics
 
 [Bayesian Statistics on Wikipedia](https://en.wikipedia.org/wiki/Bayesian_statistics)

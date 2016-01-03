@@ -16,8 +16,6 @@ The required knowledge is broken down into the following sections:
 1. Statistics
 1. Linear Algebra
 1. Calculus
-1. computer science/programming
-1. Important topics and concepts
 
 # Precalculus and Mathematical Thinking
 
@@ -71,6 +69,11 @@ Factor analysis
 ## Bayesian vs Frequentist Approach
 In addition, a data scientist should know the bayesian vs Frequentist approach to statistics and should be familiary with bayes theory and Bayesian Statistics. The notes go into Bayes Theorem.
 
+# Further Reading for Stats
+
+[Maximum Likelihood Estimation](http://statgen.iop.kcl.ac.uk/bgim/mle/sslike_1.html)
+
+
 ## Bayesian Statistics
 
 [Bayesian Methods for Hackers](camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) Monte carlo markov chain
@@ -103,66 +106,3 @@ Khan Academy provides a great overview of many of the necessary concepts:
 [Differential Equations](https://www.khanacademy.org/math/differential-equations)
 
 Calculus and differential equations is very important for methematic modeling of systems and used in optimization.
-
-# Computer Science/programming
-
-## Programming Fundamentals
-
-### Basics
-
-Arrays, loops, functions, reading/writing data, objects
-vectors, lists, variables, expressions, factors
-
-[Udacity's Intro to Computer Science](https://www.udacity.com/course/intro-to-computer-science--cs101) and [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036) are great resources to both learn programming and python.  You can view and learn the course material for free or you can take the course and get extra help.
-
-## Data structures
-
-Specifically focus on understanding graphs, trees (binary trees), hash functions,  algorithm complexity, big O notation
-TODO: find good resource
-
-## Algorithms
-
-Searching and manupilating graphs and trees
-
-Sorting Algorithms, and searching algorithms are also useful.
-
-TODO: find good free resource
-
-## Numerical methods
-
-Understand how rounding errors affect calculations.
-
-
-## Data Fundamentals
-
-### Tabular data
-spreadsheet, csvs, dataframes, data series
-
-### JSON, XML
-"data of the web", no key value or any organized tablular structure.
-[Data wrangling with mongodb](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
-
-### Unstructured data
-Images, voice, natural language text
-
-## Databases
-
-### Relational algebra and DB basics
-
-### SQL
-
-[SQL on Khan Academy(https://www.khanacademy.org/computer-programming/sql/)
-
-[Hands on SQL Tutorial with SQLite](https://github.com/uWaterlooDataTeam/IntroSQL/wiki)
-
-[SQL joins](http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
-
-### NoSQL
-
-[Data wrangling with mongodb](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
-
-# Important Background Concepts
-
-Since these topics are a must read, we created a new section called [important concepts](important-concepts/).
-
-

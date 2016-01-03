@@ -29,3 +29,5 @@ Since many of the deep learning topics are subjects on their own, we will outlin
 # Further reading:
 
 [Deep learning 101](http://markus.com/deep-learning-101/)
+
+[Mining Text and Web Data](http://www.saedsayad.com/docs/TextAndWebMining.pdf)
