@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Preparing Data"
+title:  "Preparing Data: Feature Engineering"
 categories: prepare 
 ---
 
 Coming soon!
+
+
 
 ## Extract/Transform/Load
 
@@ -14,13 +16,13 @@ Load: Once transformed, it can be loaded into another database or warehouse
 
 # Transforming Data
 
+
 ## Binning Numerical Data
 
 If numerical data needs to transformed into categorical data, it can be binned into groups
 
 ## Encoding Categorical Data
 
-If categorical data needs to be transformed into numerical data (for example if a classifier only works with numerical data), it can be encoded.  If the data is binary, it can be encoded into 1 or 0.  The issue if the data is not binary, is that by adding 
 
 ## Data Cleaning
 

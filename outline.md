@@ -17,7 +17,7 @@ title: "outline"
 
 #### [Databases](required-background-databases/): Relational Algebra, SQL
 
-#### [Important Concepts](important-concepts/): Regular expressions, Entropy, Distance measurements, OLAP, ETL, BI VS BA and CAP, [Bayes Theorem](bayes-theorem)
+#### [Important Concepts](important-concepts/): Regular expressions, Entropy, Distance measurements, OLAP, ETL, BI VS BA and CAP 
 	 
 #### [Tools Introduction](opensource-tools-for-datascience/): WEKA, Python, [R tutorial](r-programming-tutorial), [SQL Tutorial](sql-introduction)
 
@@ -39,15 +39,15 @@ title: "outline"
 
 #### Problems with data science
 
+#### [Feature Engineering](feature-engineering/)
+
 ### Module 3: [Aquire Data](aquiring-data/)
 
 #### Downloading Data, Scraping Data, Logging Data, Streaming
 
 ### Module 4: [Prepare Data](preparing-data/)
 
-#### Processing Data: Extract/Transform/Load, Data cleaning, Outlier detection
-
-#### Data Enrichment: [Feature engineering](feature-engineering/)
+#### Processing Data: Extract/Transform/Load, Data cleaning, Outlier detection, Featuring Engineering
 
 #### Aggrigation: [Exploratory data analysis](exploratory-data-analysis)
 

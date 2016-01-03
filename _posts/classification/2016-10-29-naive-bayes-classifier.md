@@ -153,7 +153,23 @@ Based on the data, our assumptions of independance, we predict that with 7/11 (6
 
 ## Numerical Predictors
 
-TODO: Coming soon!
+Naive bayes can also work with numerical  features, but they must first be transformed into categorical values.  One option is to use binning described in [Preparing Data](datascienceguide.github.io/preparing-data/) and the other option (and common practice) is to assume a (usually normal) distribution and probability density function based on the mean ($$mu$$)and standard deviation $$\sigma$$of the dataset.  This assumption can be done by plotting a histogram of the data in addition to computing the mean and standard deviation.
+
+The following is the equation for a normal distribution:
+
+$$P(x) = \frac{e^{- \frac{(x- \mu)^2}{2 \sigma^2}}}{\sigma \sqrt {2\pi } }$$
+
+Where:
+
+$$\mu = \frac{1}{n}\sum_{i=1}^n x_i$$
+
+$$\sigma = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \mu)^2} $$
+
+### Example: Predict playing golf based on temperature
+
+A typeset version of this example will be coming soon!  Now you can see the example below.
+
+
 
 ## Pros:
 1. Fast and easy to predict class, and works well with multi class problems
@@ -175,4 +191,11 @@ __Natural Language Processing__ naive bayes is great for text classification, sp
 
 Combining the three points, naive bayes is great for streaming text data such as tweets, news or email.
 
+## Further reading
+
+### Bayesian Statistics
+
+[Bayesian Statistics on Wikipedia](https://en.wikipedia.org/wiki/Bayesian_statistics)
+[Introduction to Bayesian Statistics](https://www.maths.nottingham.ac.uk/personal/tk/files/talks/Cran_10_12.pdf)
+[Tutorial in Bayesian Statistics](https://www.maths.nottingham.ac.uk/personal/tk/files/talks/nott_radiology_01_11.pdf)
 
