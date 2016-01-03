@@ -24,7 +24,7 @@ Basics, Data Structures, Algorithms
 
 Relational Algebra, SQL
 
-### [Important Concepts](/important/concepts/)
+### [Important Concepts](/important-concepts/)
 
 Regular expressions, Entropy, Distance measurements, OLAP, ETL, BI VS BA and CAP 
 
