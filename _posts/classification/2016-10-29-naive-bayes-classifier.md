@@ -8,9 +8,9 @@ The bayesian approach offers an alterative method to statistics, and is actuall 
 
 The foundation for the bayesian approach is bayes theorem.  I recommond you read this primer on an intuitive (and short) explanation of [Bayes' theroem](http://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/) and [understanding bayes' theorem with ratios](http://betterexplained.com/articles/understanding-bayes-theorem-with-ratios/).
 
-## Bayes' Theorem
+# Bayes' Theorem
 
-Let's say we have event A and event B which are ___independant___ of each other.  The key assumption here is that A and B have to be independant for bayes theorem to be true. Now we are trying to determine the probability of event A when B is observed.
+Let's say we have event A and event B. We are trying to determine the probability of event A when B is observed.
 
 The idea is that the probability of event B times the probability of B when A is observed is equal to the probability of A times the probability of B when A is observed.  In equation:
 
@@ -25,9 +25,15 @@ In words:
 
 >Probability of event A when event B is observed is equal to the product of the probability of event B when event A is observed and the product of event A all divided by the probability of event B
 
+Terminology:
+P(A|B):  posterior probability
+P(A): prior probability
+P(B|A): likelyhood
+P(B): Predictor prior probability
+
 Now lets look at an example of a statistics problem, and see if we can apply Bayes theorem.
 
-### Dishonest Casino Problem: Identifying a loaded dice
+# Dishonest Casino Problem: Identifying a loaded dice
 
 Question 1: Rolling 3 numbers in a row
 
@@ -72,7 +78,7 @@ P(6 \| loaded) = 0.5
 
 therefore :
 
-$$P(6 | loaded)^3 = 0.5^3$$
+$$P(666 | loaded ) = P(6 | loaded)^3 = 0.5^3$$
 
 Now we lets calculate the probability of rolling 6 three times.  We know that either the dice is loaded or not loaded.  This means that the probability is disjointedor we have to take the weighted sum of rolling 666 for loaded and not loaded.  This means it will be the probability of rolling 666 for a loaded dice times the probability the dice is loaded plus the probability of rolling 666 for a loaded dice plus times the probability the dice is fair.  In equation form:
 
@@ -90,8 +96,83 @@ The answer to the question is that we believe that there is a 21% probability th
 
 Question 2: Rolling 6 only once 
 
-Now what if you only rolled the dice once and got a 6.  What is the posterior probability of the dice being loaded?  I will leave this example for you to solve, but the solution is:
+Now what if you only rolled the dice once and got a 6.  What is the posterior probability of the dice being loaded? 
+ 
+$$P(loaded dice | 6) = \frac{P(6 | loaded) \times P(loaded)}{P(6|loaded) \times P(loaded) + P(6|fair) \times P(fair)}$$
+
 
 $$P(loaded dice | 6) = \frac{0.5 \times 0.01 }{0.5 \times 0.01 + 1/6 \times 0.99} = 0.03$$
+
+# Naive Bayes Classifier
+
+Now let us generalize bayes theorem so it can be used to solve classification problems.  The key "naive" assumption here is that independant for bayes theorem to be true. The question we are asking is the following: What is the probability of value of a class variable (C) given the values of specific feature variables ($$X_1 .. X_k$$).  Again we are going to assume that the specific feature variables are independant of each other (which is sometimes not true!).
+
+$$P(class|features) = \frac{P(features|class) \times P(class)}{P(features)}$$
+
+## Income tax example
+
+For example, lets build a classifier to determine the likelyhood if someone is cheating on their income tax.  In this example we are trying to determine a class (Yes or No for cheating) given a set for features (got refund, and maritial status).  In this case, the feature for got refund is yes (y) or no (n) and for martial status is divorced (d), married (m) and single (s).
+
+Here is the data we are given:
+
+Refund | martital status | cheat
+y | s | n
+n | m | n
+n | s | n
+y | m | n
+n | d | y
+n | m | n
+y | d | n
+n | s | y
+n | m | n
+n | s | y
+
+Now lets say we are asked to look at an example where refund = no and and marital status (M.S.) = single.  Using naive bayes (given the naive assumption that getting a refund and MS are independant) determine the probability what the person cheated on their taxes:
+
+$$  P(cheat = y | refund = n \: and \: M.S. = s) = \frac{P (refund = n \: and \:  M.S. = s | cheat = y) \times P(cheat=y)}{P(refund = n \: and \: M.S. = s)}$$
+
+$$ = \frac{P (refund = n \: and \:  M.S. = s | cheat = y) \times P(cheat=y)}{P (refund = n \: and \:  M.S. = s | cheat = y) \times P(cheat=y)+P (refund = n \: and \:  M.S. = s | cheat = n) \times P(cheat=n)}$$
+
+By independance:
+
+$$ = \frac{P(M.S. = s | cheat = yes) \times P(refund = n | cheat = yes) \times P(cheat=y)}{P(M.S. = s | cheat = y) \times P(refund = n | cheat = y) \times P(cheat=y)+ P(M.S. = s | cheat = n) \times P(refund = n | cheat = n) \times P(cheat=n)}$$
+
+Now by counting the data provided:
+
+$$P(M.S. = s | cheat = y) = 2/3$$
+$$P(refund = n | cheat = y) = 3/3 = 1$$
+$$P(cheat = y) = 3 / 10$$
+
+$$P(M.S. = s | cheat = n) = 2/7$$
+$$P(refund = n | cheat = n) = 4/7$$
+$$P(cheat = n) = 7 / 10$$
+
+$$ P(cheat = y | refund = n \: and \: M.S. = s) = \frac{ 2/3 \times 3/3 \times 3/10}{3/10 \times 1 \times 2/3+ 4/7 \times 2/7 \times 7/10} = 7/11 $$
+
+Based on the data, our assumptions of independance, we predict that with 7/11 (63.63%) probability the person cheated on their taxes.  The posterior probablity is 7/11 compared to the 3/10 (33.33%) prior probability.
+
+## Numerical Predictors
+
+TODO: Coming soon!
+
+## Pros:
+1. Fast and easy to predict class, and works well with multi class problems
+2. Performs very well (compared to logistic regression and other algorithms) when imdependence assumption is held (you need less training data)
+3. Works very well for categorical inputs
+
+## Cons:
+1.  For numeric features must assume a distribution such as a gaussian (which might not be true)
+2.  If a variable has a category in the test data, but not in the training data, the model will assign a "zero frequency" or zero probability.  One must apply a smoothing technique such as laplace estimation or additive smoothing (smoothing algorithms content is coming soon!)
+3.  Since occurances (and probabilities) can be very small (with a large number of features and observations), there can be floating-point underflow.  This means the probability is so small that rounding errors will cause issues.  One solutoin is to use a log function and convert the decimals into negative numbers (a property of logorithms) and use those
+4.  Performance can be very poor if insumptions are incorrect, for this reason is it not wise to use the probablity (`predict_proba in python`)  
+5.  Some expert call Naive bayes, idiot's bayes since in real life if it almost impossible to have a set of predictors which are completely independent
+
+## When to use:
+
+___Real time prediction___ of streaming data: naive bayes is simple and fast, great to use for predictions in real time with stream data
+__Multiclass prediction___ by definition naive bayes can work on multiclass problems since it is able to predict the probability of multiple classes
+__Natural Language Processing__ naive bayes is great for text classification, spam filtering, sentiment analysis since it natually works with multi-class problem.  The simpliest implementation is using a bag of words approach or by splitting the text corpus in to words or n-gram and using the occurances.  Tutorial on this coming soon!
+
+Combining the three points, naive bayes is great for streaming text data such as tweets, news or email.
 
 
