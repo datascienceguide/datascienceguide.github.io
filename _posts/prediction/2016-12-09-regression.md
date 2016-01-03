@@ -122,23 +122,23 @@ Now let's take a look at one of the datasets from Anscombe's quartet.  The full 
 
 The scatter plot looks like:
 
-![](mages/anscombe_i_scatter.png)
+![](http://datascienceguide.github.io/images/anscombe_i_scatter.png)
 
 We can now use simple least squares linear regression to fit a line:
 
-![](images/anscombe_i_scatter_fitted_line.png)
+![](http://datascienceguide.github.io/images/anscombe_i_scatter_fitted_line.png)
 
 The residual (difference between y and y predicted (ŷ)) can then be calculated.  The residuals looks like:
 
-![](images/anscombe_i_scatter_line_residuals.png)
+![](http://datascienceguide.github.io/images/anscombe_i_scatter_line_residuals.png)
 
 y - ŷ vs x  can now be plotted:
 
-![](images/anscombe_i_residuals.png)
+![](http://datascienceguide.github.io/images/anscombe_i_residuals.png)
 
 We can now plot the residual distribution:
 
-![](images/anscombe_i_scatter_line_residual_distribution.png)
+![](http://datascienceguide.github.io/images/anscombe_i_scatter_line_residual_distribution.png)
 
 As seen the the histogram, the residual error should be (somewhat) normally distributed and centered around zero.  This [post](http://stattrek.com/regression/linear-regression.aspx#ReqressionPrerequisites) explains why.
 
@@ -211,7 +211,7 @@ Try each variable one by one and find the one the lowest sum of squares error
 3. Shrinkage
 - LASSO: uses matrix algebra to shrink coefficient to help with eliminating variables
 
-The techniques are used in feature engineering section (TODO add link) and are outlined in the [Scikit-learn documentation](http://scikit-learn.org/stable/modules/feature_selection.html)
+The techniques are used in [preparing data section](http://datascienceguide.github.io/preparing-data/) and are outlined in the [Scikit-learn documentation](http://scikit-learn.org/stable/modules/feature_selection.html)
 
 ### Linear and Non-linear Regression using Generalized Linear Models
 
