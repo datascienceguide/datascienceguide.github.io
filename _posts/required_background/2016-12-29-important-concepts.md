@@ -29,38 +29,11 @@ Yes, regular expressions initially are uninterpretable, but luckily there are us
 
 # Information Entropy
 
-Information entropy (more specifically, [Shannon entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) is the expected value (average) of the information contained in each message.  The [following video](https://www.khanacademy.org/computing/computer-science/informationtheory/moderninfotheory/v/information-entropy) outlines the concept very well.
+Since [information entropy](/information-entropy) is a very important topics and is used in decision trees, we created its [own page](/information-entropy) not to crowd this page.
 
 # Distance measurements
-Distance measurements are very important since they are used in clustering and nearest neibour algorithms.  The Scipy library has an implemention of common [distance computations](http://docs.scipy.org/doc/scipy/reference/spatial.distance.html).  The common ones are outlined below:
 
-TODO: better figures and put in formulas and examples
-
-
-1. Numeric Attributes
-
-[Euclidean Distance](https://en.wikipedia.org/wiki/Euclidean_distance): ordinary straight line distance between two points.
-
-Given two points p and q:
-
-$$d(p,q) = d(q,p) = \sqrt{(q_1-p_1)^2+(q_2-p_2)^2 + ... + (q_n-p_n^2)}$$
-
-Manhatten Distance: Distance a cab would drive (on a city grid)
-
-2. Discrete
-
-1 if the same, 0 if different 
-
-
-3. Itemsets (binary attributes)
-Jaccard similarity
-
-4. Text data/vector angles
-
-Cosine similarity
-
-[Three](http://blog.christianperone.com/2011/09/machine-learning-text-feature-extraction-tf-idf-part-i/) [part](blog.christianperone.com/2011/10/machine-learning-text-feature-extraction-tf-idf-part-ii/) [tutorial](http://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/) on the tf-idf and 
-cosine similarity
+Since [distance measurements](/distance-measurements) is a very important topics and is used in clustering and k nearest neighbor, we created its [own page](/distance-measurements) not to crowd this page.
 
 # OLAP
 
