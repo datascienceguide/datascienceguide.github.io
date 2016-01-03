@@ -39,8 +39,9 @@ As part of the data cleaning stage, outliers can be detected through [outlier de
 
 ## Dimensionality Reduction
 
-
 # Further Reading
+
+[Dealing with outliers](http://r-statistics.co/Outlier-Treatment-With-R.html)
 
 ## Dimensionality Reduction
 
