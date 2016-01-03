@@ -86,4 +86,4 @@ Rattle (http://rattle.togaware.com/)
 
 # Big data tools and Next Steps
 
-We created a section for [big data tools](opensource-bigdata-tools/) which outline popular opensource tools for big data.  This section is optional for now (until you get to big data).  If you want to move on, you can go to the [DataScience Framework](data-science-framework/).
+We created a section for [big data tools](/opensource-bigdata-tools/) which outline popular opensource tools for big data.  This section is optional for now (until you get to big data).  If you want to move on, you can go to the [DataScience Framework](/data-science-framework/).

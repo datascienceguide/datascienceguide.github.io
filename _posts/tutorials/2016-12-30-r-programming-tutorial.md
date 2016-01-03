@@ -8,12 +8,13 @@ This R programming tutorial was orignally created by the uWaterloo stats club an
 
 ## Contents:
 
-- *R Programming Reference*: complilation of useful information and code snippets      
-[ Reference in html](http://rpubs.com/uwaterloodatateam/r-programming-reference)  /  [Reference in pdf](https://github.com/uWaterlooDataTeam/r-programming-tutorial/raw/master/r-programming-reference.pdf) /  [Source (r markdown)](r-programming-reference.Rmd)
-- *R Programming 101 (Beginner Tutorial)*: Introduction to R Presentation     
+*R Programming 101 (Beginner Tutorial)*: Introduction to R Presentation     
 [Presentation in html](http://rpubs.com/uwaterloodatateam/r-programming-101)  /  [Presentation in pdf](https://github.com/uWaterlooDataTeam/r-programming-tutorial/raw/master/r-programming-101.pdf)  /  [Source (r markdown)](r-programming-101.Rmd)
 
 
+
+*R Programming Reference*: complilation of useful information and code snippets      
+[ Reference in html](http://rpubs.com/uwaterloodatateam/r-programming-reference)  /  [Reference in pdf](https://github.com/uWaterlooDataTeam/r-programming-tutorial/raw/master/r-programming-reference.pdf) /  [Source (r markdown)](r-programming-reference.Rmd)
 ## Useful Resources:
 
 Learn more R using [swirl](http://swirlstats.com/students.html)

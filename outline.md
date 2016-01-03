@@ -9,7 +9,7 @@ title: "outline"
 
 #### [What is DataScience?](what-is-data-science/)
 
-### Module 1: [Required Background](required-background/)
+### Module 1: [Required Background](/required-background/)
 
 #### [Math](required-background-math/): Stats, Calculus, Linear Algebra
 

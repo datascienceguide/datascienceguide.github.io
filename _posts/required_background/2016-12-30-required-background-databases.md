@@ -4,9 +4,10 @@ title:  "Databases Introduction"
 categories: introduction 
 ---
 
+Content Coming Soon!
+
 # Relational algebra and DB basics
 
-TODO: Coming Soon!
 
 # SQL
 
@@ -15,4 +16,4 @@ TODO: Coming Soon!
 [Hands on SQL Tutorial with SQLite](sql-introudction) is guide created by us, in conjuction with Darell Aucoin and uWaterloo's stats club.
 
 
-Once you think you understand databases and SQL well enough, you go can go back to the [required background](required-background) and complete the rest of the modules.
+Once you think you understand databases and SQL well enough, you go can go back to the [required background](/required-background) and complete the rest of the modules.

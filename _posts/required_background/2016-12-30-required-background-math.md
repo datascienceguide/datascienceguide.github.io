@@ -106,3 +106,6 @@ Khan Academy provides a great overview of many of the necessary concepts:
 [Differential Equations](https://www.khanacademy.org/math/differential-equations)
 
 Calculus and differential equations is very important for methematic modeling of systems and used in optimization.
+
+
+Once you feel you have the required mathematrical background, you can move onto the other parts of the [required background](/required-background/)

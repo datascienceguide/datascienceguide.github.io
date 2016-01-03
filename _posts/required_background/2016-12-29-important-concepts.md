@@ -6,7 +6,7 @@ categories: introduction
 
 What important concepts are critical to know datascientist? Know of any good (and free) resources? The following list is not complete, so please consider contributing via a [pull request](http://github.com/datascienceguide/datascienceguide.github.io/) or sending [me an email](mailto:andrew@andrewandrade.ca) with suggestions or edits.
 
-In the previous lesson on [Required background](required-background/) we listed a long list of required subjects which are related to learning data science.  In this lesson we outline very important concepts which are critical to know and understand when doing data science. Please do not skip this section! 
+In the previous lesson on [Required background](/required-background/) we listed a long list of required subjects which are related to learning data science.  In this lesson we outline very important concepts which are critical to know and understand when doing data science. Please do not skip this section! 
 
 We cover the following topics:
 1. Regular Expressions 
@@ -90,5 +90,5 @@ Before learning "big data" or distributed systesm, one must understand CAP theor
 
 Here is a [plain english explation](http://ksat.me/a-plain-english-introduction-to-cap-theorem/) which explains it better than I could.
 
-Once you have read through the topics, you can move onto learning differents [tools for data science](opensource-tools-for-datascience).
+Once you have read through the topics, you can move onto learning differents [tools for data science](/opensource-tools-for-datascience).
 

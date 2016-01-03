@@ -174,4 +174,4 @@ Some of these are: [Cloudera](http://www.cloudera.com/content/cloudera/en/home.h
 
 # Next Steps: Data Science Framework
 
-Now that you have been introduced to the tools, start on the next module and learn the [data science framework](data-science-framework/).
+Now that you have been introduced to the tools, start on the next module and learn the [data science framework](/data-science-framework/).

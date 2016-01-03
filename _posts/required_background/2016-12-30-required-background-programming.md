@@ -32,5 +32,5 @@ Understand how rounding errors affect calculations.
 
 ## Next Steps
 
-Once you think you have the required programming background, go can go back to the [required background](required-background) and complete the rest of the modules.
+Once you think you have the required programming background, go can go back to the [required background](/required-background) and complete the rest of the modules.
 
