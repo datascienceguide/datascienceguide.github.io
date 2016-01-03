@@ -33,11 +33,11 @@ title: "outline"
 
 #### Garbage in, Garbage out
 
-#### [Deep learning](deep-learning/): [natural language processing](natural-language-processing/), [image classification](image-classification/), computer vision, bioinformatics
-
 #### What questions to ask
 
 #### Problems with data science
+
+#### [Deep learning](deep-learning/): natural language processing, image classification, computer vision, bioinformatics
 
 #### [Feature Engineering](feature-engineering/)
 

@@ -169,7 +169,10 @@ $$\sigma = \sqrt{\frac{1}{n-1} \sum_{i=1}^n (x_i - \mu)^2} $$
 
 A typeset version of this example will be coming soon!  Now you can see the example below.
 
+<iframe src="http://docs.google.com/viewer?url=https://datascienceguide.github.io/assets/naivebayes_numeric.pdf&embedded=true" width="900" height="780" style="border: none;"></iframe>
 
+
+# Closing thoughts
 
 ## Pros:
 1. Fast and easy to predict class, and works well with multi class problems
