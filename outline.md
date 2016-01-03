@@ -17,7 +17,7 @@ title: "outline"
 
 #### [Databases](required-background-databases/): Relational Algebra, SQL
 
-#### [Important Concepts](important-concepts/): Regular expressions, [Information Entropy](/information-entropy), Distance measurements, OLAP, ETL, BI VS BA and CAP 
+#### [Important Concepts](important-concepts/): Regular expressions, [Information Entropy](/information-entropy), [Distance measurements](/distance-measurements), OLAP, ETL, BI VS BA and CAP 
 	 
 #### [Tools Introduction](opensource-tools-for-datascience/): WEKA, Python, [R tutorial](r-programming-tutorial), [SQL Tutorial](sql-introduction)
 
