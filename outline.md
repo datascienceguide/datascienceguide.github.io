@@ -70,7 +70,7 @@ title: "outline"
 #### [Hypothesis Testing](hypothesis-testing)
 
 
-### Module 8: [Predict]([predict/])
+### Module 8: [Predict](predict/)
 
 #### [Model Evaluation](model-evaluation/): Evaluation metrics
 
