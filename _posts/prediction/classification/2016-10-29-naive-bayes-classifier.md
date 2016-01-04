@@ -198,6 +198,8 @@ Combining the three points, naive bayes is great for streaming text data such as
 
 ### Naive Bayes
 
+[Naive Bayes Examples](gicl.cs.drexel.edu/images/2/21/Regli-casino-example.pdf)
+
 [The Optimality of Naive Bayes](http://www.saedsayad.com/docs/Optimality_of_Naive_Bayes.pdf)
 
 ### NaiveBayes and NLP
