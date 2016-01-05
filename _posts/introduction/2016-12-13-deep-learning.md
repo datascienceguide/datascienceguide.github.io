@@ -19,6 +19,8 @@ Since many of the deep learning topics are subjects on their own, we will outlin
 
 ## Audio classification
 
+## [Sentiment Analysis](http://datascienceguide.github.io/sentiment-analysis)
+
 # Computer Vision
 
 ## Image Classification

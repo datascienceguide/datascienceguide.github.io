@@ -47,7 +47,7 @@ title: "outline"
 
 ### Module 4: [Prepare Data](preparing-data/)
 
-#### Processing Data: Extract/Transform/Load, Data cleaning, Outlier detection, Featuring Engineering
+#### Processing Data: Extract/Transform/Load, Data Cleaning, [Outlier Detection](/outlier-detection)
 
 #### Aggrigation: [Exploratory data analysis](exploratory-data-analysis)
 
@@ -108,9 +108,9 @@ title: "outline"
 
 #### [Artificial Neural Networks](neural-network)
 
-### Module 11: [Recommendation]()
+### Module 11: [Recommendation](recommendation/)
 
-Content based Filtering, Collaborative Filtering
+#### Content based Filtering, Collaborative Filtering
 
 ### Module 12: Advise (Coming soon!)
 
