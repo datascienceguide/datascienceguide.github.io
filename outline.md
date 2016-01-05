@@ -18,7 +18,7 @@ title: "outline"
 #### [Databases](required-background-databases/): Relational Algebra, SQL
 
 #### [Important Concepts](important-concepts/): Regular expressions, [Information Entropy](/information-entropy), [Distance measurements](/distance-measurements), OLAP, ETL, BI VS BA and CAP 
-	 
+
 #### [Tools Introduction](opensource-tools-for-datascience/): WEKA, Python, [R tutorial](r-programming-tutorial), [SQL Tutorial](sql-introduction)
 
 #### [Big Data Tools Introduction](opensource-bigdata-tools/): Hadoop, Hive, Pig, and many more!
@@ -37,7 +37,6 @@ title: "outline"
 
 #### Problems with data science
 
-#### [Deep learning](deep-learning/): natural language processing, image classification, computer vision, bioinformatics
 
 #### [Feature Engineering](feature-engineering/)
 
@@ -68,7 +67,6 @@ title: "outline"
 #### [Association Rule Mining](association-rule-mining/)
 
 #### [Hypothesis Testing](hypothesis-testing)
-
 
 ### Module 8: [Predict](predict/)
 
@@ -108,17 +106,25 @@ title: "outline"
 
 #### [Artificial Neural Networks](neural-network)
 
-### Module 11: [Recommendation](recommendation/)
+#### Module 11: [Deep learning](deep-learning/)
+
+[natural language processing](natural-language-processing): text mining, topic modeling, [sentiment analysis](/sentiment-analysis)
+
+[computer vision](/computer-vision)
+
+bioinformatics
+
+### Module 12: [Recommendation](recommendation/)
 
 #### Content based Filtering, Collaborative Filtering
 
-### Module 12: Advise (Coming soon!)
+### Module 13: Advise (Coming soon!)
 
 #### [Simulation](simulation/)
 
 #### [Optimization](optization/)
 	
-### Module 13: [Big Data](big-data-fundamentals)
+### Module 14: [Big Data](big-data-fundamentals)
 
 #### [Big Data Tools](opensource-bigdata-tools/)
 
