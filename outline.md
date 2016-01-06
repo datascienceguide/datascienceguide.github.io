@@ -122,7 +122,9 @@ bioinformatics
 
 #### [Simulation](simulation/)
 
-#### [Optimization](optization/)
+#### [Optimization](optimization/)
+
+#### [Project Economics](project-economics/)
 	
 ### Module 14: [Big Data](big-data-fundamentals)
 
