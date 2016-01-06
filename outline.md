@@ -7,7 +7,7 @@ title: "outline"
 
 ####  [About](about.html)
 
-#### [What is DataScience?](what-is-data-science/)
+#### [What is Data Science?](what-is-data-science/)
 
 ### Module 1: [Required Background](/required-background/)
 
@@ -23,7 +23,7 @@ title: "outline"
 
 #### [Big Data Tools Introduction](opensource-bigdata-tools/): Hadoop, Hive, Pig, and many more!
 
-### Module 2: [DataScience Framework](data-science-framework/)
+### Module 2: [Data Science Framework](data-science-framework/)
 
 #### Ask > Acquire > Assimilate > Analyze > Answer > Act
 

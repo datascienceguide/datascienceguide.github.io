@@ -9,4 +9,5 @@ _config.yml
 .rbenv-version
 .rvmrc
 posts.html
-*.ipynb_checkpoints 
+*.ipynb_checkpoints
+.sass-cache*
