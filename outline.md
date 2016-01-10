@@ -44,9 +44,9 @@ title: "outline"
 
 #### Downloading Data, Scraping Data, Logging Data, Streaming
 
-### Module 4: [Prepare Data](preparing-data/)
+### Module 4: [Assimilate Data](assimilating-data/)
 
-#### Processing Data: Extract/Transform/Load, Data Cleaning, [Outlier Detection](/outlier-detection)
+#### Processing Data: Extract/Transform/Load, Data Cleaning, [Outlier Detection](/outlier-detection), Filtering, Iputation, Dimensionality Reduction, Normalization and Transformation
 
 #### Aggrigation: [Exploratory data analysis](exploratory-data-analysis)
 

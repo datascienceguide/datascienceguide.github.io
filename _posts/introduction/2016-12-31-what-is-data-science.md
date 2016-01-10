@@ -60,6 +60,6 @@ For this reason, there exists specialized tools which allows people to "get valu
 
 The wikipedia article on [data science](https://en.wikipedia.org/wiki/Data_science) outlines the multifaceted approach including "signal processing, probability models, machine learning, statistical learning, data mining, database, data engineering, pattern recognition and learning, visualization, predictive analytics, uncertainty modeling, data warehousing, data compression, computer programming, artificial intelligence, and high performance computing."
 
-Now that we have an general understanding of what is Data Science is and what it involves, lets move onto the [required background](/required-background/) knowledge required to be a good data scientist.
+Now that we have an general understanding of what is Data Science is and what it involves.  Next let us learn the [Data Science Framework](/data-science-framework).  The [required background](/required-background/) section indicates the required knowledge to be a good data scientist.
 
 
