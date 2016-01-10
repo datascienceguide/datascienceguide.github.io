@@ -4,7 +4,7 @@ title:  "How to Install the Python Data Science Stack on a Remote Server"
 categories:  tutorial
 ---
 
-[Absolute Beginners Tutorial for Getting Started Doing Data Science using Servers](/beginner-tutorial-getting-started-with-data-science-using-servers) provided us with a background of why using servers are useful for data scientists and how setup and connect to a server using SSH.  In this section we will learn how to install python and the common packages data scientists use with python which we call the PyDataScience Stack.  We will also learn how to setup and use Jupyter get started with data anlaysis with python. This guide should also work for people using Mac and Linux on their local machines.
+[Beginners Tutorial for How to Get Started Doing Data Science using Servers](beginner-tutorial-how-to-get-started-with-data-science-using-servers) provided us with a background of why using servers are useful for data scientists and how setup and connect to a server using SSH.  In this section we will learn how to install python and the common packages data scientists use with python which we call the PyDataScience Stack.  We will also learn how to setup and use Jupyter get started with data anlaysis with python. This guide should also work for people using Mac and Linux on their local machines.
 
 ### Anaconda Distribution
 

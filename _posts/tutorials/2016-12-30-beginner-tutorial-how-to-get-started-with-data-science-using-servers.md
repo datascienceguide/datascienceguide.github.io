@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Absolute Beginners Tutorial for Getting Started Doing Data Science using Servers"
+title:  "Beginners Tutorial for How to Get Started Doing Data Science using Servers"
 categories:  tutorial
 ---
 
