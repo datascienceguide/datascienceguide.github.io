@@ -19,24 +19,29 @@ title: "outline"
 
 #### [Important Concepts](important-concepts/): Regular expressions, [Information Entropy](/information-entropy), [Distance measurements](/distance-measurements), OLAP, ETL, BI VS BA and CAP 
 
-#### [Tools Introduction](opensource-tools-for-datascience/): WEKA, Python, [R tutorial](r-programming-tutorial), [SQL Tutorial](sql-introduction)
+#### [Tools Introduction](opensource-tools-for-datascience/): WEKA, Python, R
+
+#### Tutorials:
+
+#### [Beginners guide to using servers for data science](/beginner-tutorial-how-to-get-started-with-data-science-using-servers/)
+
+#### Tutorial [Installing Python Data Science Stack](/how-to-install-the-python-data-science-stack-on-a-remote-server/)
+
+#### [R tutorial](r-programming-tutorial)
+
+#### [SQL Tutorial](sql-introduction)
 
 #### [Big Data Tools Introduction](opensource-bigdata-tools/): Hadoop, Hive, Pig, and many more!
+
+#### Note: there is a big data section below, this is just an introduction
 
 ### Module 2: [Data Science Framework](data-science-framework/)
 
 #### Ask > Acquire > Assimilate > Analyze > Answer > Act
 
-#### What is machine learning, pattern recognition, artificial intelligence and data mining
-
-#### Correlation and Causality
-
-#### Garbage in, Garbage out
-
 #### What questions to ask
 
-#### Problems with data science
-
+#### What is Data Mining and Analysis Overview
 
 #### [Feature Engineering](feature-engineering/)
 
