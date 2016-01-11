@@ -25,7 +25,7 @@ title: "outline"
 
 #### [Beginners guide to using servers for data science](/beginner-tutorial-how-to-get-started-with-data-science-using-servers/)
 
-#### Tutorial [Installing Python Data Science Stack](/how-to-install-the-python-data-science-stack-on-a-remote-server/)
+#### [Installing Python Data Science Stack](/how-to-install-the-python-data-science-stack-on-a-remote-server/)
 
 #### [R tutorial](r-programming-tutorial)
 

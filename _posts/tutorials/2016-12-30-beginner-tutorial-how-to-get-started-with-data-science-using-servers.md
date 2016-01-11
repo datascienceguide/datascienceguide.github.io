@@ -54,7 +54,7 @@ For example, with a username of `andrew.andrade` I can ssh into uWaterloo's cscl
   ssh andrew.andrade@corn-syrup.uwaterloo.ca
 ```
 
-And on Windows you can connect using Putty:
+And on Windows you can connect using [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).  As the guide mentioned, you can download the latest version of Putty from [here](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)  After double clicking to run Putty, you can enter the host name and click open.
 
 ![](https://assets.digitalocean.com/articles/putty_do_keys/enter_ip.png)
 
