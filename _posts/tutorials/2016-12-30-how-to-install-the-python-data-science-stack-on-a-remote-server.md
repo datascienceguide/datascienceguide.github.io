@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Install the Python Data Science Stack on a Remote Server"
+title:  "How to Install the Python Data Science Stack on Linux or a Remote Linux Server"
 categories:  tutorial
 ---
 
