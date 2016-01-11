@@ -36,8 +36,6 @@ Once the data has been collected and cleaned, we are now ready to start the anal
 
 Data mining (sometimes called knowledge discovery in data) is extracting implicit and potentially useful information from data.  This is done by finding patterns and structure in data and summarizing it into useful information which can be used for decision making.  What is not data mining? `SELECT FROM WHERE` queries, looking up a telephone number in the phone book, searching the web (information retreval not data mining)  Some can think of data mining as applied machine learning or pattern recognition.  On the home page of this guide you will friend a tree or road map to the larger study of data science, this is a high level data mining road map:
 
-TODO: Put Tree/Roadmap
-
 The [ouline](/outline.html) has the links to the indepth explantion for each the topics, the rest of this section will provide a high level outline for each of the data mining topics.
 
 ## What is Exploratory Data Analysis and Summary Statistics?
