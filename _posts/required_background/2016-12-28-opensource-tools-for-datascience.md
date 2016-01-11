@@ -54,12 +54,11 @@ WEKA is great for quick analysis and for if you do not want to learn how to code
 
 ### How to install and getting started:
 
-You can download Weka here:
-http://www.cs.waikato.ac.nz/ml/weka/downloading.html
-Weka Intro:
-http://ortho.clmed.ncku.edu.tw/~emba/2006EMBA_MIS/3_16_2006/WekaIntro.pdf
-Full Tutorial:
-http://www.cs.waikato.ac.nz/ml/weka/mooc/dataminingwithweka/
+You can download Weka [here](http://www.cs.waikato.ac.nz/ml/weka/downloading.html)
+
+[Weka Intro](http://ortho.clmed.ncku.edu.tw/~emba/2006EMBA_MIS/3_16_2006/WekaIntro.pdf)
+
+[Full Tutorial](http://www.cs.waikato.ac.nz/ml/weka/mooc/dataminingwithweka/)
 
 
 ## Python + datastack (Scipy + Scikitlearn + other packages)
@@ -81,13 +80,10 @@ I personally recommend Python since it is a good skill to have.  Python is used 
 
 ### How to install and getting started:
 
-The simpliest and arguagable best way to install python and the requicked packages for data science is through the [Anaconda Python distribution](https://www.continuum.io/downloads) created by Continuum.  Their GUI will save you a lot of time and the modules it doesn't provide out of the box can easily be installed via a GUI. The distribution is also available for all major platforms (windows, linux mac).  To save time and headache please use the Python 2.7 installer.
+The simpliest and arguagable best way to install python and the requicked packages for data science is through the [Anaconda Python distribution](https://www.continuum.io/downloads) created by Continuum.  Their GUI will save you a lot of time and the modules it doesn't provide out of the box can easily be installed via a GUI. The distribution is also available for all major platforms (windows, linux mac).  To save time and headache please use the Python 2.7 installer.  I also wrote a guide for how to install the data science stack in python [here](http://datascienceguide.github.io/how-to-install-the-python-data-science-stack-on-a-remote-server/) if you perfer to install it manually.
 
-If you are not confident using Linux and the commandline, please ignore this.  If you are like me and prefer to have full control over your system, I wrote a [small script](https://github.com/mrandrewandrade/dotfiles/blob/master/install-python-data-science.sh) which builds and installs some of the most common packages.  The also uses [virtual environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/) in an isolated python environment.
 
-If you install Anaconda (which includes IPython) most of the required packages will come by default. It is way easier since it is a graphic installer. However, these packages will only be available to use if you launch IPython or IPython Notebook. This should not give you any problems since the console is very similar and if you launch IPython Notebook you can even start coding on your browser! 
-
-Python 2 also ahve many (free) tutorials and courses online:
+Python 2 also has many (free) tutorials and courses online:
 http://docs.python-guide.org/en/latest/intro/learning/
 My favourite resources:
 https://docs.python.org/2/tutorial/introduction.html
@@ -95,7 +91,6 @@ https://docs.python.org/2/tutorial/
 http://learnpythonthehardway.org/book/
 https://www.udacity.com/wiki/cs101/%3A-python-reference
 http://rosettacode.org/wiki/Category:Python
-
 
 Once you are familar with python, the first part of this guide is useful in learning some of the libraries we will be using:
 
@@ -121,7 +116,7 @@ If you are more focused on doing analysis then R is usually a better option.  Ma
 
 ### How to install and getting started:
 
-You can download [R] from the [offical website](https://cran.r-project.org/) or follow the guide [here](http://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/src/installr.html).  I also recommend installing and using [Rstudio](https://www.rstudio.com/products/rstudio/) and MATLAB like environment for R.
+You can download [R] from the [offical website](https://cran.r-project.org/) or follow the guide [here](http://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/src/installr.html).  I also recommend installing and using [Rstudio](https://www.rstudio.com/products/rstudio/) and MATLAB like environment for R.  You can also find my guide [here](http://datascienceguide.github.io/beginner-tutorial-how-to-get-started-with-data-science-using-servers/) to installing R and RStudio for Linux or a Linux server.
 
 With the stats club at uWaterloo, I presented a getting started with R tutorial which can found [here](http://rpubs.com/uwaterloodatateam/r-programming-101) and a reference guide [here](http://rpubs.com/uwaterloodatateam/r-programming-reference). There are also many other [data science tutorials](https://www.kaggle.com/wiki/Tutorials) you can find on the web.
 
@@ -147,7 +142,6 @@ There are many database tools which exist with many in the works.  The [big data
 # Big data tools and Next Steps
 
 We created a section for [big data tools](/opensource-bigdata-tools/) which outline popular opensource tools for big data.  This section is optional for now (until you get to big data).  If you want to move on, you can go to the [DataScience Framework](/data-science-framework/).
-
 
 # Further reading:
 
