@@ -4,11 +4,11 @@ title:  "How to Install the Python Data Science Stack on Linux or a Remote Linux
 categories:  tutorial
 ---
 
-[Beginners Tutorial for How to Get Started Doing Data Science using Servers](/beginner-tutorial-how-to-get-started-with-data-science-using-servers) provided us with a background of why using servers are useful for data scientists and how setup and connect to a server using SSH.  In this section we will learn how to install python and the common packages data scientists use with python which we call the PyDataScience Stack.  We will also learn how to setup and use Jupyter get started with data anlaysis with python. This guide should also work for people using Mac and Linux on their local machines.
+[Beginners Tutorial for How to Get Started Doing Data Science using Servers](/beginner-tutorial-how-to-get-started-with-data-science-using-servers) provided us with a background of why using servers are useful for data scientists and how setup and connect to a server using SSH.  In this section we will learn how to install python and the common packages data scientists use with python which we call the PyDataScience Stack.  We will also learn how to setup and use Jupyter get started with data analysis with python. This guide should also work for people using Mac and Linux on their local machines.
 
 ### Anaconda Distribution
 
-Continuum Analytics has developed a [Anaconda Distribution](https://www.continuum.io/downloads) which provides an installer and package management for the PyDataScience stack. While being free to use (even for commerical), it is not fully open sourced and their script (.sh file) includes precompiled binary code.  Precompiled binary means that there was original source code used to generate the code you would be running.  It is not recommended to blindly use precompiled code since the content of the original source code is unknown and can create security flaws on your server.  For this reason is better to install packages on our own or using a fully open sourced package manager.  If you choose to take the simplier (but not better route) of using the Anaconda distribution the specific instructions for your system (Linux, Mac and Windows) can be found on the [downloads page](https://www.continuum.io/downloads)
+Continuum Analytics has developed a [Anaconda Distribution](https://www.continuum.io/downloads) which provides an installer and package management for the PyDataScience stack. While being free to use (even for commerical), it is not fully open sourced and their script (.sh file) includes precompiled binary code.  Precompiled binary means that there was original source code used to generate the code you would be running.  It is not recommended to blindly use precompiled code since the content of the original source code is unknown and can create security flaws on your server.  For this reason is better to install packages on our own or using a fully open sourced package manager.  If you choose to take the simpler (but not better route) of using the Anaconda distribution the specific instructions for your system (Linux, Mac and Windows) can be found on the [downloads page](https://www.continuum.io/downloads)
 
 ### Installing the PyDataScience Framework Manually
 
@@ -53,9 +53,9 @@ Now let us activate our virtual environment.
   source ~/venv/data-science/bin/activate
 
 ```
-The name of the current virtual environment will now appear on the left of the prompt (e.g. (venv)Your-Computer:your_project UserName$) to let you know that it’s active. From now on, any package that you install using pip will be placed in the venv folder, isolated from the global Python installation.  This means that When the virtual environment is activated, when anything is installed using pip, it is installed in the virtual environment, not in your system's python.  This means you can have different version of libraries installed and if an installation breaks, you can simply delete the correspoding venv folder (data-science in this case) and start over without damaging the global Python installation.
+The name of the current virtual environment will now appear on the left of the prompt (e.g. (venv)Your-Computer:your_project UserName$) to let you know that it’s active. From now on, any package that you install using pip will be placed in the venv folder, isolated from the global Python installation.  This means that When the virtual environment is activated, when anything is installed using pip, it is installed in the virtual environment, not in your system's python.  This means you can have different version of libraries installed and if an installation breaks, you can simply delete the corresponding venv folder (data-science in this case) and start over without damaging the global Python installation.
 
-If you want to deactive the virtual environment, it is as simple as using the deactivate command:
+If you want to deactivate the virtual environment, it is as simple as using the deactivate command:
 
 ```
   deactivate
@@ -72,7 +72,7 @@ If the virtual environment is not active, we can activate it again:
 
 ```
 
-Next let us upgrade our python setup tools and install compliation requirements in python:
+Next let us upgrade our python setup tools and install compilation requirements in python:
 
 ```
   pip install --upgrade setuptools
@@ -123,7 +123,7 @@ Let us now install one of the most powerful and commonly use machine learning li
   pip install scikit-learn
 
 ```
-Now let us install some other python libaries which commonly used for data science:
+Now let us install some other python libraries which commonly used for data science:
 
 ```
   pip install numexpr && pip install bottleneck && pip install pandas && pip install SQLAlchemy && pip install pyzmq && pip install jinja2 && pip install tornado
@@ -140,7 +140,7 @@ We have now installed the most popular python libraries used for data science.  
 
 ### Jupyter Notebook Custom Themes (Optional)
 
-This step is optional.  Just like any other development environent, with Jupyter notebook, you can change the theme, color scheme and syntax highlighting.  I personally prefer dark themes such as [Oceans16](https://github.com/dunovank/jupyter-themes), you can follow the following steps to choose a different theme.
+This step is optional.  Just like any other development environment, with Jupyter notebook, you can change the theme, color scheme and syntax highlighting.  I personally prefer dark themes such as [Oceans16](https://github.com/dunovank/jupyter-themes), you can follow the following steps to choose a different theme.
 
 ```
   pip install git+https://github.com/dunovank/jupyter-themes.git
@@ -155,7 +155,7 @@ We are going to install theme (-t) for ipython/jupyter version > 3.x (-J) with t
 
 ## Running Jupyter Notebook
 
-Before we started running python code on our server, let us set some safety contrains to ensure that our code does not use all the CPU and memory resources.  The first step is determining how much memory our system is using using the `free` command:
+Before we started running python code on our server, let us set some safety constraints to ensure that our code does not use all the CPU and memory resources.  The first step is determining how much memory our system is using using the `free` command:
 
 ```
   free
@@ -169,12 +169,12 @@ A sample output using the corn-syrup server from uWaterloo's csclub is the follo
   Swap:             0           0           0
 
 ```
-Under the total column, the first number is the total memory avaliable in kbytes.  This means that there is 32947204 kbytes of RAM total or about 32 GB.  It is generally suggested to not exceed 75% of memory to ensure the system does not hang or freeze, but you are free to set the limit to what ever you think is best. You can limit the memory using the following command
+Under the total column, the first number is the total memory available in kbytes.  This means that there is 32947204 kbytes of RAM total or about 32 GB.  It is generally suggested to not exceed 75% of memory to ensure the system does not hang or freeze, but you are free to set the limit to what ever you think is best. You can limit the memory using the following command
 
   ulimit -m 20000000
   ulimit -v 20000000
 
-The `-m ` is for the total memory, and the `-v` is for the virtual memory. In this example, the limit is set to 20000000 kbytes, which is equivilent to around 20GB. 
+The `-m ` is for the total memory, and the `-v` is for the virtual memory. In this example, the limit is set to 20000000 kbytes, which is equivalent to around 20GB. 
 
 You can see the limits by the following command:
 
@@ -219,7 +219,7 @@ The output is:
 
 ```
 
-Next we can optionally run Jupyter using tmux so that is can run in the background, and not be terminated if you close terminal.  [Tmux](https://tmux.github.io/) is a very popular terminal multiplexer.  What is a terminal multiplexer? It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.  [This guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tmux-on-ubuntu-12-10--2) outlines how to [install and use tmux](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tmux-on-ubuntu-12-10--2), and this guide outlines how to [configure tmux](https://www.digitalocean.com/community/tutorials/how-to-configure-tmux-on-a-cloud-server).  In the previous section we installed tmux, but here is the command again:
+Next we can optionally run Jupyter using tmux so that is can run in the background, and not be terminated if you close terminal.  [Tmux](https://tmux.github.io/) is a very popular terminal multiplexer.  What is a terminal multiplexer? It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.  [This guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tmux-on-ubuntu-12-10--2) outlines how to [install and use tmux](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-tmux-on-ubuntu-12-10--2), and this guide outlines how to [configure tmux](https://www.digitalocean.com/community/tutorials/how-to-configure-tmux-on-a-cloud-server).  We can how install tmux:
 
 ```
   sudo apt-get update && sudo apt-get -y install tmux
@@ -251,9 +251,9 @@ The two guides above outline more advanced things you can do with tmux such as c
 ```
 We use the [nice](https://en.wikipedia.org/wiki/Nice_%28Unix%29) command to lower the priority of the code running in Jupyter. This is important since if you are running very CPU intensive code, it will run at a lower priority.  This means that not only will it not disrupt others using the server (if it is a shared resource) but it will also ensure that the intensive code has a lower priority than important system functions.
 
-When you run Jupyter notebook, it runs on a specific [port number](https://en.wikipedia.org/wiki/Port_%28computer_networking%29). The first notebook you are running will run generally on port 8888 so you can simply navigate to [localhost:8888](http://localhost:8888) to connect to Jupyer notebook.
+When you run Jupyter notebook, it runs on a specific [port number](https://en.wikipedia.org/wiki/Port_%28computer_networking%29). The first notebook you are running will run generally on port 8888 so you can simply navigate to [localhost:8888](http://localhost:8888) to connect to Jupyter notebook.
 
-If you are running Jupyter on a a server without a webbrowser, it will still run but give you an error stating that Ipython notebook requires JavaScipt as shown below.  This is expected since JavaScript is not necessary on a server without a web browser.  You can type q and then enter on the keyboard and confirm by to closing w3m by hitting y and then enter which will remove the error message (and show you which port jupyer is running on).
+If you are running Jupyter on a a server without a web browser, it will still run but give you an error stating that Ipython notebook requires JavaScipt as shown below.  This is expected since JavaScript is not necessary on a server without a web browser.  You can type q and then enter on the keyboard and confirm by to closing w3m by hitting y and then enter which will remove the error message (and show you which port Jupyter is running on).
 
 ![](/images/jupyter-server.png)
 
@@ -266,11 +266,11 @@ Since you are using tmux you can create a new pane or a new window and run the f
 
 If you are not using tmux, you can open another ssh session to the server the run htop.  Using htop, we can move around using the arrow keys, sort the processes by hitting F6, change the priority level using F8 and kill processes using F9.  If you are using Mac and following these instructions on your local machine, you will need to run it using a super user (run `sudo htop`).  In the next section We will learn how to connect to the web browser and use Jupyter as if it was running on your local computer.
 
-Since Jupyter was run using nice, all python scipts run in Jupyter will appear in blue on htop indicating that they are running at a lower priority (compared to green and red).
+Since Jupyter was run using nice, all python scripts run in Jupyter will appear in blue on htop indicating that they are running at a lower priority (compared to green and red).
 
 ## Connecting to the server using SSH Tunneling
 
-In this section we will learn how to connect to Jupyter notebook using SSH tunneling.  While SSH tunneling might sound scary, the concept is very simple.  Since Juptyer notebook is running on a specific port such as 8888, 8889 etc, SSH tunneling enables you to connect to the server's port securely.  Since we are used to running Jupyter notebook on a specific port number, we can create a secure tunnel which listens on the the server's port (8888 for example) and securly forwards a port on our local computer on a specific port (8000 for example).
+In this section we will learn how to connect to Jupyter notebook using SSH tunneling.  While SSH tunneling might sound scary, the concept is very simple.  Since Juptyer notebook is running on a specific port such as 8888, 8889 etc, SSH tunneling enables you to connect to the server's port securely.  Since we are used to running Jupyter notebook on a specific port number, we can create a secure tunnel which listens on the the server's port (8888 for example) and securely forwards a port on our local computer on a specific port (8000 for example).
 
 ### Mac or Linux
 
@@ -280,7 +280,7 @@ If using Linux of Mac, this can be done simply by running the following SSH comm
   ssh -L 8888:localhost:8000 server_username@<server ip address>
 
 ```
-You should change 8888 to the port which Jupyter notebook is running on, and optionally change port 8000 to one of your choosing (if 8000 is used by another process).  Your server_username is your username on the server and the `<server ip adress>` could be an actual ip adress or a url depending on who is providing your virtual machine.  In the csclub example, the server_username is your csclub username (generally your quest ID) and the server ip would be for example [corn-syrup.uwaterloo.ca](http://corn-syrup.uwaterloo.ca).  The command I would run if my username is andrew.andrade is: 
+You should change 8888 to the port which Jupyter notebook is running on, and optionally change port 8000 to one of your choosing (if 8000 is used by another process).  Your server_username is your username on the server and the `<server ip address>` could be an actual IP address or a URL depending on who is providing your virtual machine.  In the csclub example, the server_username is your csclub username (generally your quest ID) and the server ip would be for example [corn-syrup.uwaterloo.ca](http://corn-syrup.uwaterloo.ca).  The command I would run if my username is andrew.andrade is: 
 
 ```
   ssh -L 8888:localhost:8000 andrew.andrade@corn-syrup.uwaterloo.ca
@@ -291,17 +291,17 @@ If no error shows up after running the `ssh -L` command and you tunneled the por
 
 ### Windows
 
-If you are using windows, you can also easily tunnel ssh using putty.  As you may remeber, you SSH into a server, you enter the server url into the host name as shown in the figure below (for connecting to corn-syrump from the uwaterloo csclub).
+If you are using windows, you can also easily tunnel ssh using putty.  As you may remember, you SSH into a server, you enter the server url into the host name as shown in the figure below (for connecting to corn-syrup from the uwaterloo csclub).
 
 ![](/images/putty.png)
 
-Next click the `+ SSH` on the bottom left, and then click tunnels.  You can now enter the port you want to accress Jupyer on your local machine (for example 8000), and set the destination as `localhost:8888` where 8888 is the number of the port that Jupyer notebook is running on.  Now click the add button and the ports should apprear in the Forwarded ports: section.
+Next click the `+ SSH` on the bottom left, and then click tunnels.  You can now enter the port you want to access Jupyter on your local machine (for example 8000), and set the destination as `localhost:8888` where 8888 is the number of the port that Jupyter notebook is running on.  Now click the add button and the ports should appear in the Forwarded ports: section.
 
 For the example of uWaterloo's csclub, my Putty configuration screen looks like the following:
 
 ![](/images/putty-tunneling.png)
 
-Finally you can hit open, and you will now both connect to the server via SSH and tunnel the desired ports.  If no error shows up and you tunneled the port to 8000 (for example), you can simply navigate to [localhost:8000](http://localhost:8000) in our favourite web browser to connect to Jupyer notebook running on the server!
+Finally you can hit open, and you will now both connect to the server via SSH and tunnel the desired ports.  If no error shows up and you tunneled the port to 8000 (for example), you can simply navigate to [localhost:8000](http://localhost:8000) in our favourite web browser to connect to Jupyter notebook running on the server!
 
 # Using Jupyter notebook
 
@@ -328,10 +328,10 @@ sns.lmplot(x="x", y="y", col="dataset", hue="dataset", data=df,
 
 ```
 
-Please note we use `%matplotlib inline` for the plots to appear inline in the notebook (instead of a pop-up).  When using Jupyter Notebook, the easiest way to see a plot is inline.
+Please note we use `%matplotlib inline` for the plots to appear inline in the notebook (instead of a pop-up).  When using Jupyter Notebook, the easiest way to see a plot is in-line.
 
 To get a quick tour of Jupyter notebook, you can go to Help > User Interface Tour as show below:
 
 ![](/images/jupyter.png)
 
-Once you have installed everything and Jupyer is running you can move onto to installing R and RStudio by following the [Absolute Beginners Tutorial for Getting Started Doing Data Science using Servers](/beginner-tutorial-getting-started-with-data-science-using-servers).
+Once you have installed everything and Jupyter is running you can move onto to installing R and RStudio by following the [Absolute Beginners Tutorial for Getting Started Doing Data Science using Servers](/beginner-tutorial-getting-started-with-data-science-using-servers).
