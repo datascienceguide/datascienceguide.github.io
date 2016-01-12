@@ -55,7 +55,7 @@ title: "outline"
 
 #### Aggrigation: [Exploratory data analysis](exploratory-data-analysis)
 
-### Module 5: [Analyse Data](analyse-data/)
+### Module 5: [Analyze Data](analyze-data/)
 
 #### Analyse Framework: Describe, Discover, Predict, Advise
 
