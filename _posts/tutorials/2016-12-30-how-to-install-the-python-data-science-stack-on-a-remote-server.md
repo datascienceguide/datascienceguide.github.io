@@ -255,7 +255,7 @@ When you run Jupyter notebook, it runs on a specific [port number](https://en.wi
 
 If you are running Jupyter on a a server without a webbrowser, it will still run but give you an error stating that Ipython notebook requires JavaScipt as shown below.  This is expected since JavaScript is not necessary on a server without a web browser.  You can type q and then enter on the keyboard and confirm by to closing w3m by hitting y and then enter which will remove the error message (and show you which port jupyer is running on).
 
-![](jupyter-server.png)
+![](/images/jupyter-server.png)
 
 Since you are using tmux you can create a new pane or a new window and run the following command to monitor the system (and Jupyter):
 
@@ -293,7 +293,7 @@ If no error shows up after running the `ssh -L` command and you tunneled the por
 
 If you are using windows, you can also easily tunnel ssh using putty.  As you may remeber, you SSH into a server, you enter the server url into the host name as shown in the figure below (for connecting to corn-syrump from the uwaterloo csclub).
 
-![](putty.png)
+![](/images/putty.png)
 
 Next click the `+ SSH` on the bottom left, and then click tunnels.  You can now enter the port you want to accress Jupyer on your local machine (for example 8000), and set the destination as `localhost:8888` where 8888 is the number of the port that Jupyer notebook is running on.  Now click the add button and the ports should apprear in the Forwarded ports: section.
 
