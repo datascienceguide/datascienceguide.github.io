@@ -12,4 +12,5 @@ Content coming soon!
 
 [Multivariate Visualization](http://www.saedsayad.com/docs/multivariate_visualization.pdf)
 
+u BufRead *.md setlocal spell
 

@@ -9,17 +9,17 @@ In this tutorial we will learn how to install and python and R along with the po
 
 ### Introduction
 
-When a data scientist is working with a larger set of data which requires more computational resources than their desktop or laptop, they use a more powerful computer called a server.  A server is generally a very powerful computer which is dedicted to a specific task (for example running a file system, running a database, doing data analysis, runing a web application or even all of the above!).
+When a data scientist is working with a larger set of data which requires more computational resources than their desktop or laptop, they use a more powerful computer called a server.  A server is generally a very powerful computer which is dedicated to a specific task (for example running a file system, running a database, doing data analysis, running a web application or even all of the above!).
 
 A server with multiple fast processors and large memory allows you to do analysis which is otherwise not possible on a laptop or desktop. For example if you are dealing with a set of data which is 30 GB, one option for a computer with not enough RAM would be to load the data in a database and database analytics.  A faster (and arguably better) option would be use a server with enough ram (more than 30 Gb) and all of the analytics in RAM like is done with smaller sets of data.
 
-Before moving on, lets understand idea of the "the virtual cloud" or a group of virtual private servers.  A virtual private server (VPS) is a server which you can rent as a service.  Being "virtual" means getting full acccess and control over the server, but you physically never see the server in person or struggle with managing the hardware.  Instead of paying thoudsands of dollars to buy your own server and having to manage and pay upkeep costs, a virtual machine is running in a data center, but you interact with an emulation though commandline or web tools.  Being a service means you can use it when you need it and only pay for when you use the resources.  What this means is that when your data gets larger you can temporarly use a VPS to quickly do the anlysis required without having ever to purchase a server.  This is very powerful since you are able to work with larger and larger sets of data in RAM, without ever having to deal with slower database analysis and overhead.  While using servers and VMs can be scary at first we will soon learn how fun, useful and simple they are to use!
+Before moving on, lets understand idea of the "the virtual cloud" or a group of virtual private servers.  A virtual private server (VPS) is a server which you can rent as a service.  Being "virtual" means getting full access and control over the server, but you physically never see the server in person or struggle with managing the hardware.  Instead of paying thousands of dollars to buy your own server and having to manage and pay upkeep costs, a virtual machine is running in a data center, but you interact with an emulation though command-line or web tools.  Being a service means you can use it when you need it and only pay for when you use the resources.  What this means is that when your data gets larger you can temporarily use a VPS to quickly do the analysis required without having ever to purchase a server.  This is very powerful since you are able to work with larger and larger sets of data in RAM, without ever having to deal with slower database analysis and overhead.  While using servers and VMs can be scary at first we will soon learn how fun, useful and simple they are to use!
 
-There are many options for using using a VPS and companies have specialized options for specific applications.  For this guide, we are going to use an exmmple of runing a VPS from [Digital Ocean](https://m.do.co/c/d8927c335d4a), but any instructions should be similar for almost any VPS service provider.   Digial Ocean provide a solid state drive only based cloud services.  Digital Ocean is highly recommend for new users because it has very simple an intuitive control panel, one click linux installations, and a very active [develop community](https://www.digitalocean.com/community/) which have updated tutorials.  Digital Ocean has one of one of [the lowest costs](https://www.digitalocean.com/pricing/) for hosting.  Using [this link](https://m.do.co/c/d8927c335d4a) you can get $10 in credit.  Since they have spot pricing, if you pause the server when you are not using it, the credit can last you a very long time!  If you are a university student, your school might offer free server access.  For University of Waterloo Students, for $2 a term, you can become a member of the [computer science club](https://csclub.uwaterloo.ca/) and get access to their servers.  
+There are many options for using using a VPS and companies have specialized options for specific applications.  For this guide, we are going to use an example of running a VPS from [Digital Ocean](https://m.do.co/c/d8927c335d4a), but any instructions should be similar for almost any VPS service provider.   Digital Ocean provide a solid state drive only based cloud services.  Digital Ocean is highly recommend for new users because it has very simple an intuitive control panel, one click Linux installations, and a very active [develop community](https://www.digitalocean.com/community/) which have updated tutorials.  Digital Ocean has one of one of [the lowest costs](https://www.digitalocean.com/pricing/) for hosting.  Using [this link](https://m.do.co/c/d8927c335d4a) you can get $10 in credit.  Since they have spot pricing, if you pause the server when you are not using it, the credit can last you a very long time!  If you are a university student, your school might offer free server access.  For University of Waterloo Students, for $2 a term, you can become a member of the [computer science club](https://csclub.uwaterloo.ca/) and get access to their servers.  
 
-The two most common (open sourced) programming languages for doing data science are python (using the PyDataScience stack) and R.  Python is a very easy to learn yet powerful programming language.  Many data scientists who also work on production systems or applications use python primarily for analysis.  The PyDataScience stack includes SciPy, NumPy, Pandas, Scikitlearn and many more open sourced software librabries.  We are soon going to learn that all of these libraries are easy to install using `pip` or [Python Package Index](https://pypi.python.org/pypi/pip).  This means that the development of the packages are contributed and reviewed by hundreds and thoudsands of people around the world.  R is a very powerful mathematical and statistical programming language.  Many data scientists who work on the analysis of data use R and is has many statistical packages.  R also has its own application development environment which can also be used to build data tools.  Similarly to `pip`, the libraries for the R programming langage are packages and maintained in [The Comprehensive R Archive Network](https://cran.r-project.org/) or CRAN.
+The two most common (open sourced) programming languages for doing data science are python (using the PyDataScience stack) and R.  Python is a very easy to learn yet powerful programming language.  Many data scientists who also work on production systems or applications use python primarily for analysis.  The PyDataScience stack includes SciPy, NumPy, Pandas, Scikitlearn and many more open sourced software libraries.  We are soon going to learn that all of these libraries are easy to install using `pip` or [Python Package Index](https://pypi.python.org/pypi/pip).  This means that the development of the packages are contributed and reviewed by hundreds and thousands of people around the world.  R is a very powerful mathematical and statistical programming language.  Many data scientists who work on the analysis of data use R and is has many statistical packages.  R also has its own application development environment which can also be used to build data tools.  Similarly to `pip`, the libraries for the R programming language are packages and maintained in [The Comprehensive R Archive Network](https://cran.r-project.org/) or CRAN.
 
-The most common IDE/development tool for doing data science in python is [Jupyter notebook](http://jupyter.org/).  Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is very useful as it enables rapid prototyping and reproducable code.  Similarly [Rstudio](https://www.rstudio.com/) is the most common IDE/development tool for doing data science in R, and it offers the ability for notebook like documents using Rmarkdown and even custom web applications using RShiny.  Since Jupyter Notebook and Rstudio are web applications using servers, data scientists can use the same tools they are used to using  on their desktops with the added computational power of servers.
+The most common IDE/development tool for doing data science in python is [Jupyter notebook](http://jupyter.org/).  Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is very useful as it enables rapid prototyping and reproducible code.  Similarly [Rstudio](https://www.rstudio.com/) is the most common IDE/development tool for doing data science in R, and it offers the ability for notebook like documents using Rmarkdown and even custom web applications using RShiny.  Since Jupyter Notebook and Rstudio are web applications using servers, data scientists can use the same tools they are used to using  on their desktops with the added computational power of servers.
 
 ## Goals:
 
@@ -33,15 +33,15 @@ The most common IDE/development tool for doing data science in python is [Jupyte
 
 ## Prerequisites:
 
-You must have acess to a simple ubuntu linux server with at 1 GB RAM (the more is better).  If using digial ocean, you can follow their guide on [how to create your first digital ocean virtual server](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server).
+You must have access to a simple ubuntu linux server with at 1 GB RAM (the more is better).  If using digital ocean, you can follow their guide on [how to create your first digital ocean virtual server](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server).
 
 ##  How to SSH
 
-In this section we will learn how to connect to a server using SSH.  For linux and mac we will learn how to use terminal, and for windows we will learn how to use putty.
+In this section we will learn how to connect to a server using SSH.  For Linux and Mac we will learn how to use terminal, and for windows we will learn how to use putty.
 
 SSH or [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell) is a  cryptographic (encrypted) network protocol to allow remote login and other network services to operate securely over an unsecured network.  It enables you access your server for log in, file uploading and even conencting to Jupyter notebook or Rstudio.
 
-If you are using a Linux or Mac computer, you can open terminal and follow this guide for [setting up ssh](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets) for setting up your ssh key and connecting to the server.  If you are using Windows you can follow this guide for [setting up ssh on wondows](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users) where you learn how to download and install putty.
+If you are using a Linux or Mac computer, you can open terminal and follow this guide for [setting up ssh](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets) for setting up your ssh key and connecting to the server.  If you are using Windows you can follow this guide for [setting up ssh on windows](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users) where you learn how to download and install putty.
 
 As the guide mentioned, it is highly recommended to use an SSH key, but it is also possible to secure shell using a username and password.  In general, once SSH is setup, on Mac and Linux you can connect using
 ```
@@ -58,7 +58,7 @@ And on Windows you can connect using [Putty](http://www.chiark.greenend.org.uk/~
 
 ![](https://assets.digitalocean.com/articles/putty_do_keys/enter_ip.png)
 
-Back to our example, we can connect to corn-syrup by simply entering the url into putty under the host name and clicking open.
+Back to our example, we can connect to corn-syrup by simply entering the URL into putty under the host name and clicking open.
 
 ![](/images/putty.png)
 
@@ -89,7 +89,7 @@ The following are additional build tools which are not required, but are useful 
   sudo apt-get -y install build-essential gfortran gcc-multilib g++-multilib libffi-dev libffi6 libffi6-dbg python-crypto python-mox3 python-pil python-ply libssl-dev zlib1g-dev libbz2-dev libexpat1-dev libbluetooth-dev libgdbm-dev dpkg-dev quilt autotools-dev libreadline-dev libtinfo-dev libncursesw5-dev tk-dev blt-dev libssl-dev zlib1g-dev libbz2-dev libexpat1-dev libbluetooth-dev libsqlite3-dev libgpm2 mime-support netbase net-tools bzip2
 ```
 
-We are now ready to move onto to install python, R and their correspoding common data science framework.
+We are now ready to move onto to install python, R and their corresponding common data science framework.
 
 ## Python and the Python Data Science Stack
 
@@ -100,7 +100,7 @@ Now that we have our system read we can learn [how to install the python data sc
 
 In this section we will learn how install and update R along with installing and managing Rstudio sever.
 
-irst we must [install R](https://www.digitalocean.com/community/tutorials/how-to-set-up-r-on-ubuntu-14-04).  This guide on digital ocean provides very good instructions on how to install R, but I will just include the highlights here.
+First we must [install R](https://www.digitalocean.com/community/tutorials/how-to-set-up-r-on-ubuntu-14-04).  This guide on digital ocean provides very good instructions on how to install R, but I will just include the highlights here.
 
 Since the default location to install R usually includes older versions, we first need to add an updated version to the advanced package tool's (APT) list located here: `/etc/apt/sources.list`.  The exact command to use depends on your [version of ubuntu](https://cran.r-project.org/bin/linux/ubuntu/README) but for 14.04 the follow command will work:
 
@@ -151,7 +151,7 @@ If you are on 32-bit Ubuntu, execute the following commands:
   sudo gdebi rstudio-server-0.99.491-i386.deb
 ```
 
-Since the wget command downloaded an installition (.deb) file you can delete the file using the rm since we are done using it
+Since the wget command downloaded an installation (.deb) file you can delete the file using the rm since we are done using it
 
 ```
   rm rstudio-server-*
@@ -167,7 +167,7 @@ If the commands is successful and there is no output, then you have installed Rs
 
 ## Connecting to the Server
 
-Rstudio is generally running on port `8787`.  This means if you install the server on your local computer (running Linux), you would access it at [localhost:8787](http://localhost:8787) in your favourite web browser.  Similarly to connect to the server you can connect to it directly navigating to `http://<server-ip>:8787`  in your favourite web brower.  You can then log into RStudio using the your username and password for the server (or local comptuter).
+Rstudio is generally running on port `8787`.  This means if you install the server on your local computer (running Linux), you would access it at [localhost:8787](http://localhost:8787) in your favourite web browser.  Similarly to connect to the server you can connect to it directly navigating to `http://<server-ip>:8787`  in your favourite web browser.  You can then log into RStudio using the your username and password for the server (or local computer).
 
 ### Installing Packages and Getting Started Doing Analysis using Rstudio
 
@@ -177,7 +177,7 @@ Once Rstudio is running, you can easily install packages by going to Tools > Ins
   install.packages("ggplot2")
 ```
 
-It might ask you to confirm the instilation, so type `y` to confirm the prompts.  Once the library has installed, we can now create our first R script. Go to File > New File > R script.  Now type the following:
+It might ask you to confirm the installation, so type `y` to confirm the prompts.  Once the library has installed, we can now create our first R script. Go to File > New File > R script.  Now type the following:
 
 ```
   # load the plotting library
@@ -198,15 +198,15 @@ Next let us learn how to transfer data between your local computer and the serve
 
 # Securely Transferring Files with a Remote Server
 
-In this section we will learn how to tranfer files using SSH.  First we will send a data file from our local computer to the server, next we will build a simple model and output the results into a new data file and trasfer it back to our local computer.
+In this section we will learn how to transfer files using SSH.  First we will send a data file from our local computer to the server, next we will build a simple model and output the results into a new data file and transfer it back to our local computer.
 
 ## Using Filezilla (Windows, Linux and Mac)
 
 The Digital Ocean Community page has a great guide with the theory behind on how to [How To Use Filezilla to Transfer and Manage Files Securely](https://www.digitalocean.com/community/tutorials/how-to-use-filezilla-to-transfer-and-manage-files-securely-on-your-vps)  Filezilla is an opensourced graphical user interface which enables you to send files using different network protocols. 
 
-After you download and install the [filezilla client](https://filezilla-project.org/), you can connect to it by typing in `sftp://<server-ip>:8787` into the Host on the top right, and then the username and password on the server and port `22`.  22 is the default port for SSH.   Once you have entered the details, you can click quickconnect, and it will connect to the server.  One the left hand side you will access to your local files, and on right hand side you will accress to the servers.  You can now drag and drop files between your local computer and the server.
+After you download and install the [filezilla client](https://filezilla-project.org/), you can connect to it by typing in `sftp://<server-ip>:8787` into the Host on the top right, and then the username and password on the server and port `22`.  22 is the default port for SSH.   Once you have entered the details, you can click quickconnect, and it will connect to the server.  One the left hand side you will access to your local files, and on right hand side you will access to the servers.  You can now drag and drop files between your local computer and the server.
 
-Note, if you are using the csclub server, since they have a shared file system you have to transfer files by connecting to csclub.uwaterloo.ca.  An example of a conection between the csclub server and my local computer using filezilla is shown below:
+Note, if you are using the csclub server, since they have a shared file system you have to transfer files by connecting to csclub.uwaterloo.ca.  An example of a connection between the csclub server and my local computer using Filezilla is shown below:
 
 ![](/images/filezilla.png)
 
@@ -224,7 +224,7 @@ Now let us connect to the server using sftp:
   sftp username@remote_hostname_or_IP
 ```
 
-File Transfer Protocol (FTP) is a very popular method for transfering files but can be unsecure.   SSH File Transfer Protocol, or Secure File Transfer Protocol (SFTP) is a separate protocol packaged with SSH that works in a similar way over a secure connection.  In our example with the csclub corn-syrup server, with andrew.andrade as the username, we can connect using the following command in Linux:
+File Transfer Protocol (FTP) is a very popular method for transferring files but can be unsecure.   SSH File Transfer Protocol, or Secure File Transfer Protocol (SFTP) is a separate protocol packaged with SSH that works in a similar way over a secure connection.  In our example with the csclub corn-syrup server, with andrew.andrade as the username, we can connect using the following command in Linux:
 
 ```
   sftp andrew.andrade@corn-syrup.uwaterloo.ca
