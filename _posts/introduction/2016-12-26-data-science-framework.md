@@ -5,7 +5,7 @@ categories: introduction
 ---
 
 
-This section outlines the steps in the data science framework and answers what is data mining. It ends with issues and imporatant topics with data science.  
+This section outlines the steps in the data science framework and answers what is data mining. It ends with issues and important topics with data science.  
 
 [Data Science](http://datascienceguide.github.io/what-is-data-science/) is the art of turning data into actions and the overall framework is the following 7 high level steps:
 
@@ -13,19 +13,19 @@ Ask > Acquire > Assimilate > Analyze > Answer > Advise > Act
 
 # Asking Questions
 
-Data science begings by asking questions, where the answers are then used to advise and act upon.  A data scientist, like any good scientist, should not only have a formal mathemical background but the curiousity to ask and answer questions. Data should also be able to validate the answers to the questions and think critically if the assumptions made along the way are valid.
+Data science begins by asking questions, where the answers are then used to advise and act upon.  A data scientist, like any good scientist, should not only have a formal mathematical background but the curiosity to ask and answer questions. Data should also be able to validate the answers to the questions and think critically if the assumptions made along the way are valid.
 
 # Acquiring and Assimilating Data
 
-Once a series of questions are asked, a data scientist will try and acquire the required data and assimilate in a form which is usable.  It is a data scientist's role to determine which inputs or features will enable the data mining, pattern recognition and machine algorithms to work.  Determining the features is a process called Feature Engineering.  Once the features are determined, the data aquisition could be simple as downloading the data from an [open data](https://en.wikipedia.org/wiki/Open_data) source or creating an elloborate framework to log or measure data.  Once the data is collected, it needs to cleaned and transformed. This step usually involves dealing with missing values, incorrect values and potential outliers.
+Once a series of questions are asked, a data scientist will try and acquire the required data and assimilate in a form which is usable.  It is a data scientist's role to determine which inputs or features will enable the data mining, pattern recognition and machine algorithms to work.  Determining the features is a process called Feature Engineering.  Once the features are determined, the data acquisition could be simple as downloading the data from an [open data](https://en.wikipedia.org/wiki/Open_data) source or creating an collaborate framework to log or measure data.  Once the data is collected, it needs to cleaned and transformed. This step usually involves dealing with missing values, incorrect values and potential outliers.
 
 ## What form does data come in?
 
-There are many different types of data and data can come in various forms.  Structured data is usually in the form of discrete or categorical varibles (finite set of possible values such as gender) or continous or numeric variables which are intergers or real numbers (for example temperature, salary, credit score etc.).  A special case of categorical varibles are boolean or binary variables which are yes/no or true/false.
+There are many different types of data and data can come in various forms.  Structured data is usually in the form of discrete or categorical variables (finite set of possible values such as gender) or continuous or numeric variables which are integers or real numbers (for example temperature, salary, credit score etc.).  A special case of categorical variables are boolean or binary variables which are yes/no or true/false.
 
-We can ofter convert numeric to discrete by binning (for example hot/medium/cold for temparature).  This is because some algorithms work well with categorical variables or can not handle numeric variables or we would like to purposely anonymize the data. Categorical variables can be converted numeric through encoding.
+We can ofter convert numeric to discrete by binning (for example hot/medium/cold for temperature).  This is because some algorithms work well with categorical variables or can not handle numeric variables or we would like to purposely anonymize the data. Categorical variables can be converted numeric through encoding.
 
-While the analysis of the data may seem to be the most important step, data colection, data cleaning and feature engineering are usually the most [most expensive and difficult](https://forum.stanford.edu/events/2011/2011slides/plenary/2011plenaryNg.pdf).  Have poor data but solid modeling will not ensure good results. There is the [Garbage In, Garbage Out](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) concept in computer science and information theory that since computers operate by logical processes, will unquestioningly process unintended, even nonsensical, input data ("garbage in") and produce undesired, often nonsensical, output ("garbage out").
+While the analysis of the data may seem to be the most important step, data collection, data cleaning and feature engineering are usually the most [most expensive and difficult](https://forum.stanford.edu/events/2011/2011slides/plenary/2011plenaryNg.pdf).  Have poor data but solid modeling will not ensure good results. There is the [Garbage In, Garbage Out](https://en.wikipedia.org/wiki/Garbage_in,_garbage_out) concept in computer science and information theory that since computers operate by logical processes, will unquestioningly process unintended, even nonsensical, input data ("garbage in") and produce undesired, often nonsensical, output ("garbage out").
 
 
 # Analyzing Data
@@ -34,25 +34,28 @@ Once the data has been collected and cleaned, we are now ready to start the anal
 
 ## What is data mining?
 
-Data mining (sometimes called knowledge discovery in data) is extracting implicit and potentially useful information from data.  This is done by finding patterns and structure in data and summarizing it into useful information which can be used for decision making.  What is not data mining? `SELECT FROM WHERE` queries, looking up a telephone number in the phone book, searching the web (information retreval not data mining)  Some can think of data mining as applied machine learning or pattern recognition.  On the home page of this guide you will friend a tree or road map to the larger study of data science, this is a high level data mining road map:
+Data mining (sometimes called knowledge discovery in data) is extracting implicit and potentially useful information from data.  [Dr. Saed Sayad](http://www.saedsayad.com/data_mining.htm) says is best "data mining is about explaining the past and predicting the future by means of data analysis".  This is done by finding patterns and structure in data and summarizing it into useful information which can be used for decision making.  It is the union of statistics, artificial intelligence & machine learning and databases.
 
-The [ouline](/outline.html) has the links to the indepth explantion for each the topics, the rest of this section will provide a high level outline for each of the data mining topics.
+![](http://www.saedsayad.com/images/DM.png)
+
+
+What is not data mining? `SELECT FROM WHERE` queries, looking up a telephone number in the phone book, searching the web (information retrieval not data mining)  Some can think of data mining as applied machine learning or pattern recognition.  On the home page of this guide you will friend a tree or road map to the larger study of data science, this is a high level data mining road map:
+
+The [outline](/outline.html) has the links to the in depth explanation for each the topics, the rest of this section will provide a high level outline for each of the data mining topics.
 
 ## What is Exploratory Data Analysis and Summary Statistics?
 
-Summary statistics are basic measures which are used to summarize data, and exploratory data analysis (EDA) is the process of using summary statistics and visualization techiniques to describe the data. Examples of summary statistics for numerical variables are the mean, median, mode, max, min, range, quartiles/percentiles, variance, standard deviation, coefficient of determination, skewness and kurtosis.  Summary statistics for categorial variables is the number of distic counts, for text data is term freqeuency,and for bivariate data is the linear correlation, chi-squared, or the p value based z-test, t-test or analysis of variance. Examples of visualizations for numeric data are line charts with error bars, histograms, box and whisker plots, for categorical data bar charts and waffle charts, and for bivariate data are scatter charts or combination charts.  The [exploratory data analysis](http://datascienceguide.github.io/exploratory-data-analysis/) section of this guide outlines examples of all of these.
-
-Exploratory data analysis is a very important step in understanding the data before building any models or many any decisions.  By undestanding and representing the data, a data scientist is able to make informated decisions on how to analyse the data and validate assumptions about the data.  The tutorials outline examples of why EDA is very important before building any model.
+Summary statistics are basic measures which are used to summarize data, and [exploratory data analysis](http://datascienceguide.github.io/exploratory-data-analysis/) (EDA) is the process of using summary statistics and visualization techniques to describe the data.   Exploratory data analysis is a very important step in understanding the data before building any models or many any decisions.  By understanding and representing the data, a data scientist is able to make informed decisions on how to analyze the data and validate assumptions about the data.  The tutorials outline examples of why EDA is very important before building any model.  The  section of this guide outlines examples of all of these.
 
 A very simple example of of exploratory data analysis is a scatter plot of the grades of a exam vs the amount of time students said they studied.
 
 ![](/images/mark_vs_time_studying.png)
 
-We will continue to use this example dataset in this article to explain the basic types of analysis.
+We will continue to use this example dataset (where possible) in this article to explain the basic types of analysis.
 
 ## What is Association?
 
-If you have an itemsets such a products purchased togeather or words in a document, you can determine which items are related (and the strength of the relation).  An example is a database with supermarket tranction, a common association could be that bread is associated with butter.  
+If you have an item-sets such a products purchased together or words in a document, you can determine which items are related (and the strength of the relation).  An example is a database with supermarket transaction, a common association could be that bread is associated with butter.  
 
 ![](http://rayli.net/blog/wp-content/uploads/2015/05/shopping_database.jpg)
 
@@ -60,7 +63,7 @@ Association is important as it can be used for product placement, indirectly boo
 
 ## What is Clustering?
 
-Clustering is a method to segment data into natual groupings.  It is called an unsupervised method since the data is not labeled and the natual groups are not known.  The algorithm is able to organize the data and determine clusters and cluster centers.
+Clustering is a method to segment data into natural groupings.  It is called an unsupervised method since the data is not labeled and the natural groups are not known.  The algorithm is able to organize the data and determine clusters and cluster centers.
 
 ![](https://datasciencelab.files.wordpress.com/2013/12/p_n200_k3_g.gif?w=830)
 Image from [here](https://datasciencelab.wordpress.com/2013/12/12/clustering-with-k-means-in-python/)
@@ -71,13 +74,13 @@ An example of this clustering a class based on the grade and the hours of study.
 
 ## What is Regression?
 
-Regression is fitting a line (y = mx+b) or a curve to a set of data to conduct numeric prediction.   Regression can also be used to do predictive causality analysis, meaning determing the strength of the correlation of two features.  Back to the example of class grades, a line can be fit against the number of hours of study and the grade. In this course, we will learn how to do robust regression and deal with the outliers as shown in the the figure below:
+Regression is fitting a line (y = mx+b) or a curve to a set of data to conduct numeric prediction.   Regression can also be used to do predictive causality analysis, meaning determining the strength of the correlation of two features.  Back to the example of class grades, a line can be fit against the number of hours of study and the grade. In this course, we will learn how to do robust regression and deal with the outliers as shown in the the figure below:
 
 ![](/images/mark_vs_time_studying_regression.png)
 
 ## What is outlier detection?
 
-An outlier is a data point or set of data points which deviates so much from the other observations what there is possibility that it could be  generated by a different mechanism.  Outlier detection are a set of methods to determine such observations.  This means that it can be used to find a problem with the data (garbage) or provide an interesting obeservation (treasure).  Back to our example of students grades, students with high grades who study very little are outliers.  This could be because these students had a prior experience with the subject, could be geniuses or the real reason might be because they wrote an incorrect amount of studying or grade if a survey was used to collect the data.  There are many techniques to determine outliers, but two popular methods are using clustering or using the residual error (difference of observation vs prediction) from regression as shown in the figures above.
+An outlier is a data point or set of data points which deviates so much from the other observations what there is possibility that it could be  generated by a different mechanism.  Outlier detection are a set of methods to determine such observations.  This means that it can be used to find a problem with the data (garbage) or provide an interesting observation (treasure).  Back to our example of students grades, students with high grades who study very little are outliers.  This could be because these students had a prior experience with the subject, could be geniuses or the real reason might be because they wrote an incorrect amount of studying or grade if a survey was used to collect the data.  There are many techniques to determine outliers, but two popular methods are using clustering or using the residual error (difference of observation vs prediction) from regression as shown in the figures above.
 
 ## What is Classification?
 
@@ -93,7 +96,7 @@ While the example of grade vs time studying is very intuitive and simple, exampl
 
 # Advise and Act
 
-Another very important (and often forgotten) part of data science is the Advise stage.  After understanding data, a data scientist will have to provide actional advise.  This is done through optimization, simulation, project economics, and decision making under uncertainty.  The guide will focus on data mining for now, but the Advise section will come soon!
+Another very important (and often forgotten) part of data science is the Advise stage.  After understanding data, a data scientist will have to provide actionable advise.  This is done through optimization, simulation, project economics, and decision making under uncertainty.  The guide will focus on data mining for now, but the Advise section will come soon!
 
 Now that we understand the overall data science framework, we can move onto learn about [feature engineering](/feature-engineering).
 
