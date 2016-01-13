@@ -7,7 +7,9 @@ categories: introduction
 Exploratory data analysis (EDA) is a very important step which takes place after [feature engineering](feature-engineering) and acquiring data and it should be done before any modeling.  This is because it is very important for a data scientist to be able to understand the nature of the data without making assumptions.  
 
 
-The purpose of EDA is to use summary statistics and visualizations to better understand data, and find clues about the tendencies of the data, its quality and to formulate assumptions and the hypothesis of our analysis.  EDA is NOT about making fancy visualizations or even aesthetically pleasing ones, the goal is to try and answer questions with data.  EDA is also very iterative since we first make assumptions based on our first exploratory visualizations, then build some models. We then make visualizations of the model results and tune our models.  
+The purpose of EDA is to use summary statistics and visualizations to better understand data, and find clues about the tendencies of the data, its quality and to formulate assumptions and the hypothesis of our analysis.  EDA is NOT about making fancy visualizations or even aesthetically pleasing ones, the goal is to try and answer questions with data.  Your goal should be to be able to create a figure which someone can look at in a couple of seconds and understand what is going on.  If not, the visualization is too complicated (or fancy) and something similar should be used.
+
+EDA is also very iterative since we first make assumptions based on our first exploratory visualizations, then build some models. We then make visualizations of the model results and tune our models.  
 
 # Types of Data
 
@@ -31,7 +33,17 @@ The charts look identical, and it takes more than a couple of seconds to underst
 
 ![](http://static2.businessinsider.com/image/51bf0aa8ecad04a05d00004a-995-382/screen%20shot%202013-06-17%20at%209.07.44%20am.png)
 
-A reader an instantly compare the 5 variables.  Since humans have a difficult time comparing angles, bar graphs or waffle diagrams are recommended.
+A reader an instantly compare the 5 variables.  Since humans have a difficult time comparing angles, bar graphs or waffle diagrams are recommended.  There are many other visualizations which are not recommended: spider charts, stacked bar charts, and many other [junkcharts](http://junkcharts.typepad.com/junk_charts/).
+
+For example, this visualization is very complicated and difficult to understanding:
+
+![](https://i2.wp.com/cdn3.vox-cdn.com/assets/4824510/pev-sales-june.png?zoom=2)
+
+Often less is more: the plot redux as a simple line graph:
+
+![](https://solomonmessing.files.wordpress.com/2014/10/6008e-6a00d8341e992c53ef01a3fd3fdcc3970b-pi.png?w=400)
+
+When dealing with multi-categorical data, avoid using stacked bar charts and follow [the guidelines](https://solomonmessing.wordpress.com/2012/03/04/visualization-series-insight-from-cleveland-and-tufte-on-plotting-numeric-data-by-groups/) written by Solomon Messing (data scientist I met while working at Facebook).
 
 
 ### Numeric Variables
@@ -82,62 +94,76 @@ There are many tools and libraries which can be used for plotting visualizations
 - data driven documents (D3.js)
 - [panoramix](https://github.com/mistercrunch/panoramix)
 
-
 In additional, Tibco Spotfire and Tableau are popular but commercial solutions for data visualizations.
 
-### Univariate data
-
-The two visualizations used to describe univariate (1 variable) data is the box plot and the histogram.  The box plot can be used to show the minimum, maximum, mean, median, quantiles and range.  The histogram can be used to show the count, mode, variance, standard deviation, coefficient of deviation, skewness and kurtosis.  
+For the next set of images, click the image to be redirected to the example with source code.
 
 
+### Univariate data (One variable)
+
+The two visualizations used to describe univariate (1 variable) data is the box plot and the histogram.  The box plot can be used to show the minimum, maximum, mean, median, quantiles and range.
+
+[![](http://stanford.edu/~mwaskom/software/seaborn/_images/horizontal_boxplot.png)](http://stanford.edu/~mwaskom/software/seaborn/examples/horizontal_boxplot.html)
 
 
+The histogram can be used to show the count, mode, variance, standard deviation, coefficient of deviation, skewness and kurtosis.  
+
+[![](http://matplotlib.org/1.3.1/_images/histogram_demo_extended_00.png)](http://matplotlib.org/1.3.1/examples/pylab_examples/histogram_demo_extended.html)
 
 
-#### bivariate data
-line charts
-(why stacked bar are bad)
-scatter plot
+### Bivariate data (Two Variables)
 
-### multivariate visualation
-- plot for each variable
-- 3d scatter plot with color
-- use principal component anlaysis and then visualize
-
-#### categorial
-waffle chart (why pie charts are bad)
-
-#### Text Data
-
-- Word clouds
-- Topic modeling
+When plotting the relation between two variables, one can use a scatter plot.  
 
 
+[![](http://matplotlib.org/_images/scatter_symbol.png)](http://matplotlib.org/examples/pylab_examples/scatter_symbol.html)
 
-tree (decision tree)
-tree maps
+If the data is time series or has an order, a line chart can be used.
 
-Commercial tools:
-Tableau
+[![](http://matplotlib.org/_images/plotfile_demo_00.png)](http://matplotlib.org/examples/pylab_examples/plotfile_demo.html)
 
-spatial charts
+### Multivariate Visualization
 
-survey plots
+When dealing with multiple variables, it is tempting to make three dimensional plots, but as show below it can be difficult to understand the data:
 
-timelines
+[![](http://matplotlib.org/_images/scatter3d_demo.png)](http://matplotlib.org/examples/mplot3d/scatter3d_demo.html)
 
-- Is there a distribution?
+Rather I recommend create a scatter plot of the relation between each variable:
 
-
-
+[![](http://stanford.edu/~mwaskom/software/seaborn/_images/scatterplot_matrix.png)](http://stanford.edu/~mwaskom/software/seaborn/examples/scatterplot_matrix.html)
 
 
-
-[Why Data Visualizations?](https://www.dashingd3js.com/why-data-visualizations): from the proverb that a "picture is worth a thousand words!"
-
+Combined charts also are great ways to visualize data, since each chart is simple to understand on its own.
 
 
+[![](http://matplotlib.org/_images/mri_with_eeg.png)](http://matplotlib.org/examples/pylab_examples/mri_with_eeg.html)
 
+
+For very large dimensionality, you can reduce the dimensionality using principle component analysis, Latent Dirichlet allocation or other techniques and then make a plot of the reduced variables.  This is particularly important for high dimensionality data and has applications in deep learning such as visualizing natural language or images.
+
+### Text Data
+
+For example with Text data, one could create a world cloud, where the size of each word is the based on its frequency in the text.  To remove the words which add noise to the dataset, the documents can be grouped using [Topic modeling](https://en.wikipedia.org/wiki/Topic_model) and only the important words can be displayed.
+
+[![](http://4.bp.blogspot.com/-cjfJLOPGjIg/UJmCmBa65tI/AAAAAAAAAJk/TF2qRh964GI/s400/constitution_.png)](https://github.com/amueller/word_cloud)
+
+### Image data
+
+When doing image classification, it is common to use decomposition and remove the dimensionality of the data. For example, an image before decomposition looks like:
+
+[![](http://scikit-learn.sourceforge.net/0.6/_images/plot_face_recognition.png)](http://scikit-learn.sourceforge.net/0.6/auto_examples/applications/plot_face_recognition.html)
+
+Instead of blindly using decomposition, a data scientist could plot the result:
+
+[![](http://scikit-learn.org/stable/_images/plot_faces_decomposition_002.png)](http://scikit-learn.org/stable/auto_examples/decomposition/plot_faces_decomposition.html)
+
+
+We can see here, there is an importance with the locations of the eyes, nose and mouth, along with the head shape.
+
+
+# Conclusion and Next Steps
+
+Data visualization is a fun an very important part of being a data scientist.  Simplicity and the ability for others to quickly understand a message is the most important part of exploratory data analysis.  Before every building any model, make sure you create a visualization to understand the data first.  After getting a better understand of the data we can move onto describing data using [clustering](http://datascienceguide.github.io/clustering/).
 
 
 
