@@ -50,12 +50,22 @@ Binning otherwise known as discretization is the process of transforming numeric
 Encoding, otherwise known as continuization is the transformation of categorical variables into numerical (or binary) variables.  A basic example of encoding is gender: -1, 0, 1 could be used to describe male, other and female.  Binary encoding is a special case of encoding where the value is set to a 0 or 1 to indicate absence or presence of a category.  One hot encoding is a special case where multiple categories are each binary encoded.  Given we have k categories, this will create k extra features (thus increasing the dimensionality of the data)  Another method for encoding is using a target and probability based encoding.  The category is the average value and includes a probability.
 
 
+# Iris DataSet
+
+For this article (and tutorial) on exploratory data analysis, we are going be investigating [Anscombe's_quartet](https://en.wikipedia.org/wiki/Anscombe's_quartet) and [Fisher's Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set).  
+
+"Anscombe's quartet comprises four datasets that have nearly identical simple statistical properties, yet appear very different when graphed. Each dataset consists of eleven (x,y) points. They were constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers on statistical properties."  The Iris data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper The use of multiple measurements.  It shows the variation of Iris flowers of three related species.
+
+
 ## Summary Statistics
 
 Summary statistics are measurements meant to describe data.  In the field of descriptive statistics, there are many summary measurements, but we will leave the definition (and derivation ) to textbooks.  Examples of summary/ descriptive statistics for a single numerical variable is the mean, median, mode, max, min, range, quartiles/percentiles, variance, standard deviation, coefficient of determination, skewness and kurtosis.  Summary statistics for categorical variables is the number of distinct counts.  The most basic summary statistic for text data is term frequency and inverse document frequency.  For bivariate data, the summary statistics is the linear correlation, chi-squared, or the p value based z-test, t-test or analysis of variance.  [This link](http://www.saedsayad.com/numerical_variables.htm)  outlines the common summary statistics, their basic equations and a description.  This should come as a review since you should have a solid understanding of statistics at this point.
 
-## Visualization
+You can download the Ansombe Excel worksheet with summary statistics from [datascienceguide.github.io/datasets/anscombe.xls](http://datascienceguide.github.io/datasets/anscombe.xls)  and the Iris dataset Excel worksheet with summary statistics for each variable from [datascienceguide.github.io/datasets/iris.xls](http://datascienceguide.github.io/datasets/iris.xls)
 
+Notice how on the Ansombe dataset, the mean,  standard deviation and correlation between x and y are almost identical.  When we learn about linear regression, we will also see the same coefficients for linear regression as well.
+
+## Visualization
 
 In addition to summary statistics, visualizations can be used to explore and describe data.  We will learn in the tutorials the importance of visualizations, and that it is not enough to use simple statistical properties to describe data.  This is demonstrated by [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe's_quartet) as outlined in this article [Why Data Visualizations](https://www.dashingd3js.com/why-data-visualizations) (are important).  This is also a great [article](http://web.stanford.edu/~savage/flaw/Article.htm)  and [Book](http://amzn.to/1Tiax3B) on the flaw of averages.  
 
@@ -75,17 +85,9 @@ There are many tools and libraries which can be used for plotting visualizations
 
 In additional, Tibco Spotfire and Tableau are popular but commercial solutions for data visualizations.
 
-For this article (and tutorial) on exploratory data analysis, we are going 
-
-
-
 ### Univariate data
 
-The two visualizations used to describe univariate (1 variable) data is the box plot and the histogram.  The box plot can be used to show the minimum, maximum, mean, median, quantiles and range.
-
-
-The histogram can be used to show the count, mode, variance, standard deviation, coefficient of deviation, skewness and kurtosis.  
-
+The two visualizations used to describe univariate (1 variable) data is the box plot and the histogram.  The box plot can be used to show the minimum, maximum, mean, median, quantiles and range.  The histogram can be used to show the count, mode, variance, standard deviation, coefficient of deviation, skewness and kurtosis.  
 
 
 
