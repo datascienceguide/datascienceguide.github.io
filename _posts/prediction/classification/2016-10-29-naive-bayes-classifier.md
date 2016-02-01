@@ -4,9 +4,9 @@ title:  "Naive Bayes Classifier"
 categories: introduction 
 ---
 
-The bayesian approach offers an alterative method to statistics, and is actuall quite intuitive once you wrap your head around it.  Statistics can be daunting, but I will attempt to explain bayes theorem intuitively and leave the mathematical proofs for textbooks.
+The Bayesian approach offers an alternative method to statistics, and is actually quite intuitive once you wrap your head around it.  Statistics can be daunting, but I will attempt to explain Bayes theorem intuitively and leave the mathematical proofs for textbooks.
 
-The foundation for the bayesian approach is bayes theorem.  I recommond you read this primer on an intuitive (and short) explanation of [Bayes' theroem](http://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/) and [understanding bayes' theorem with ratios](http://betterexplained.com/articles/understanding-bayes-theorem-with-ratios/).
+The foundation for the Bayesian approach is Bayes theorem.  I recommend you read this primer on an intuitive (and short) explanation of [Bayes' theroem](http://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/) and [understanding bayes' theorem with ratios](http://betterexplained.com/articles/understanding-bayes-theorem-with-ratios/).
 
 # Bayes' Theorem
 
@@ -16,7 +16,7 @@ The idea is that the probability of event B times the probability of B when A is
 
 $$P(B) \times P(A|B) = P(A) \times P(B|A)$$
 
-Now, we are usually concerned with the probablity of event A when event B is observed P(A\|B).  If we rearrange the equation above we get:
+Now, we are usually concerned with the probability of event A when event B is observed P(A\|B).  If we rearrange the equation above we get:
 
 
 $$P(A|B) = \frac{P(A) \times P(B|A)}{P(B)}$$
@@ -28,7 +28,7 @@ In words:
 Terminology:
 P(A|B):  posterior probability
 P(A): prior probability
-P(B|A): likelyhood
+P(B|A): likelihood
 P(B): Predictor prior probability
 
 Now lets look at an example of a statistics problem, and see if we can apply Bayes theorem.
@@ -56,7 +56,7 @@ p(loaded | 666) = P(dice | rolling 6 three consecutive times)
 In the same way I use the following notation (to save typing):
 p(rolling 6 once) = p(6)
 
-Now lets apply bayes theorem:
+Now lets apply Bayes theorem:
 P(A|B) = P(B | A) P(A) / P(B)
 
 $$P(loaded| 666) = \frac{P(666 | loaded ) \times P(loaded )}{P(666)}$$
@@ -68,7 +68,7 @@ P(loaded) = 1/100
 P(fair) = 99/100
 This is because a dishonest casino has a 99% fair dice and 1% loaded dice.
 
-We also know what rolling a dice is independant of each other (see the [gamblers fallacy](https://en.wikipedia.org/wiki/Gambler's_fallacy)).  For this reason:
+We also know what rolling a dice is independent of each other (see the [gamblers fallacy](https://en.wikipedia.org/wiki/Gambler's_fallacy)).  For this reason:
 
 $$P(666 | loaded ) = P(6 | loaded) \times P(6 | loaded) \times P(6 | loaded) = P(6 | loaded)^3$$
 
@@ -105,17 +105,17 @@ $$P(loaded dice | 6) = \frac{0.5 \times 0.01 }{0.5 \times 0.01 + 1/6 \times 0.99
 
 # Naive Bayes Classifier
 
-Now let us generalize bayes theorem so it can be used to solve classification problems.  The key "naive" assumption here is that independant for bayes theorem to be true. The question we are asking is the following: What is the probability of value of a class variable (C) given the values of specific feature variables ($$X_1 .. X_k$$).  Again we are going to assume that the specific feature variables are independant of each other (which is sometimes not true!).
+Now let us generalize bayes theorem so it can be used to solve classification problems.  The key "naive" assumption here is that independent for bayes theorem to be true. The question we are asking is the following: What is the probability of value of a class variable (C) given the values of specific feature variables ($$X_1 .. X_k$$).  Again we are going to assume that the specific feature variables are independent of each other (which is sometimes not true!).
 
 $$P(class|features) = \frac{P(features|class) \times P(class)}{P(features)}$$
 
 ## Income tax example
 
-For example, lets build a classifier to determine the likelyhood if someone is cheating on their income tax.  In this example we are trying to determine a class (Yes or No for cheating) given a set for features (got refund, and maritial status).  In this case, the feature for got refund is yes (y) or no (n) and for martial status is divorced (d), married (m) and single (s).
+For example, lets build a classifier to determine the likelihood if someone is cheating on their income tax.  In this example we are trying to determine a class (Yes or No for cheating) given a set for features (got refund, and marital status).  In this case, the feature for got refund is yes (y) or no (n) and for martial status is divorced (d), married (m) and single (s).
 
 Here is the data we are given:
 
-Refund | martital status | cheat
+Refund | marital status | cheat
 y | s | n
 n | m | n
 n | s | n
@@ -127,7 +127,7 @@ n | s | y
 n | m | n
 n | s | y
 
-Now lets say we are asked to look at an example where refund = no and and marital status (M.S.) = single.  Using naive bayes (given the naive assumption that getting a refund and MS are independant) determine the probability what the person cheated on their taxes:
+Now lets say we are asked to look at an example where refund = no and and marital status (M.S.) = single.  Using naive bayes (given the naive assumption that getting a refund and MS are independent) determine the probability what the person cheated on their taxes:
 
 $$  P(cheat = y | refund = n \: and \: M.S. = s) = \frac{P (refund = n \: and \:  M.S. = s | cheat = y) \times P(cheat=y)}{P(refund = n \: and \: M.S. = s)}$$
 
@@ -149,11 +149,11 @@ $$P(cheat = n) = 7 / 10$$
 
 $$ P(cheat = y | refund = n \: and \: M.S. = s) = \frac{ 2/3 \times 3/3 \times 3/10}{3/10 \times 1 \times 2/3+ 4/7 \times 2/7 \times 7/10} = 7/11 $$
 
-Based on the data, our assumptions of independance, we predict that with 7/11 (63.63%) probability the person cheated on their taxes.  The posterior probablity is 7/11 compared to the 3/10 (33.33%) prior probability.
+Based on the data, our assumptions of independence, we predict that with 7/11 (63.63%) probability the person cheated on their taxes.  The posterior probability is 7/11 compared to the 3/10 (33.33%) prior probability.
 
 ## Numerical Predictors
 
-Naive bayes can also work with numerical  features, but they must first be transformed into categorical values.  One option is to use binning described in [Preparing Data](datascienceguide.github.io/preparing-data/) and the other option (and common practice) is to assume a (usually normal) distribution and probability density function based on the mean ($$mu$$)and standard deviation $$\sigma$$of the dataset.  This assumption can be done by plotting a histogram of the data in addition to computing the mean and standard deviation.
+Naive Bayes can also work with numerical  features, but they must first be transformed into categorical values.  One option is to use binning described in [Preparing Data](datascienceguide.github.io/preparing-data/) and the other option (and common practice) is to assume a (usually normal) distribution and probability density function based on the mean ($$mu$$)and standard deviation $$\sigma$$of the dataset.  This assumption can be done by plotting a histogram of the data in addition to computing the mean and standard deviation.
 
 The following is the equation for a normal distribution:
 
@@ -180,17 +180,17 @@ A typeset version of this example will be coming soon!  Now you can see the exam
 3. Works very well for categorical inputs
 
 ## Cons:
-1.  For numeric features must assume a distribution such as a gaussian (which might not be true)
-2.  If a variable has a category in the test data, but not in the training data, the model will assign a "zero frequency" or zero probability.  One must apply a smoothing technique such as laplace estimation or additive smoothing (smoothing algorithms content is coming soon!)
-3.  Since occurances (and probabilities) can be very small (with a large number of features and observations), there can be floating-point underflow.  This means the probability is so small that rounding errors will cause issues.  One solutoin is to use a log function and convert the decimals into negative numbers (a property of logorithms) and use those
-4.  Performance can be very poor if insumptions are incorrect, for this reason is it not wise to use the probablity (`predict_proba in python`)  
-5.  Some expert call Naive bayes, idiot's bayes since in real life if it almost impossible to have a set of predictors which are completely independent
+1.  For numeric features must assume a distribution such as a Gaussian (which might not be true)
+2.  If a variable has a category in the test data, but not in the training data, the model will assign a "zero frequency" or zero probability.  One must apply a smoothing technique such as Laplace estimation or additive smoothing (smoothing algorithms content is coming soon!)
+3.  Since occurances (and probabilities) can be very small (with a large number of features and observations), there can be floating-point underflow.  This means the probability is so small that rounding errors will cause issues.  One solution is to use a log function and convert the decimals into negative numbers (a property of logarithms) and use those
+4.  Performance can be very poor if assumptions are incorrect, for this reason is it not wise to use the probability (`predict_proba in python`)  
+5.  Some expert call Naive Bayes, idiot's Bayes since in real life if it almost impossible to have a set of predictors which are completely independent
 
 ## When to use:
 
 ___Real time prediction___ of streaming data: naive bayes is simple and fast, great to use for predictions in real time with stream data
-__Multiclass prediction___ by definition naive bayes can work on multiclass problems since it is able to predict the probability of multiple classes
-__Natural Language Processing__ naive bayes is great for text classification, spam filtering, sentiment analysis since it natually works with multi-class problem.  The simpliest implementation is using a bag of words approach or by splitting the text corpus in to words or n-gram and using the occurances.  Tutorial on this coming soon!
+__Multiclass prediction___ by definition naive bayes can work on multi-class problems since it is able to predict the probability of multiple classes
+__Natural Language Processing__ naive bayes is great for text classification, spam filtering, sentiment analysis since it naturally works with multi-class problem.  The simplest implementation is using a bag of words approach or by splitting the text corpus in to words or n-gram and using the occurrences.  Tutorial on this coming soon!
 
 Combining the three points, naive bayes is great for streaming text data such as tweets, news or email.
 
