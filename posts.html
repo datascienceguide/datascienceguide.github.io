@@ -9,7 +9,7 @@ title: posts
     {% for post in site.posts %}      
         <li class="listing">
           <hr class="slender">
-          <a href="{{ site.baseurl }}/{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
+           <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a> 
           <div>{{ post.excerpt }}</div> 
         </li>
     {% endfor %}
