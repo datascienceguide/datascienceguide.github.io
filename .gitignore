@@ -8,6 +8,5 @@ examples/*
 _config.yml
 .rbenv-version
 .rvmrc
-posts.html
 *.ipynb_checkpoints
 .sass-cache*
