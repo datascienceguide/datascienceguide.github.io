@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Required Background"
+title:  "Required Background in Math"
 categories: introduction 
 date:   2015-02-19 21:46:04
 ---
