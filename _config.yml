@@ -1,3 +1,4 @@
+baseurl: /guide
 title: Data Science Guide and Framework
 subtitle: Comprehensive DataScience Guide and Framework
 author:  Andrew Andrade 
@@ -5,7 +6,6 @@ simple_search: http://google.com/search
 description: Comprehensive Datascience Guide and Framework 
 name: tufte
 markdown: Kramdown
-baseurl: 
 kramdown:  
   input: GFM
   auto_id_prefix: true
