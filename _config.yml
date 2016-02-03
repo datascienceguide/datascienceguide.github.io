@@ -10,7 +10,7 @@ kramdown:
   auto_id_prefix: true
   syntax_highlighter: pygments 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-highlighter: pygments 
+highlighter: rouge 
 permalink: /:title
 timezone: America/New_York
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
