@@ -5,14 +5,14 @@ simple_search: http://google.com/search
 description: Comprehensive Datascience Guide and Framework 
 name: tufte
 markdown: Kramdown
-baseurl: 
+baseurl:
 kramdown:  
   input: GFM
   auto_id_prefix: true
   syntax_highlighter: pygments 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge 
-permalink: /articles/:short_year/:title
+permalink: :title
 timezone: America/New_York
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
