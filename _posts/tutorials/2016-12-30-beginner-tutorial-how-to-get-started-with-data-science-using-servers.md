@@ -2,6 +2,7 @@
 layout: post
 title:  "Beginners Tutorial for How to Get Started Doing Data Science using Servers"
 categories:  tutorial
+date:   2015-02-19 21:46:04
 ---
 
 

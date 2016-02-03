@@ -2,6 +2,7 @@
 layout: post
 title:  "Exploratory Data Analysis"
 categories: introduction 
+date:   2013-05-09 22:39:53
 ---
 
 Exploratory data analysis (EDA) is a very important step which takes place after [feature engineering](feature-engineering) and acquiring data and it should be done before any modeling.  This is because it is very important for a data scientist to be able to understand the nature of the data without making assumptions.  

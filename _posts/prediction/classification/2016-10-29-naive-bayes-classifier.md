@@ -2,6 +2,7 @@
 layout: post
 title:  "Naive Bayes Classifier"
 categories: introduction 
+date:   2015-02-19 21:46:04
 ---
 
 The Bayesian approach offers an alternative method to statistics, and is actually quite intuitive once you wrap your head around it.  Statistics can be daunting, but I will attempt to explain Bayes theorem intuitively and leave the mathematical proofs for textbooks.

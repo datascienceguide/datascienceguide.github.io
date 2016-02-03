@@ -2,6 +2,8 @@
 layout: post
 title:  "Hands on Hadoop tutorial"
 categories:  required-background 
+date:   2015-02-19 21:46:04
+
 ---
 	
 This tutorial was originally created by Darrell Aucoin for the Stats Club.  Follow along with the [orginal and additional files here](https://github.com/uWaterlooDataTeam/IntroHadoop).

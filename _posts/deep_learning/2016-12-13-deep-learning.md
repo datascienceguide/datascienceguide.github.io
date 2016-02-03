@@ -2,6 +2,7 @@
 layout: post
 title:  "Deep Learning"
 categories: data-science-framework 
+date:   2015-02-19 21:46:04
 ---
 More content coming soon!
 

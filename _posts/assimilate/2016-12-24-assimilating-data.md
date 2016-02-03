@@ -2,6 +2,7 @@
 layout: post
 title:  "Assimilating Data"
 categories:  Assimilation 
+date:   2015-02-19 21:46:04
 ---
 Ask > Aquire > ___Assimilate___ > Analyze > Answer > Advise > Act
 

@@ -2,6 +2,7 @@
 layout: post
 title:  "Required Computer Science/ Software Engineering Background"
 categories: introduction 
+date:   2015-02-19 21:46:04
 ---
 
 Better explanations coming soon!  Please consider contributing through a [pull request](https://github.com/datascienceguide/datascienceguide.github.io) or send edits or suggestions to [Andrew](mailto:andrew@andrewandrade.ca)

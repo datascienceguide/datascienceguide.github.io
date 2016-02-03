@@ -2,6 +2,7 @@
 layout: post
 title:  "Support Vector Machines"
 categories: classification
+date:   2015-02-19 21:46:04
 ---
 
 Content coming soon!

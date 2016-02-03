@@ -2,6 +2,7 @@
 layout: post
 title:  "What is Data Science?"
 categories: introduction 
+date:   2015-02-19 21:46:04
 ---
 
 Booz Allen Hamilton's (BAH)[Field Guide to Data Science](http://www.boozallen.com/insights/2015/12/data-science-field-guide-second-edition) tries to answer the question perfectly:

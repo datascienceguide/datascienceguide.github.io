@@ -2,6 +2,7 @@
 layout: post
 title:  "Required Background"
 categories: introduction 
+date:   2015-02-19 21:46:04
 ---
 
 What background knowledge would be helpful to know as a datascientist? Know of any good (and free) resources? The following list is not complete, so please consider contributing via a [pull request](http://github.com/datascienceguide/datascienceguide.github.io/) or sending [me an email](mailto:andrew@andrewandrade.ca) with suggestions or edits.

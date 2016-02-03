@@ -2,6 +2,7 @@
 layout: post
 title:  "R Programming Tutorial"
 categories:  required-background 
+date:   2015-02-19 21:46:04
 ---
 
 This R programming tutorial was orignally created by the uWaterloo stats club and MSFA with the purpose of providing the basic information to quickly get students hands dirty using R. Fine the original [here](https://github.com/uWaterlooDataTeam/r-programming-tutorial)

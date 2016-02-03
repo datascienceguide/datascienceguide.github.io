@@ -2,6 +2,7 @@
 layout: post
 title:  "Big Data Fundamentals"
 categories:  big-data 
+date:   2015-02-19 21:46:04
 ---
 
 ## Essential Concepts and Tools

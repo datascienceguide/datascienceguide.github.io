@@ -2,6 +2,7 @@
 layout: post
 title:  "Big Data Tools"
 categories:  big-data 
+date:   2015-02-19 21:46:04
 ---
 
 ## Popular Hadoop Projects

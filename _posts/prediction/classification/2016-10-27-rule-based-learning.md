@@ -2,6 +2,7 @@
 layout: post
 title:  "Rule Based Learning"
 categories: classification
+date:   2015-02-19 21:46:04
 ---
 
 Typeset content coming soon!

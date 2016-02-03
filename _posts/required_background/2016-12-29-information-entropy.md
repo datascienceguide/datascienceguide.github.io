@@ -2,6 +2,7 @@
 layout: post
 title:  "Information Entropy"
 categories: required-background 
+date:   2015-02-19 21:46:04
 ---
 
 Information entropy (more specifically, [Shannon entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) is the expected value (average) of the information contained in each message.  The [following video](https://www.khanacademy.org/computing/computer-science/informationtheory/moderninfotheory/v/information-entropy) outlines the concept very well.

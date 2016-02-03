@@ -2,6 +2,7 @@
 layout: post
 title:  "Regression"
 categories: predict
+date:   2015-02-19 21:46:04
 ---
 
 Regression is fitting a line or curve to do numeric prediction or to do predicted causility analysis (in some cases).

@@ -2,6 +2,7 @@
 layout: post
 title:  "Distance Measurements"
 categories: introduction 
+date:   2015-02-19 21:46:04
 ---
 
 Distance measurements are very important since they are used in clustering and nearest neibour algorithms.  The Scipy library has an implemention of common [distance computations](http://docs.scipy.org/doc/scipy/reference/spatial.distance.html).  The common ones are outlined below:

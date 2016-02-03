@@ -2,6 +2,7 @@
 layout: post
 title:  "Open Source Tools for Data Science"
 categories: introduction 
+date:   2015-02-19 21:46:04
 ---
 
 Many tools for datascience exist. One can start with excel since it is the most basic for dealing with tabular data, later we focus on open source tools: first with workbenches/ interfaces and then programming frameworks.
