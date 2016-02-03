@@ -12,7 +12,7 @@ kramdown:
   syntax_highlighter: pygments 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge 
-permalink: /:title
+permalink: :title
 timezone: America/New_York
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
