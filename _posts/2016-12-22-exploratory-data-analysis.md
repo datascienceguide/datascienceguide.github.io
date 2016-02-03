@@ -158,18 +158,33 @@ Instead of blindly using decomposition, a data scientist could plot the result:
 [![](http://scikit-learn.org/stable/_images/plot_faces_decomposition_002.png)](http://scikit-learn.org/stable/auto_examples/decomposition/plot_faces_decomposition.html)
 
 
-We can see here, there is an importance with the locations of the eyes, nose and mouth, along with the head shape.
+By looking at the contrast (black and white) in the images, we can see there is an importance with the locations of the eyes, nose and mouth, along with the head shape.	
 
 
 # Conclusion and Next Steps
 
-Data visualization is a fun an very important part of being a data scientist.  Simplicity and the ability for others to quickly understand a message is the most important part of exploratory data analysis.  Before every building any model, make sure you create a visualization to understand the data first.  After getting a better understand of the data we can move onto describing data using [clustering](http://datascienceguide.github.io/clustering/).
-
+Data visualization is a fun an very important part of being a data scientist.  Simplicity and the ability for others to quickly understand a message is the most important part of exploratory data analysis.  Before every building any model, make sure you create a visualization to understand the data first!  Exploratory is not a subject you can learn by reading book.  You need to out and acquire data and start plotting!  The [exploratory data analysis tutorial](http://nbviewer.ipython.org/github/datascienceguide/datascienceguide.github.io/blob/master/tutorials/Exploratory-Data-Analysis-Tutorial.ipynb) gets you started.  At the end of the tutorial there are various links to public datasets you can start exploring.  After making your own visualization we can move onto describing data using [clustering](http://datascienceguide.github.io/clustering/).
 
 
 # Further Reading
 
 [Visual Information Theory](http://colah.github.io/posts/2015-09-Visual-Information/)
 
+[Baby steps for performing exploratory analysis](http://www.analyticsvidhya.com/blog/2014/08/baby-steps-python-performing-exploratory-analysis-python/)
+
+[Basic EDA with R and Python](https://www.codementor.io/python/tutorial/data-science-python-r-exploratory-data-analysis-visualization)
+
+## Theory
+
+[What is EDA](http://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm)
+
+[Descriptive Statistics and Exploratory Data Analysis](http://www.gs.washington.edu/academics/courses/akey/56008/lecture/lecture2.pdf)
+
+[Think Stats Exploratory Data Analysis in Python](http://greenteapress.com/thinkstats2/thinkstats2.pdf)
+
+[A First Look at Data](http://www.stat.cmu.edu/~hseltman/309/Book/chapter4.pdf)
+[Principles and Procedures of Exploratory Data Analysis](http://cll.stanford.edu/~langley/cogsys/behrens97pm.pdf)
+
 [Multivariate Visualization](http://www.saedsayad.com/docs/multivariate_visualization.pdf)
 
+[Exploratory Data Analysis for Complex Models](http://www.stat.columbia.edu/~gelman/research/published/p755.pdf)

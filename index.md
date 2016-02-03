@@ -2,48 +2,11 @@ http://bl.ocks.org/serra/5012770
 http://bl.ocks.org/mbostock/raw/4063550/flare.json
 https://leanpub.com/D3-Tips-and-Tricks
 
-
-
-
-
-
-
-
-Tools and Environment Setup!
-
-### Data structures and algorithms:
-
-
-
-
-## Data Tools
-
-	if 
-
-
-# Data Science Framework
-
-
-# Acquiring Data
-
-## Types of data
-
-### Structured data
-category, ordinal, numeric
-
-### Unstructured data
-Natural language text, images, video, audio etc.
-
-Deep learning and big data
-
-
 ## Streaming vs. Batched
 
 ### Data scraping
 
 ### Data logging
-
-
 
 # Prepare and Transform Data
 
@@ -58,77 +21,7 @@ Regular expressions
 
 ### Summeriation of data
 
-#### Summarizing Numeric data:
 
-Use descriptive statistics:
-mean, median, standard deviation, percentiles, range, min, max
-
-- identify distribution
-See background: stats distribution
-
-#### Discrete data:
-- distict possible values and frequencies
-
-#### Warning about Summary Statistics and the Flaw of Averages:
-
-It is not enough to use the simle statistical properties (mean, variance, correlation) to describe the data.  This is demonstrated by [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe's_quartet)
-
-"Anscombe's quartet comprises four datasets that have nearly identical simple statistical properties, yet appear very different when graphed. Each dataset consists of eleven (x,y) points. They were constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers on statistical properties."
-
-Optional reading:
-Flaw of Averages
-[Article](http://web.stanford.edu/~savage/flaw/Article.htm) // [Book](http://amzn.to/1Tiax3B)
-
-### Exploratory data analysis
-
-Primer: [Why Data Visualizations](https://www.dashingd3js.com/why-data-visualizations)
-
-- don't try and make fancy visualizations, try and answer questions
-- primer on visualization (why spider charts are bad etc.)
-
-#### Plotting libraries
-- matplotlib (python)
-- seaborn (python)
-- Grammer of graphics (ggplot2)
-- infovis
-- Rshiny
-- data driven documents (D3.js)
-
-#### univariate data
-box plot, histogram
-
-#### bivariate data
-line charts (why stacked line are bad)
-scatter plot
-
-### multivariate visualation
-- plot for each variable
-- 3d scatter plot with color
-- use principal component anlaysis and then visualize
-
-#### categorial
-waffle chart (why pie charts are bad)
-
-#### Text Data
-
-- Word clouds
-- Topic modeling
-
-
-
-tree (decision tree)
-tree maps
-
-Commercial tools:
-Tableau
-
-spatial charts
-
-survey plots
-
-timelines
-
-- Is there a distribution?
 
 ## Feature engineering
 
@@ -547,7 +440,8 @@ Model Evaluation
 
 It can be difficult to predict which classifier will work best on your dataset.
 Always try multiple classifiers. Pick the one or two that work the best to refine and
-explore furthe
+explore further
+
 
 Learning Curves
 http://scikit-learn.org/stable/modules/learning_curve.html
@@ -578,15 +472,6 @@ http://www.analyticsvidhya.com/blog/2015/06/tuning-random-forest-model/
 
 
 http://mlwave.com/kaggle-ensembling-guide/
-
-
-
-
-
-
-
-
-
 
 
 

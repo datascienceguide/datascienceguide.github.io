@@ -215,11 +215,11 @@ The techniques are used in [preparing data section](http://datascienceguide.gith
 
 ### Linear and Non-linear Regression using Generalized Linear Models
 
-Piece-wise regression, polynomial regression, ridge regression, bayesian regression and [many more generalized linear models](http://scikit-learn.org/stable/modules/linear_model.html) are all valid methods of applying regression  depending on the application. The Scikit Learn documentation has a very good outline and examples of many different techniques and when to use them.
+Piece-wise regression, polynomial regression, ridge regression, bayesian regression and [many more generalized linear models](http://scikit-learn.org/stable/modules/linear_model.html) are all valid methods of applying regression  depending on the application. The Scikit Learn documentation has a very good outline and examples of many different techniques and when to use them.  In addition the [statsmodels](http://statsmodels.sourceforge.net/devel/index.html) library in python also provides an even more powerful implemention of regression with additional statistical properties as we saw in the tutorial.
 
 ### Advanced Regression Techniques
 
-In addition, we learn later in the course about classification methods which can also be used for regerssion.  These include [decision trees](http://scikit-learn.org/stable/auto_examples/ensemble/plot_adaboost_regression.html#example-ensemble-plot-adaboost-regression-py), [nearest neighbour](http://scikit-learn.org/stable/auto_examples/neighbors/plot_regression.html#example-neighbors-plot-regression-py), [support vector regression](http://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#example-svm-plot-svm-regression-py), [isotonic regression](http://scikit-learn.org/stable/auto_examples/plot_isotonic_regression.html).
+In addition, we learn later in the course about classification methods which can also be used for regression.  These include [decision trees](http://scikit-learn.org/stable/auto_examples/ensemble/plot_adaboost_regression.html#example-ensemble-plot-adaboost-regression-py), [nearest neighbour](http://scikit-learn.org/stable/auto_examples/neighbors/plot_regression.html#example-neighbors-plot-regression-py), [support vector regression](http://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#example-svm-plot-svm-regression-py), [isotonic regression](http://scikit-learn.org/stable/auto_examples/plot_isotonic_regression.html).
 
 For now, understand that these methods exist, and by applying the principles of model selection, evaluation and parameter tuning, you can identify which algorithm and method to use.
 

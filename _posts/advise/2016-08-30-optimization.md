@@ -78,8 +78,14 @@ a) ___Proportionality___ (assumption about both objective function and functiona
 
 b) ___Continuity___: Variables are continious numbers, meaning we can produce not just interget (whole number) amounts of each product.  Mathematically this is representedby $$X_j \geq 0$$ 
 
+2. Additivity
+Both the equation for the value to minimize or maximize are sums, and the contraints are linear as well
 
+Linear Programming has 3 basic components:
 
+1. Decision variables (solution of model)
+2. Objective function (min or mix) with a goal (maximize profit, minimize cost)
+3. Constraints
 
 # Further Reading:
 
