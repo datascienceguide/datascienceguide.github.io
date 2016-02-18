@@ -173,27 +173,27 @@ A typeset version of this example will be coming soon!  Now you can see the exam
 <iframe src="http://docs.google.com/viewer?url=https://datascienceguide.github.io/assets/naivebayes_numeric.pdf&embedded=true" width="900" height="780" style="border: none;"></iframe>
 
 
-# Closing thoughts
+	# Closing thoughts
 
-## Pros:
-1. Fast and easy to predict class, and works well with multi class problems
-2. Performs very well (compared to logistic regression and other algorithms) when imdependence assumption is held (you need less training data)
-3. Works very well for categorical inputs
+	## Pros:
+	1. Fast and easy to predict class, and works well with multi class problems
+	2. Performs very well (compared to logistic regression and other algorithms) when imdependence assumption is held (you need less training data)
+	3. Works very well for categorical inputs
 
-## Cons:
-1.  For numeric features must assume a distribution such as a Gaussian (which might not be true)
-2.  If a variable has a category in the test data, but not in the training data, the model will assign a "zero frequency" or zero probability.  One must apply a smoothing technique such as Laplace estimation or additive smoothing (smoothing algorithms content is coming soon!)
-3.  Since occurances (and probabilities) can be very small (with a large number of features and observations), there can be floating-point underflow.  This means the probability is so small that rounding errors will cause issues.  One solution is to use a log function and convert the decimals into negative numbers (a property of logarithms) and use those
-4.  Performance can be very poor if assumptions are incorrect, for this reason is it not wise to use the probability (`predict_proba in python`)  
-5.  Some expert call Naive Bayes, idiot's Bayes since in real life if it almost impossible to have a set of predictors which are completely independent
+	## Cons:
+	1.  For numeric features must assume a distribution such as a Gaussian (which might not be true)
+	2.  If a variable has a category in the test data, but not in the training data, the model will assign a "zero frequency" or zero probability.  One must apply a smoothing technique such as Laplace estimation or additive smoothing (smoothing algorithms content is coming soon!)
+	3.  Since occurances (and probabilities) can be very small (with a large number of features and observations), there can be floating-point underflow.  This means the probability is so small that rounding errors will cause issues.  One solution is to use a log function and convert the decimals into negative numbers (a property of logarithms) and use those
+	4.  Performance can be very poor if assumptions are incorrect, for this reason is it not wise to use the probability (`predict_proba in python`)  
+	5.  Some expert call Naive Bayes, idiot's Bayes since in real life if it almost impossible to have a set of predictors which are completely independent
 
-## When to use:
+	## When to use:
 
-___Real time prediction___ of streaming data: naive bayes is simple and fast, great to use for predictions in real time with stream data
-__Multiclass prediction___ by definition naive bayes can work on multi-class problems since it is able to predict the probability of multiple classes
-__Natural Language Processing__ naive bayes is great for text classification, spam filtering, sentiment analysis since it naturally works with multi-class problem.  The simplest implementation is using a bag of words approach or by splitting the text corpus in to words or n-gram and using the occurrences.  Tutorial on this coming soon!
+	___Real time prediction___ of streaming data: naive bayes is simple and fast, great to use for predictions in real time with stream data
+	__Multiclass prediction___ by definition naive bayes can work on multi-class problems since it is able to predict the probability of multiple classes
+	__Natural Language Processing__ naive bayes is great for text classification, spam filtering, sentiment analysis since it naturally works with multi-class problem.  The simplest implementation is using a bag of words approach or by splitting the text corpus in to words or n-gram and using the occurrences.  Tutorial on this coming soon!
 
-Combining the three points, naive bayes is great for streaming text data such as tweets, news or email.
+	Combining the three points, naive bayes is great for streaming text data such as tweets, news or email.
 
 ## Further reading
 
