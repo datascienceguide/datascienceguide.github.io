@@ -27,13 +27,17 @@ The following table displays the most basic 2x2 confusion matrix for two classes
 | Position |   a | b |
 |Negative  |  c  | d |
 
-Accuracy $$(a+d)/(a+b+c+d)$$: the proportion of the total number of predictions that were correct.
-Positive Predictive Value or Precision ($$a/(a+b)$$) : the proportion of positive cases that were correctly identified.
-Negative Predictive Value ($$d/(c+d)$$) : the proportion of negative cases that were correctly identified.
-Sensitivity or Recall $$ a/(a+c) $$ : the proportion of actual positive cases which are correctly identified. 
-Specificity $$d/(b+d)$$: the proportion of actual negative cases which are correctly identified. 
+___Accuracy___ $$(a+d)/(a+b+c+d)$$: the proportion of the total number of predictions that were correct.  
 
-While this is the most basic metrics you can use for classification, I highly recommend you read the wikipedia article on the [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and related classification metrics.
+Positive Predictive Value or ___Precision___ ($$a/(a+b)$$) : the proportion of positive cases that were correctly identified.
+
+Negative Predictive Value ($$d/(c+d)$$) : the proportion of negative cases that were correctly identified.
+
+Sensitivity or ___Recall___ $$ a/(a+c) $$ : the proportion of actual positive cases which are correctly identified. 
+
+___Specificity___ $$d/(b+d)$$: the proportion of actual negative cases which are correctly identified. 
+
+While this is the most basic metrics you can use for classification, I highly recommend you read the Wikipedia article on the [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) and related classification metrics.
 
 
 
@@ -47,6 +51,6 @@ Further Reading:
 
 [Model Evaluation Regression](http://www.saedsayad.com/model_evaluation_r.htm)
 
-[ROC101](http://www.saedsayad.com/docs/ROC101.pdf)
+[ROC101](http://wikiww.saedsayad.com/docs/ROC101.pdf)
 
 

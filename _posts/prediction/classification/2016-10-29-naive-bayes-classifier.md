@@ -210,6 +210,9 @@ A typeset version of this example will be coming soon!  Now you can see the exam
 ### Bayesian Statistics
 
 [Bayesian Statistics on Wikipedia](https://en.wikipedia.org/wiki/Bayesian_statistics)
+
 [Introduction to Bayesian Statistics](https://www.maths.nottingham.ac.uk/personal/tk/files/talks/Cran_10_12.pdf)
+
 [Tutorial in Bayesian Statistics](https://www.maths.nottingham.ac.uk/personal/tk/files/talks/nott_radiology_01_11.pdf)
+
 

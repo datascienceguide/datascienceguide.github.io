@@ -42,7 +42,10 @@ It is also important to understand that rule-based and tree-based classification
 
 # Further reading
 
-[ZeroR](http://www.saedsayad.com/zeror.htm)
-[OneR](http://www.saedsayad.com/oner.htm)
-[Knowledge Representation](http://www.cs.waikato.ac.nz/~tcs/DataMining/TEKBAC2013/Slides/Chapter3.pdf)
-[Data Mining Algorithms](http://www.cs.waikato.ac.nz/~tcs/DataMining/TEKBAC2013/Slides/Chapter4.pdf)
+[ZeroR](http://www.saedsayad.com/zeror.htm) 
+
+[OneR](http://www.saedsayad.com/oner.htm) 
+
+[Knowledge Representation](http://www.cs.waikato.ac.nz/~tcs/DataMining/TEKBAC2013/Slides/Chapter3.pdf) 
+
+[Data Mining Algorithms](http://www.cs.waikato.ac.nz/~tcs/DataMining/TEKBAC2013/Slides/Chapter4.pdf) 

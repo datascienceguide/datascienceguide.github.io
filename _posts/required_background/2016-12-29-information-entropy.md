@@ -8,7 +8,7 @@ date:   2015-02-19 21:46:04
 Information entropy (more specifically, [Shannon entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) is the expected value (average) of the information contained in each message.  The [following video](https://www.khanacademy.org/computing/computer-science/informationtheory/moderninfotheory/v/information-entropy) outlines the concept very well.
 
 
-Let X be a random variable that takes on n possible values, x_1 through x_n.  Suppose the probability that X = x_i is p_i, i.e., P(X = x_i) = p_i, for i = 1 to n.  We define the (shannon) entropy of X, call it H(X), as follows:
+Let X be a random variable that takes on n possible values, $$x_1$$ through $$x_n$$.  Suppose the probability that $$X = x_i$$ is $$p_i$$, i.e., $$P(X = x_i) = p_i$$, for i = 1 to n.  We define the (shannon) entropy of X, call it H(X), as follows:
 
 $$H = - \sum_i p_i \log_b p_i$$ 
 
@@ -19,7 +19,7 @@ Where $$p_i$$ is a specific probability of the event and b is the base.  Base 2 
 
 ## Complete Certainty (No Uncertainty)
 
-The lowest possible value of H(X) is zero, and this occurs when there is no uncertainty in the probability distribution of X.  That is, X can take on only one value, say, $$x_1$$, meaning that P(X = $$x_1$$) = 1.  Therefore, x2, x3 ... xn = 0
+The lowest possible value of H(X) is zero, and this occurs when there is no uncertainty in the probability distribution of X.  That is, X can take on only one value, say, $$x_1$$, meaning that P(X = $$x_1$$) = 1.  Therefore, $$x_2$$, $$x_3$$ ... $$x_n$$ = 0
 
 In this case:
 
@@ -33,14 +33,14 @@ The highest possible value of H(X) occurs when there is complete uncertainty abo
 
 ### 50:50
 
-Suppose X is a random variable with two possible outcomes: x_1 and x_2, such that P(X = x_1) = P(X = x_2) = 1/2.  In this case:
+Suppose X is a random variable with two possible outcomes: $$x_1$$ and $$x_2$$, such that $$P(X = x_1) = P(X = x_2) = 1/2$$.  In this case:
 
-Given: P(X = x1) = p1 = 1/2 = 0.5 and P(X = x2) = p2 = 1/2 = 0.5
+Given: $$P(X = x1) = p1 = 1/2 = 0.5$$ and $$P(X = x2) = p2 = 1/2 = 0.5$$
 
 $$H(x) = - 0.5  \log_2 0.5  - 0.5 \log_2 0.5 = 1 $$
 
 
-### 1/4, 1/4 , 1/4, 1/4
+### 25:25:25:25
 
 Suppose X is a random variable with four equally likely outcomes. In this case:
 

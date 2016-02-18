@@ -37,23 +37,23 @@ If we choose refund at the top, there will be two edges out of this node: refund
 
 For refund = yes, we have a distribution of cheat where cheat=no is the only possible outcome, so the entropy is zero.
 
-For refund = no, we have a distribution of cheat where P(cheat=no) = 4/7 and P(cheat=yes) = 3/7.  The entropy is -4/7 log 4/7 - 3/7 log 3/7 = 0.98.
+For refund = no, we have a distribution of cheat where P(cheat=no) = 4/7 and P(cheat=yes) = 3/7.  The entropy = $$-4/7 log 4/7 - 3/7 log 3/7 = 0.98$$.
 
 Finally, we compute the weighted average entropy for refund.  We take the entropy for refund = yes and weigh it by the proportion of data points that have refund = yes (3 out of 10), and add the entropy for refund = no, weighted by the proportion of data points that have refund = no (7 out of 10).  We get:
 
-weighted average entropy for refund = 3/10 * 0 + 7/10 * 0.98 = 0.686.
+weighted average entropy for refund = $$3/10 * 0 + 7/10 * 0.98 = 0.686$$.
 
 Option 2:
 
 If we choose marital status at the top, there will be three edges out of this node: marital status = single, marital status = married and marital status = divorced.  For marital status = single, we have 4 data points, two of which have cheat = no and two have cheat = yes.  For marital status = married, we have 4 data points, all of which have refund = no.  For marital status = divorced, we have 2 data points, one with refund = no and one with refund = yes.  We need to calculate the entropies of these three distributions.
 
-For marital status = single, we get entropy = -2/4 log 2/4 - 2/4 log 2/4 = 1.
+For marital status = single, we get entropy = $$-2/4 log 2/4 - 2/4 log 2/4 = 1$$.
 
 For marital status = married, we get zero.
 
-For marital status = divorced, we get -1/2 log 1/2 - 1/2 log 1/2 = 1.
+For marital status = divorced, we get $$-1/2 log 1/2 - 1/2 log 1/2 = 1$$.
 
-Now we compute the weighted entropy for marital status: 4/10 * 1 + 4/10 * 0 + 2/10 * 1 = 0.6.
+Now we compute the weighted entropy for marital status: $$4/10 * 1 + 4/10 * 0 + 2/10 * 1 = 0.6$$.
 
 Finally, we choose the option with the lowest weighted average entropy.  In our example, marital status will be the root node.
 
