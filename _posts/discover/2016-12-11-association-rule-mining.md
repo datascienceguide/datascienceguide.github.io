@@ -12,7 +12,7 @@ A popular application of association rules involves examining products that were
 3. {bread, beer, diapers, butter}  
 4. {beer, butter}  
 
-Definition: Support of itemset A, denoted sup(A) or $$|A|$$ = the number of records (purchase transactions) containing A.
+Definition: Support of itemset A, denoted sup(A) or $$\vert A \vert$$ = the number of records (purchase transactions) containing A.
 
 Definition: Let A and B be two itemsets.  An association rule A->B asserts that if a transaction contains A, it is also likely to contain B.
 
