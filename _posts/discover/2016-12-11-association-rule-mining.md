@@ -7,18 +7,18 @@ date:   2015-02-19 21:46:04
 
 A popular application of association rules involves examining products that were bought together.  Consider the following four sets of items (itemsets) bought together:
 
-1 {bread, diapers, milk}
-2 {beer, diapers, butter}
-3 {bread, beer, diapers, butter}
-4 {beer, butter}
+1. {bread, diapers, milk}  
+2. {beer, diapers, butter}  
+3. {bread, beer, diapers, butter}  
+4. {beer, butter}  
 
-Definition: Support of itemset A, denoted sup(A) or |A| = the number of records (purchase transactions) containing A.
+Definition: Support of itemset A, denoted sup(A) or $$|A|$$ = the number of records (purchase transactions) containing A.
 
 Definition: Let A and B be two itemsets.  An association rule A->B asserts that if a transaction contains A, it is also likely to contain B.
 
-Definition: The support of an association rule A->B is |AB|
+Definition: The support of an association rule A->B is $$|AB|$$
 
-Definition: The confidence of an association rule A->B is |AB|/|A|
+Definition: The confidence of an association rule A->B is $$\frac{|AB|}{|A|}$$
 
 For example, the support of beer->diapers is 2 and its confidence is 2/3.
 
@@ -28,7 +28,7 @@ Since the number of possible association rules can be very large, we need an eff
 
 1. Let A, B and C be three itemsets.  The support of the following association rules is the same: AB->C, AC->B, BA->C, BC->A, A->BC, B->AC, C->BA.  So, one way to solve the association rule mining problem is to first find all the FREQUENT ITEMSETS, i.e., those with support >= s.  Then we construct possible association rules from the frequent itemsets and return those with confidence >= c
 
-2. For any two itemsets A and B, |A| >= |AB|.  So, if we find that |A| < s, we don’t have to consider any supersets of A since we already know that their support will be < s.
+2. For any two itemsets A and B, $$|A| >= |AB|$$.  So, if we find that |A| < s, we don’t have to consider any supersets of A since we already know that their support will be < s.
 
 The APRIORI algorithm first finds frequent itemsets of size one (one item each), then uses them to build frequent itemsets of size 2, and so on.  After finding the frequent itemsets.  Recall the above dataset and suppose s=2 and c=95%.
 
