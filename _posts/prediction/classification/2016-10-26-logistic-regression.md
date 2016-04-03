@@ -10,9 +10,8 @@ Logistic regression is a popular classifier for problems where the class label i
 Instead, we can use logistic regression.  Here, the model is: $$z = 1 / 1 + e^(-(m_1 x_1 + m_2 x_2 + … + m_n x_n + b))$$.  We can interpret z as the probability that y=1.  Note that z can ranges between 0 and 1.
 
 
-See the following Wikipedia article for more info: https://en.wikipedia.org/wiki/Logistic_regression.
-
-[Maximum Likelihood Estimation of Logistic Regression](http://www.saedsayad.com/docs/mlelr.pdf)
-[Logistic Regression](http://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+See the following Wikipedia article for more info: Logistic Regression [Logistic Regression](http://en.wikipedia.org/wiki/Logistic_regression).   
+[Maximum Likelihood Estimation of Logistic Regression](http://www.saedsayad.com/docs/mlelr.pdf)  
+[Logistic Regression](http://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)  
 
 

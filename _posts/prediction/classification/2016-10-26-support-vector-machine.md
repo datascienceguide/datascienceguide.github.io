@@ -29,16 +29,9 @@ For example, for (x,y)=(credit score,credit limit)=(500,500), we get 15/4 * 500 
 
 An interesting question is how to select the best line that divides the two class values.
 
-# Further Reading
-
-
-
-
 
 # Further Reading
 
-[Support Vector Machines and Margins simplified](http://www.holehouse.org/mlclass/12_Support_Vector_Machines.html)
-[Support Vector Machine Full](http://cs229.stanford.edu/notes/cs229-notes3.pdf)
-
-
-[Support Vector Machines](http://www.saedsayad.com/docs/svm15.pdf)  
+[Support Vector Machines and Margins simplified](http://www.holehouse.org/mlclass/12_Support_Vector_Machines.html)   
+[Support Vector Machine Full](http://cs229.stanford.edu/notes/cs229-notes3.pdf)   
+[Support Vector Machines](http://www.saedsayad.com/docs/svm15.pdf)    
