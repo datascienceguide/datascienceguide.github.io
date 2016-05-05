@@ -8,20 +8,20 @@ IPython is an open sourced command shell which orginally developed for the Pytho
 
 This tutorial only uses open sourced software and package installers, namely apt-get and Pip.  Package installers are useful as they are small progams which made installing code convenient and managable.  Apt-get and Pip was useful as they allow to install open sourced software.  The offical Jupyter install tutorial suggests using the Anaconda distribution by Continuum Analytics which provides an installer and package management for many python packages. While being free to use (even for commercial), it is not fully open sourced and their script (.sh file) includes precompiled binary code.  Precompiled binary means that there was original source code used to generate the code you would be running.  It is not recommended to blindly use precompiled code since the content of the original source code is unknown and can create security flaws on your server.  For this reason is better to install packages on our own or using a fully open sourced package manager such as apt-get and Pip.
 
-# Requirements
+## Requirements
 
 To get started, you will need a clean Ubuntu 14.04 server instance with a non-root user set up. The non-root user must be configured with sudo privileges. Learn how to set this up by following our [initial server setup guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04).
 
 ## Step 1 - Installing Python and Pip
 First, update the system's package index. This will ensure that old or outdated packages do not interfere with the installation.
 
-```
-  sudo apt-get update
+```command
+sudo apt-get update
 ```
 
-First let us update install python, python development and python-pip:
+First let us install Python 2.7 and python-pip:
 
-```
+```command
   sudo apt-get -y install python2.7 python-pip
 ```
 
@@ -30,6 +30,34 @@ Installing `python2.7` will update python to the latest version of Python 2.7, a
 ## Installing Required Python Packages
 
 By this point you should have Python 2.7 installed.  This can be checked using 
+
+```command
+  python --version
+```
+
+This will output:
+
+```
+  Python 2.7.6
+```
+
+Depending on the lastest version of Python 2.7, the output might be different (for example 2.7.7, 2.7.8 etc.)
+
+You can also check if Pip is installed using the following command:
+
+```commend
+    pip --version
+```
+
+Which will output:
+
+```
+    pip 1.5.4 from /usr/lib/python2.7/dist-packages (python 2.7)
+```
+
+
+
+
 
 
 Next let us upgrade our python setup tools and install compilation requirements in python:
