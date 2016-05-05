@@ -1,44 +1,37 @@
----
-layout: post
-title:  "Jupyter and Ipython notebook tutorial"
-categories:  tutorial
-date:   2015-02-19 21:46:04
----
+# How to Setup and use Jupyter and Ipython notebook on Ubuntu 14.04"
 
-## Introduction
+### Introduction
 
-This article will talk you through setting up a server running Ipython and Jupyter notebook and teach you how to connect to the notebook.  By the end of this tutorial, you will be able to use a Python 2.7 virtual environment, run Ipython and Jupyer noteobok and create and share reproducable code.  For the purposes of this tutorial, the walk through will be through using Python 2 (2.7.x) since many of the data science, scientific computing and high performance computing libraries support 2.7 and not 3.0+. 
+This article will talk you through setting up a server running Ipython and Jupyter notebook and teach you how to connect to and use the notebook app.  By the end of this tutorial, you will be able to use a Python 2.7 virtual environment, run Ipython and Jupyer noteobok and create and share reproducable code.  For the purposes of this tutorial, the walk through will be through using Python 2 (2.7.x) since many of the data science, scientific computing and high performance computing libraries support 2.7 and not 3.0+. 
 
-[IPython](http://ipython.org/) is an open sourced command shell which orginally developed for the Python Programming language which provides many features such as tab completion, history, interactive shells, browser-based notebook with support for code, text, mathematical expressions inline plots and many other features.  [Project Jupyter](http://jupyter.org/) is a spin off open sourced project which uses IPython as the kernel and provides a similar web notebook interface with support for Julia, R Haskell and Ruby programming languages.  Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is very useful as it enables rapid prototyping and reproducable code.  This tutorial will go over getting started with Ipython and Jupyter notebook.
+IPython is an open sourced command shell which orginally developed for the Python Programming language which provides many features such as tab completion, history, interactive shells, browser-based notebook with support for code, text, mathematical expressions inline plots and many other features.  Project Jupyter is a spin off open sourced project which uses IPython as the kernel and provides a similar web notebook interface with support for Julia, R, Haskell and Ruby programming languages.  Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is very useful as it enables rapid prototyping and reproducable code.  This tutorial will go over getting started with Ipython and Jupyter notebook.
 
-This tutorial only uses open sourced software and package installers, namely apt-get and Pip.  Package installers are useful as they are small progams which made installing code convenient and managable.  Apt-get and Pip was useful as they allow to install open sourced software.  The offical Jupyter install tutorial suggests using the [Anaconda distribution](https://www.continuum.io/downloads) by continuum analytics wwhich provides an installer and package management for many python packages. While being free to use (even for commercial), it is not fully open sourced and their script (.sh file) includes precompiled binary code.  Precompiled binary means that there was original source code used to generate the code you would be running.  It is not recommended to blindly use precompiled code since the content of the original source code is unknown and can create security flaws on your server.  For this reason is better to install packages on our own or using a fully open sourced package manager such as apt-get and Pip.
+This tutorial only uses open sourced software and package installers, namely apt-get and Pip.  Package installers are useful as they are small progams which made installing code convenient and managable.  Apt-get and Pip was useful as they allow to install open sourced software.  The offical Jupyter install tutorial suggests using the Anaconda distribution by Continuum Analytics which provides an installer and package management for many python packages. While being free to use (even for commercial), it is not fully open sourced and their script (.sh file) includes precompiled binary code.  Precompiled binary means that there was original source code used to generate the code you would be running.  It is not recommended to blindly use precompiled code since the content of the original source code is unknown and can create security flaws on your server.  For this reason is better to install packages on our own or using a fully open sourced package manager such as apt-get and Pip.
 
 # Requirements
 
 To get started, you will need a clean Ubuntu 14.04 server instance with a non-root user set up. The non-root user must be configured with sudo privileges. Learn how to set this up by following our [initial server setup guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04).
 
-
-### Installing the PyDataScience Framework Manually
-
-First let us install some common utilities which are useful for using servers:
+## Step 1 - Installing Python and Pip
+First, update the system's package index. This will ensure that old or outdated packages do not interfere with the installation.
 
 ```
-  sudo apt-get -y install git curl vim tmux htop ranger
+  sudo apt-get update
 ```
 
-Next let us install python, python development and python-pip:
+First let us update install python, python development and python-pip:
 
 ```
-  sudo apt-get -y install python2.7 python-dev python-pip
+  sudo apt-get -y install python2.7 python-pip
 ```
-We an also install some optional python libraries which are popularly used:
 
-```
-  sudo apt-get -y install python-serial python-setuptools python-smbus
-```
-Next we need to set up [virtual environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for python. A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.  It solves the “Project X depends on version 1.x but, Project Y needs version 4.x” dilemma, and keeps your global site-packages directory clean and manageable. For example, you can work on a data science project which requires Django 1.3 while also maintaining a project which requires Django 1.0.
+Installing `python2.7` will update python to the latest version of Python 2.7, and `python-pip` will install Pip which allows us to manage Python packages we would like to use.
 
-Let us get started by installing virtualenv using pip
+### Optional: Using Virtual Environments
+
+An optional step is to set up [virtual environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for python. A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.  It solves the “Project X depends on version 1.x but, Project Y needs version 4.x” dilemma, and keeps your global site-packages directory clean and manageable. For example, you can work on a data science project which requires Django 1.3 while also maintaining a project which requires Django 1.0.  We already have a great in-depth guide for [Common Python Tools: Using virtualenv, Installing with Pip, and Managing Packages](https://www.digitalocean.com/community/tutorials/common-python-tools-using-virtualenv-installing-with-pip-and-managing-packages), the follow is a summary of just the practical points.
+
+Let us get started by installing virtualenv using pip:
 
 ```
   pip install virtualenv
@@ -70,15 +63,19 @@ If you want to deactivate the virtual environment, it is as simple as using the 
 
 ```
 
-### Installing the Required Python Packages
-
-
-If the virtual environment is not active, we can activate it again:
+If you set up a virtual environment and If the virtual environment is not active, we can activate it again:
 
 ```
   source ~/venv/data-science/bin/activate
 
 ```
+
+If you are choosing not to use one, you can move onto the next step.
+
+## Installing Required Python Packages
+
+By this point you should have Python 2.7 installed.  This can be checked using 
+
 
 Next let us upgrade our python setup tools and install compilation requirements in python:
 
