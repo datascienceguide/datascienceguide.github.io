@@ -27,51 +27,6 @@ First let us update install python, python development and python-pip:
 
 Installing `python2.7` will update python to the latest version of Python 2.7, and `python-pip` will install Pip which allows us to manage Python packages we would like to use.
 
-### Optional: Using Virtual Environments
-
-An optional step is to set up [virtual environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for python. A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them.  It solves the “Project X depends on version 1.x but, Project Y needs version 4.x” dilemma, and keeps your global site-packages directory clean and manageable. For example, you can work on a data science project which requires Django 1.3 while also maintaining a project which requires Django 1.0.  We already have a great in-depth guide for [Common Python Tools: Using virtualenv, Installing with Pip, and Managing Packages](https://www.digitalocean.com/community/tutorials/common-python-tools-using-virtualenv-installing-with-pip-and-managing-packages), the follow is a summary of just the practical points.
-
-Let us get started by installing virtualenv using pip:
-
-```
-  pip install virtualenv
-
-```
-If that command gave you an error, then it might be necessary to run all pip commands as super user (`sudo pip install virtualenv`) instead
-
-Now lets create a folder in the home directory  (~/) which will contain the Python executable files, and a copy of the pip library which you can use to install other packages. The name of the virtual environment (in this case, it is data-science) can be anything; omitting the name will place the files in the current directory instead.
-
-```
-  cd ~/
-  mkdir venv
-  pushd venv
-  virtualenv data-science
-  popd
-```
-Now let us activate our virtual environment.
-
-```
-  source ~/venv/data-science/bin/activate
-
-```
-The name of the current virtual environment will now appear on the left of the prompt (e.g. (venv)Your-Computer:your_project UserName$) to let you know that it’s active. From now on, any package that you install using pip will be placed in the venv folder, isolated from the global Python installation.  This means that When the virtual environment is activated, when anything is installed using pip, it is installed in the virtual environment, not in your system's python.  This means you can have different version of libraries installed and if an installation breaks, you can simply delete the corresponding venv folder (data-science in this case) and start over without damaging the global Python installation.
-
-If you want to deactivate the virtual environment, it is as simple as using the deactivate command:
-
-```
-  deactivate
-
-```
-
-If you set up a virtual environment and If the virtual environment is not active, we can activate it again:
-
-```
-  source ~/venv/data-science/bin/activate
-
-```
-
-If you are choosing not to use one, you can move onto the next step.
-
 ## Installing Required Python Packages
 
 By this point you should have Python 2.7 installed.  This can be checked using 
