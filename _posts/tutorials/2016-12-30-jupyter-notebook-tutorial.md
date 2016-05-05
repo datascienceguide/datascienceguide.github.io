@@ -19,17 +19,16 @@ First, update the system's package index. This will ensure that old or outdated 
 sudo apt-get update
 ```
 
-First let us install Python 2.7 and python-pip:
+First let us install Python 2.7, Python Pip, and Python Development:
 
 ```command
-  sudo apt-get -y install python2.7 python-pip
+  sudo apt-get -y install python2.7 python-pip python-dev
 ```
-
-Installing `python2.7` will update python to the latest version of Python 2.7, and `python-pip` will install Pip which allows us to manage Python packages we would like to use.
+Installing `python2.7` will update python to the latest version of Python 2.7, and `python-pip` will install Pip which allows us to manage Python packages we would like to use.  Since some of Jupyter’s dependencies may require compilation, in which case you would need the ability to compile Python C-extensions. This means a C compiler and the Python headers which is installed with `python-dev`
 
 ## Installing Required Python Packages
 
-By this point you should have Python 2.7 installed.  This can be checked using 
+By this point you should have Python 2.7 installed.  This can be checked using the following command:
 
 ```command
   python --version
@@ -54,28 +53,15 @@ Which will output:
 ```
     pip 1.5.4 from /usr/lib/python2.7/dist-packages (python 2.7)
 ```
-
-
-
-
-
-
-Next let us upgrade our python setup tools and install compilation requirements in python:
+Now that we have all of the requirements, let us begin by installing the Ipython and Ipython Notebook
 
 ```
-  pip install --upgrade setuptools
-  pip install virtualenvwrapper
-  pip install cython
-  pip install nose
-
+  sudo apt-get -y install ipython ipython-notebook
 ```
-Now that we have all of the requirements, let us begin by installing the [SciPy stack](http://www.scipy.org/install.html)
+If you notice here, ipython and ipython-notebook is installed using apt-get not Pip.  This 
 
-```
-  sudo apt-get -y install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose 
 
-```
-In the future you might also want to add the [NeuroDebian repository](http://neuro.debian.net/) for extra SciPy packages but for now let us move onto installing [Jupyter notebook](http://jupyter.org/):
+Now we can move onto installing Jupyter notebook:
 
 ```
   pip install jupyter
