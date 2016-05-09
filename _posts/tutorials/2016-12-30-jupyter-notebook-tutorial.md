@@ -1,18 +1,19 @@
-# How to Setup and use Jupyter and Ipython notebook on Ubuntu 14.04"
+# How to Setup and use Jupyter and Ipython notebook on a remote server (Ubuntu 14.04 )"
 
 ### Introduction
 
-This article will talk you through setting up a server running Ipython and Jupyter notebook and teach you how to connect to and use the notebook app.  By the end of this tutorial, you will be able to use a Python 2.7 using Ipython and Jupyer noteobok.  For the purposes of this tutorial, the walk through will be through using Python 2 (2.7.x) since many of the data science, scientific computing and high performance computing libraries support 2.7 and not 3.0+. 
+This article will talk you through setting up a server running Ipython and Jupyter notebook and teach you how to connect to and use the notebook app on a remote server.  By the end of this tutorial, you will be able to use Python 2.7 using Ipython and Jupyer notebook.  For the purposes of this tutorial, the walk through will be through using Python 2 (2.7.x) since many of the data science, scientific computing and high performance computing libraries support 2.7 and not 3.0+. 
 
-IPython is an open sourced command shell which orginally developed for the Python Programming language which provides many features such as tab completion, history, interactive shells, browser-based notebook with support for code, text, mathematical expressions inline plots and many other features.  Project Jupyter is a spin off open sourced project which uses IPython as the kernel and provides a similar web notebook interface with support for Julia, R, Haskell and Ruby programming languages.  Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is very useful as it enables rapid prototyping and reproducable code.  This tutorial will go over getting started with Ipython and Jupyter notebook.
+IPython is an open sourced command shell which originally developed for the Python Programming language which provides many features such as tab completion, history, interactive shells, browser-based notebook with support for code, text, mathematical expressions in-line plots and many other features.  Project Jupyter is a spin off open sourced project which uses IPython as the kernel and provides a similar web notebook interface with support for Julia, R, Haskell and Ruby programming languages.  Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.  It is very useful as it enables rapid prototyping and reproducible code.  This tutorial will go over getting started with Ipython and Jupyter notebook.
 
-This tutorial only uses open sourced software and package installers, namely apt-get and Pip.  Package installers are useful as they are small progams which made installing code convenient and managable.  Apt-get and Pip was useful as they allow to install open sourced software.  The offical Jupyter install tutorial suggests using the Anaconda distribution by Continuum Analytics which provides an installer and package management for many python packages. While being free to use (even for commercial), it is not fully open sourced and their script (.sh file) includes precompiled binary code.  Precompiled binary means that there was original source code used to generate the code you would be running.  It is not recommended to blindly use precompiled code since the content of the original source code is unknown and can create security flaws on your server.  For this reason is better to install packages on our own or using a fully open sourced package manager such as apt-get and Pip.
+This tutorial only uses open sourced software and package installers, namely apt-get and Pip.  Package installers are useful as they are small programs which made installing code convenient and manageable.  Apt-get and Pip was useful as they allow to install open sourced software.  The official Jupyter install tutorial suggests using the Anaconda distribution by Continuum Analytics which provides an installer and package management for many python packages. While being free to use (even for commercial), it is not fully open sourced and their script (.sh file) includes precompiled binary code.  Precompiled binary means that there was original source code used to generate the code you would be running.  It is not recommended to blindly use precompiled code since the content of the original source code is unknown and can create security flaws on your server.  For this reason is better to install packages on our own or using a fully open sourced package manager such as apt-get and Pip.
 
 ## Requirements
 
 To get started, you will need a clean Ubuntu 14.04 server instance with a non-root user set up. The non-root user must be configured with sudo privileges. Learn how to set this up by following our [initial server setup guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04).
 
 ## Step 1 - Installing Python and Pip
+
 First, update the system's package index. This will ensure that old or outdated packages do not interfere with the installation.
 
 ```command
@@ -43,7 +44,7 @@ Depending on the lastest version of Python 2.7, the output might be different (f
 
 You can also check if Pip is installed using the following command:
 
-```commend
+```command
     pip --version
 ```
 
@@ -54,7 +55,7 @@ Which will output:
 ```
 Now that we have all of the requirements, let us begin by installing the Ipython and Ipython Notebook
 
-```
+```command
   sudo apt-get -y install ipython ipython-notebook
 ```
 
@@ -62,105 +63,108 @@ Now that we have all of the requirements, let us begin by installing the Ipython
 
 Now we can move onto installing Jupyter notebook:
 
-```
-  pip install jupyter
-
+```command
+  sudo pip install jupyter
 ```
 
 [Jupyer notebook](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html) (or notebooks) are documents produced by the Jupyter Notebook App which contain both computer code (e.g. Python) and rich text elements (paragraph, equations, figures, links, etc...). Notebook documents are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable documents which can be run to perform data analysis.
 
-### Installing Jupyter Notebook Custom Themes (Optional)
-
-This step is optional.  Just like any other development environment, with Jupyter notebook, you can change the theme, color scheme and syntax highlighting.  I personally prefer dark themes such as [Oceans16](https://github.com/dunovank/jupyter-themes), you can follow the following steps to choose a different theme.
-
-```
-  pip install git+https://github.com/dunovank/jupyter-themes.git
-
-```
-We are going to install theme (-t) for ipython/jupyter version > 3.x (-J) with the toolbar (-T)
-
-```
-  jupyter-theme -J -t oceans16 -T
-
-```
 
 ## Step Four - Running Jupyter Notebook
 
 Running Jupyter notebook is as simple as running the following command:
 
-```
+```command
   jupyter notebook
-
 ```
 
-When you run Jupyter notebook, it runs on a specific port number. The first notebook you are running will run generally on port 8888.  If you are running Jupyter notebook on a local Linux computer, you can simply navigate to [localhost:8888](http://localhost:8888) to connect to Jupyter notebook.  If you are running Jupyter on a server (such as a Digital Ocean droplet) without a web browser, it will still run but give you an error stating that Ipython notebook requires JavaScipt as shown below.  This is expected since JavaScript is not necessary on a server without a web browser.  You can type q and then enter on the keyboard and confirm by to closing w3m by hitting y and then enter which will remove the error message (and show you which port Jupyter is running on).
+When you run Jupyter notebook, it runs on a specific port number. The first notebook you are running will run generally on port 8888.  If you are running Jupyter notebook on a local Linux computer, you can simply navigate to [localhost:8888](http://localhost:8888) to connect to Jupyter notebook.  If you are running Jupyter on a server (such as a Digital Ocean droplet), it will still run but it might give you an error stating that Ipython notebook requires JavaScipt as shown below:
 
-![](/images/jupyter-server.png)
+![](http://i.imgur.com/48WFDWH.png)
+
+This error is expected since JavaScript is not necessary on a server.  You can now follow Step Five to connect to the notebook using a server.
 
 ## Step Five - Connecting to the server using SSH Tunneling
 
-In this section we will learn how to connect to Jupyter notebook using SSH tunneling.  While SSH tunneling might sound scary, the concept is very simple.  Since Juptyer notebook is running on a specific port such as 8888, 8889 etc, SSH tunneling enables you to connect to the server's port securely.  Since we are used to running Jupyter notebook on a specific port number, we can create a secure tunnel which listens on the the server's port (8888 for example) and securely forwards a port on our local computer on a specific port (8000 for example).
+In this section we will learn how to connect to Jupyter notebook using SSH tunneling.  While SSH tunneling might sound scary, the concept is very simple.  Since Jupyter notebook is running on a specific port on the Droplet such as 8888, 8889 etc, SSH tunneling enables you to connect to the Droplet's port securely.
 
-### Mac or Linux
+The first step in SSH tunneling is being able to connect to the server using SSH.  If you are using Linux or Mac you can follow our guide [How To Use SSH Keys with DigitalOcean Droplets using Linux or Mac](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets) if you don't know how to connect to the Droplet using SSH.  For those who are using Windows on your home computer you can follow our guide on [How To Use SSH Keys with PuTTY on DigitalOcean Droplets for Windows users](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users)  The Windows and Putty users can then skip the next subsection, and follow's the Window's guide using Putty further below.
 
-If using Linux of Mac, this can be done simply by running the following SSH command:
+### SSH Tunneling using Mac or Linux
+
+If using Linux of Mac, SSH tunneling can be done simply by running the following SSH command:
+
+```command
+  ssh -L 8000:localhost:8888 server_username@<your.ip.address.here>
+```
+`ssh` is the standard command to open a ssh connection but `-L ` specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side (droplet).  This means that what ever is running on second port number (ie 8888) on the droplet will appear on the first port number (ie. 8000) on your local computer.  You should change 8888 to the port which Jupyter notebook is running on, and optionally change port 8000 to one of your choosing (if 8000 is used by another process).  `server_username` is your username on the droplet which you created and the `<your.ip.address.here>` is the  IP address of your droplet.  For example if my username was `demo_user` and the server address was 159.203.0.134 the command I would run is  `ssh -L 8000:localhost:8888 demo_user@159.203.0.134`.  If no error shows up after running the `ssh -L` command and you tunneled the port to 8000 (for example), you can run Jupyter notebook:
+
+```command
+  jupyter notebook
 
 ```
-  ssh -L 8888:localhost:8000 server_username@<server ip address>
-
-```
-You should change 8888 to the port which Jupyter notebook is running on, and optionally change port 8000 to one of your choosing (if 8000 is used by another process).  Your server_username is your username on the server and the `<server ip address>` could be an actual IP address or a URL depending on who is providing your virtual machine.  In the csclub example, the server_username is your csclub username (generally your quest ID) and the server ip would be for example [corn-syrup.uwaterloo.ca](http://corn-syrup.uwaterloo.ca).  The command I would run if my username is andrew.andrade is: 
-
-```
-  ssh -L 8888:localhost:8000 andrew.andrade@corn-syrup.uwaterloo.ca
-
-```
-If no error shows up after running the `ssh -L` command and you tunneled the port to 8000 (for example), you can simply navigate to [localhost:8000](http://localhost:8000) in your favourite web browser to connect to Jupyer notebook running on the server!
+Now simply navigate to [localhost:8000](http://localhost:8000) (or what ever port number you choose) in your favourite web browser to connect to Jupyer notebook running on the server!  The next subsection provides instructions for those using Windows and Putty so if you follow the steps for Linux or Mac, you can skip the next subsection and move onto the section where we go over the basics of using the Jupyter Notebook.
 
 
-### Windows
+### SSH Tunneling using Windows and Putty
 
-If you are using windows, you can also easily tunnel ssh using putty.  As you may remember, you SSH into a server, you enter the server url into the host name as shown in the figure below (for connecting to corn-syrup from the uwaterloo csclub).
+If you are using windows, you can also easily tunnel ssh using Putty as outlined in [our guide here](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users).  As you may remember, you SSH into a server, you enter the server url into the host name as shown:
 
-![](/images/putty.png)
+![](http://i.imgur.com/SiOcXyL.png)
 
-Next click the `+ SSH` on the bottom left, and then click tunnels.  You can now enter the port you want to access Jupyter on your local machine (for example 8000), and set the destination as `localhost:8888` where 8888 is the number of the port that Jupyter notebook is running on.  Now click the add button and the ports should appear in the Forwarded ports: section.
+Next click the `+ SSH` on the bottom of the left pane, and then click tunnels.  You can now enter the port you want to access Jupyter on your local machine (for example 8000), and set the destination as `localhost:8888` where 8888 is the number of the port that Jupyter notebook is running on.  Now click the add button and the ports should appear in the Forwarded ports,  The Putty configuration screen should look like the following:
 
-For the example of uWaterloo's csclub, my Putty configuration screen looks like the following:
+![](http://i.imgur.com/3kx9Etn.png)
 
-![](/images/putty-tunneling.png)
 
 Finally you can hit open, and you will now both connect to the server via SSH and tunnel the desired ports.  If no error shows up and you tunneled the port to 8000 (for example), you can simply navigate to [localhost:8000](http://localhost:8000) in our favourite web browser to connect to Jupyter notebook running on the server!
 
-# Using Jupyter notebook
+## Step 5 - Using Jupyter notebook
 
-Jupyter notebook will show all of the files and folders in the directory it is run from.  We can now create a new notebook file by click new > python2 from the top right.  This will open a notebook.  We can now run python code in the cell or change the cell to markdown (by Cell > Cell Type > Markdown) and write notes and even put equations in  $$\LaTeX$$ by putting them between the `$$` symbols.  For example, to generate $$ y = x^2$$ you can write the following
+By this point you should have Jupyer notebook running and you should be connected to it using a web browser.  Jupyter notebook is very powerful and has many features.  This section will outline the very basic features just to get us started using the notebook.  Automatically Jupyter notebook will show all of the files and folders in the directory it is run from.  We can now create a new notebook file by click new > python2 from the top right:
+
+![](http://i.imgur.com/fULT990.png)
+
+This will open a notebook.  We can now run Python code in the cell or change the cell to markdown.  For example change the first cell to accept Markdown by Cell > Cell Type > Markdown.  We can now write notes using Markdown and even put equations in  LaTeX by putting them between the `$$` symbols.  For example, type the following into the cell after changing it to markdown:
 
 ```
+# Simple Equation
+
+Let us now implement the following equation in Python:
 $$ y = x^2$$
+
+where $x = 2$
 ```
 
-You can also download Jupyter Notebooks off the internet and open them in Jupyer.  For now let us make a simple plot from the Anscombe's quartet using the seaborn library.  We can do this by just typing the following into the first cell
+Now hold the `Ctrl` key on your keyboard and hit `Enter`, the following should be the result:
 
-```python 
+![](http://i.imgur.com/D4MeS7W.png)
 
-import seaborn as sns
-sns.set(style="ticks")
-%matplotlib inline
-# Load the example dataset for Anscombe's quartet
-df = sns.load_dataset("anscombe")
-
-# Show the results of a linear regression within each dataset
-sns.lmplot(x="x", y="y", col="dataset", hue="dataset", data=df,
-           col_wrap=2, ci=None, palette="muted", size=4,
-           scatter_kws={"s": 50, "alpha": 1})
+You can use the markdown cells to make notes and document your code.  Now let us implement that simple equation and print the result.   Hit Insert > Insert Cell Below  to insert and cell and enter the following code:
 
 ```
+x = 2
+y = x*x
+print y
+```
 
-Please note we use `%matplotlib inline` for the plots to appear inline in the notebook (instead of a pop-up).  When using Jupyter Notebook, the easiest way to see a plot is in-line.
+Now hold the `Ctrl` key on your keyboard and hit `Enter`, the following should be the result:
 
-To get a quick tour of Jupyter notebook, you can go to Help > User Interface Tour as show below:
+![](http://i.imgur.com/l3bHNCO.png)
 
-![](/images/jupyter.png)
+You now have the ability to include libraries and use the notebook as you would with any other Python development environment!
 
-Once you have installed everything and Jupyter is running you can move onto to installing R and RStudio by following the [Absolute Beginners Tutorial for Getting Started Doing Data Science using Servers](/beginner-tutorial-getting-started-with-data-science-using-servers).
+
+## Where To Go From Here?
+
+Congratulations! You should be now able to write reproducible Python code and notes using markdown using Jupyter notebook running on a Droplet.  To get a quick tour of Jupyter notebook, you can go to Help > User Interface Tour as show below:
+
+![](http://i.imgur.com/HXsLPzs.png)
+
+In the future we will be releasing more advanced for running servers for data science which will make use of Jupyter notebook!
+
+
+
+
+
+  
